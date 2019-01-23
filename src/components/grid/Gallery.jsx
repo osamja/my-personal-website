@@ -22,8 +22,10 @@ export default class Gallery extends Component {
     renderImageContent(image_content, index) {
         return (
             <div key={image_content.text.toString()}>
-                <img src={image_content.src} alt={image_content.text.toString()}/>
-                <h2 style={this.state.imageText}>{image_content.text}</h2>
+                <a href={image_content.url}>
+                    <img src={image_content.src} alt={image_content.text.toString()}/>
+                    <h2 style={this.state.imageText}>{image_content.text}</h2>
+                </a>
             </div>
         )
     }

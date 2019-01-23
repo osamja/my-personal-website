@@ -19,7 +19,7 @@ export default class Title extends Component {
         return (
             <div className="TitleHeader">
                 <h1 style={this.state.style}>Sammy Javed</h1>
-                <h5 style={this.state.style}>Hey, welcome to my webpage!  I'm currently rebuilding this site.</h5>
+                <h5 style={this.state.style}>Welcome to my webpage!  I'm currently rebuilding this site.</h5>
                 <h5 style={this.state.style}>In the meantime, here are some really blurry images.</h5>
             </div>
         );
