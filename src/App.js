@@ -3,7 +3,65 @@ import React, { Component } from 'react';
 
 import logo from './logo.svg';
 import './App.css';
-import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Title from '../src/components/Title';
+import Gallery from '../src/components/grid/Gallery';
+
+// React router stuff
+const Home = () => (
+    <div>
+        Home
+    </div>
+);
+
+const About = () => (
+    <div>
+        About
+    </div>
+);
+
+const Code = () => (
+    <div>
+        Code
+      <h1>Sammy</h1>
+    </div>
+);
+
+const Contact = () => (
+    <div>
+        Contact
+    </div>
+);
+
+const info = () => (
+    <div>
+        info
+    </div>
+);
+
+const MainMenu = () => {
+    return (
+        <div>
+            <Link to="/">
+                <button>home</button>
+            </Link>
+            <Link to="/about">
+                <button>About</button>
+            </Link>
+            <Link to="/code">
+                <button>code</button>
+            </Link>
+            <Link to="/contact">
+                <button>contact</button>
+            </Link>
+            <Link to="/info">
+                <button>info</button>
+            </Link>
+        </div>
+    );
+};
+
+// React router stuff
 
 class App extends Component {
   render() {
@@ -11,6 +69,7 @@ class App extends Component {
     //     <Title />
     // );
     return (
+      <Router>
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -26,8 +85,17 @@ class App extends Component {
           >
             Learn React
           </a>
+          <MainMenu/>
         </header>
+        <div>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/code" component={Code} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/presence" component={info} />
+        </div>
       </div>
+      </Router>
     );
   }
 }
