@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {imgUrls} from '../../scripts/GalleryImages';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Projects from "../Projects";
 
 export default class Gallery extends Component {
     constructor(props) {
@@ -17,16 +18,19 @@ export default class Gallery extends Component {
             currentIndex: null,
             imageText: imageText
         };
-        this.renderImageContent = this.renderImageContent.bind(this);
+        this.renderGridItem = this.renderGridItem.bind(this);
     }
 
-    renderImageContent(image_content, index) {
+    renderGridItem(image_content, index) {
         return (
             <div key={image_content.text.toString()}>
-                <a href={image_content.url}>
+                <Link to={image_content.url}>
                     <img src={image_content.src} alt={image_content.text.toString()}/>
                     <h2 style={this.state.imageText}>{image_content.text}</h2>
-                </a>
+                </Link>
+                <div>
+                    <Route exact path="/books" component={Projects} />
+                </div>
             </div>
         )
     }
@@ -35,7 +39,7 @@ export default class Gallery extends Component {
         return (
             <div className="gallery-container">
                 <div className="gallery-grid">
-                    {imgUrls.map(this.renderImageContent)}
+                    {imgUrls.map(this.renderGridItem)}
                 </div>
             </div>
         )
