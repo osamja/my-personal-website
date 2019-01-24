@@ -1,4 +1,6 @@
-class Projects extends React.Component {
+import React, { Component } from 'react';
+
+export default class Projects extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -8,7 +10,7 @@ class Projects extends React.Component {
 
     render() {
         return (
-            <div className="ProjectHeader">
+            <div className="ProjectHeader" style={{color: 'white'}}>
                 <h2>Projects</h2>
                 <p>Here are some of the projects I've worked on.</p>
                 <div className="ProjectDetails">

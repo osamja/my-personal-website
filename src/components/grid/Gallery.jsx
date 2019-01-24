@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {imgUrls} from '../../scripts/GalleryImages';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 export default class Gallery extends Component {
     constructor(props) {
