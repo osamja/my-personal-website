@@ -1,12 +1,7 @@
 # Deployment
 
-Production app currently running on process
-11460
-
-To run the production personal website, from the home directory run
-//sudo nohup node deploy.js &
-sudo nohup ./deploy.sh &
-
+Find out which processes are listening on which ports
+sudo netstat -tulpn
 
  
 ### Things to do:
