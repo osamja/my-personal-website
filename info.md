@@ -1,4 +1,4 @@
-# Deployment information
+# Deployment
 
 Production app currently running on process
 11460
@@ -8,16 +8,14 @@ To run the production personal website, from the home directory run
 sudo nohup ./deploy.sh &
 
 
-### Epics to do:
-1. Make developing personal website more enjoyable so I can focus more on the content and less on the infrastructre.
- - Enable a 'staging' environment for create react app on sammyjaved.com.  
- - Document the deployment process so that deploying changes from stage to master is a streamlined process.
  
 ### Things to do:
  - Create a /projects page using React router
+ - Remove the '#' that is appearing in the URLs
+ - 
  
  
- 
- 
+### Backlog
+  
  
  

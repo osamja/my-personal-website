@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from '../components/Header';
 
 export default class Title extends Component {
     constructor(props) {
@@ -17,8 +18,7 @@ export default class Title extends Component {
 
     render() {
         return (
-            <div className="TitleHeader">
-                <h1 style={this.state.style}>Sammy Javed</h1>
+            <div className="Title">
                 <h5 style={this.state.style}>Welcome to my webpage!  I'm currently rebuilding this site.</h5>
                 <h5 style={this.state.style}>In the meantime, here are some really blurry images.</h5>
             </div>
