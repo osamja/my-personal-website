@@ -14,7 +14,10 @@ sudo nohup ./deploy.sh &
  - Document the deployment process so that deploying changes from stage to master is a streamlined process.
  
 ### Things to do:
- - Create a /books page using React router
- - 
+ - Create a /projects page using React router
  
-
+ 
+ 
+ 
+ 
+ 

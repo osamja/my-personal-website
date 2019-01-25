@@ -6,8 +6,8 @@ export default class Homepage extends Component {
     render() {
         return (
             <div className="Homepage">
-                    <Title/>
-                    <Gallery/>
+                <Title/>
+                <Gallery/>
             </div>
         );
     }

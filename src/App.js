@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import {Route, NavLink, HashRouter} from 'react-router-dom';
 import Homepage from '../src/pages/Homepage';
+import Books from '../src/pages/Books';
 
 class App extends Component {
     render() {
         return (
-            <Router>
-              <div className="App">
-                  <Homepage/>
-              </div>
-            </Router>
+            <HashRouter>
+                <div className="App">
+                    <div className="routes">
+                        <Route exact path="/" component={Homepage}/>
+                        <Route path="/books" component={Books}/>
+                    </div>
+                </div>
+            </HashRouter>
         );
     }
 }

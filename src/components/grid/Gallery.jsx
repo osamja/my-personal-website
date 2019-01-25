@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {imgUrls} from '../../scripts/GalleryImages';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Projects from "../Projects";
+import {NavLink} from 'react-router-dom';
 
 export default class Gallery extends Component {
     constructor(props) {
@@ -24,13 +25,10 @@ export default class Gallery extends Component {
     renderGridItem(image_content, index) {
         return (
             <div key={image_content.text.toString()}>
-                <Link to={image_content.url}>
+                <NavLink to={image_content.url}>
                     <img src={image_content.src} alt={image_content.text.toString()}/>
                     <h2 style={this.state.imageText}>{image_content.text}</h2>
-                </Link>
-                <div>
-                    <Route exact path="/books" component={Projects} />
-                </div>
+                </NavLink>
             </div>
         )
     }
