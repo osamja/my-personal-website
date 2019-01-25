@@ -1,24 +1,23 @@
 # Deployment
 
-Find out which processes are listening on which ports
-sudo netstat -tulpn
+ - Find out which processes are listening on which ports
+    * sudo netstat -tulpn
 
  
 ### Things to do:
- 
- 
- 
+ - Remove the '#' that is appearing in the URLs
+    * Use BrowserRouter rather than HashRouter
  
 ### Sprint Backlog 1/21/19 - 2/4/19
-1. Remove the '#' that is appearing in the URLs
-2. Edit the projects page
-3. Evaluate size of homepage (num of bytes)
-4. When the deployment shell script is run, kill the existing process on the port
-5. Edit the books page
-6. Create font for 'Sammy Javed' header
-7. Edit the photography section
+ - Edit the projects page
+ - Evaluate size of homepage (num of bytes)
+ - When the deployment shell script is run, kill the existing process on the port
+ - Edit the books page (Fix two headers)
+ - Create font for 'Sammy Javed' header
+ - Add the photography section
  
 ### Product Backlog
-  
- 
- 
+ - Create an error 404 page
+ - Redirect osamjaved.com to sammyjaved.com
+ - Populate the Bio page
+ - Populate the travel page
