@@ -6,4 +6,5 @@
 access-logs
 build/
 cache/
+node_modules/
 tmp/
