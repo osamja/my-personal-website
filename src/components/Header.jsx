@@ -19,7 +19,7 @@ export default class Header extends Component {
     render() {
         return (
             <NavLink to="/">
-            <div className="Header" style={{border: "1px solid aliceblue", padding: "5px"}}>
+            <div className="Header">
                 <h1 style={this.state.style}>Sammy Javed</h1>
             </div>
             </NavLink>
