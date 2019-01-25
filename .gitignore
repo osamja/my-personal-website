@@ -1,0 +1,10 @@
+.env
+.bash_history
+.idea/
+.bash_logout
+*.DS_STORE
+access-logs
+build/
+cache/
+node_modules/
+tmp/
