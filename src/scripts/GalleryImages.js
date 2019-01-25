@@ -22,12 +22,12 @@ export const imgUrls = [
 
     {
         'src': 'static/images/home/compressed/laska.jpg',
-        'text': 'Alaska',
+        'text': 'Photography',
         'url': '#',
     },
     {
         'src': 'static/images/home/compressed/bosphorus.jpg',
-        'text': 'Istanbul',
+        'text': 'Random',
         'url': '#',
     },
 ];

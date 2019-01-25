@@ -17,7 +17,7 @@ sudo nohup ./deploy.sh &
 ### Sprint Backlog
 1. Remove the '#' that is appearing in the URLs
 2. Clean up the projects page
-3.
+3. Evaluate size of homepage (num of bytes)
 4.
 5.
 6.
