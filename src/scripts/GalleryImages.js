@@ -1,12 +1,17 @@
 export const imgUrls = [
     {
+        'src': 'static/images/home/compressed/pier.jpg',
+        'text': 'Projects',
+        'url': '/projects',
+    },
+    {
         'src': 'static/images/home/compressed/evc2.jpg',
         'text': 'Books',
         'url': '/books',
     },
     {
         'src': 'static/images/home/compressed/cal.jpg',
-        'text': 'Cal',
+        'text': 'Bio',
         'url': '#',
     },
     {
@@ -14,11 +19,7 @@ export const imgUrls = [
         'text': 'Travel',
         'url': '#',
     },
-    {
-        'src': 'static/images/home/compressed/pier.jpg',
-        'text': 'SF Bay Area',
-        'url': '#',
-    },
+
     {
         'src': 'static/images/home/compressed/laska.jpg',
         'text': 'Alaska',

@@ -10,12 +10,20 @@ sudo nohup ./deploy.sh &
 
  
 ### Things to do:
- - Create a /projects page using React router
- - Remove the '#' that is appearing in the URLs
- - 
  
  
-### Backlog
+ 
+ 
+### Sprint Backlog
+1. Remove the '#' that is appearing in the URLs
+2. Clean up the projects page
+3.
+4.
+5.
+6.
+7. 
+ 
+### Product Backlog
   
  
  
