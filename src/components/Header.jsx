@@ -8,6 +8,9 @@ export default class Header extends Component {
         let style = {
             color: '#e0e0e0',
             textAlign: 'center',
+            fontFamily: 'rig-solid-light-fill',
+            fontWeight: '300',
+            fontStyle: 'normal',
         };
         this.state = {
             name: this.props.name,
@@ -20,6 +23,9 @@ export default class Header extends Component {
         return (
             <NavLink to="/">
             <div className="Header">
+                <link rel="stylesheet" href="https://use.typekit.net/pxs6ily.css">
+
+                </link>
                 <h1 style={this.state.style}>Sammy Javed</h1>
             </div>
             </NavLink>
