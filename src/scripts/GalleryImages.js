@@ -17,7 +17,7 @@ export const imgUrls = [
     {
         'src': 'static/images/home/compressed/evc-lake.jpg',
         'text': 'Travel',
-        'url': '#',
+        'url': '/travel',
     },
 
     {

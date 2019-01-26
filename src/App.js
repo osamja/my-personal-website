@@ -3,6 +3,7 @@ import './App.css';
 import {Route, HashRouter} from 'react-router-dom';
 import Homepage from '../src/pages/Homepage';
 import Books from '../src/pages/Books';
+import Travel from '../src/pages/Travel';
 import Header from '../src/components/Header';
 import Projects from '../src/components/Projects';
 
@@ -16,6 +17,7 @@ class App extends Component {
                         <Route exact path="/" component={Homepage}/>
                         <Route path="/books" component={Books}/>
                         <Route path="/projects" component={Projects}/>
+                        <Route path="/travel" component={Travel}/>
                     </div>
                 </div>
             </HashRouter>
