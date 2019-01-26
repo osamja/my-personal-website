@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import {imgUrls} from '../../scripts/GalleryImages';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Projects from "../Projects";
 import {NavLink} from 'react-router-dom';
 
 export default class Gallery extends Component {
@@ -17,7 +14,8 @@ export default class Gallery extends Component {
         };
         this.state = {
             currentIndex: null,
-            imageText: imageText
+            imageText: imageText,
+            gridData: this.props.gridData,
         };
         this.renderGridItem = this.renderGridItem.bind(this);
     }
@@ -37,7 +35,7 @@ export default class Gallery extends Component {
         return (
             <div className="gallery-container">
                 <div className="gallery-grid">
-                    {imgUrls.map(this.renderGridItem)}
+                    {this.state.gridData.map(this.renderGridItem)}
                 </div>
             </div>
         )

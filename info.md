@@ -18,7 +18,7 @@
  - 
  - Edit the books page (Fix two headers)
  - 
- - Add the photography section
+ - 
  
 ### Product Backlog
  - Create an error 404 page

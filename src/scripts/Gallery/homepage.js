@@ -23,7 +23,7 @@ export const imgUrls = [
     {
         'src': 'static/images/home/compressed/laska.jpg',
         'text': 'Photography',
-        'url': '#',
+        'url': '/photography',
     },
     {
         'src': 'static/images/home/compressed/bosphorus.jpg',
