@@ -8,13 +8,9 @@
     * sudo netstat -tulpn
 
  
-### Things to do:
- - Remove the '#' that is appearing in the URLs
-    * Use BrowserRouter rather than HashRouter
- 
 ### Sprint Backlog 1/21/19 - 2/4/19
  - Edit the projects page
- - 
+ - Remove the '#' that is appearing in the URLs
  - 
  - Edit the books page (Fix two headers)
  - 
