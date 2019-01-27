@@ -5,3 +5,4 @@ Sprint 99 Accomplishments (1/21/19 - 2/4/19)
   - Create font for 'Sammy Javed' header
   - Add the photography section
   - Added content to projects page
+  - Edit the books page (Fix two headers)
