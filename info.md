@@ -1,18 +1,14 @@
 # Deployment
-
  - To deploy, rather than running the deploy script, we should just run 
     `npm run build`
- - 
-
  - Find out which processes are listening on which ports
     * sudo netstat -tulpn
-
  
 ### Sprint Backlog 1/21/19 - 2/4/19
  - Edit the projects page
  - Remove the '#' that is appearing in the URLs
- - 
  - Edit the books page (Fix two headers)
+ - 
  - 
  - 
  
