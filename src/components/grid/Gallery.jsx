@@ -21,12 +21,22 @@ export default class Gallery extends Component {
     }
 
     renderGridItem(image_content, index) {
+        let gridItem;
+        if (image_content.redirect === true) {
+            gridItem = (<a href={image_content.url}>
+                <img src={image_content.src} alt={image_content.text.toString()}/>
+                <h2 style={this.state.imageText}>{image_content.text}</h2>
+            </a>)
+        } else {
+            gridItem = (
+            <NavLink to={image_content.url}>
+                <img src={image_content.src} alt={image_content.text.toString()}/>
+                <h2 style={this.state.imageText}>{image_content.text}</h2>
+            </NavLink>)
+        }
         return (
             <div key={image_content.text.toString()}>
-                <NavLink to={image_content.url}>
-                    <img src={image_content.src} alt={image_content.text.toString()}/>
-                    <h2 style={this.state.imageText}>{image_content.text}</h2>
-                </NavLink>
+                {gridItem}
             </div>
         )
     }

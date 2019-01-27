@@ -5,7 +5,7 @@
     * sudo netstat -tulpn
  
 ### Sprint Backlog 1/21/19 - 2/4/19
- - Edit the projects page
+ - 
  - Remove the '#' that is appearing in the URLs
  - Edit the books page (Fix two headers)
  - 
@@ -20,3 +20,5 @@
  - Remove blue underline from header
  - Have a separating line under header
  - Clickable header should just be the text region
+ - Enable https:// via SSL certificate
+ - Underline should appear under header upon hover, or bold/italicize text
