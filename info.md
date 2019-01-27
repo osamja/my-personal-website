@@ -22,3 +22,4 @@
  - Clickable header should just be the text region
  - Enable https:// via SSL certificate
  - Underline should appear under header upon hover, or bold/italicize text
+ - osamjaved.com should redirect to sammyjaved.com
