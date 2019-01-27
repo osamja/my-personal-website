@@ -26,7 +26,7 @@ export default class Header extends Component {
                 <link rel="stylesheet" href="https://use.typekit.net/pxs6ily.css">
 
                 </link>
-                <h1 style={this.state.style}>Sammy Javed</h1>
+                <h1 style={this.state.style} className="HeaderText">Sammy Javed</h1>
             </div>
             </NavLink>
         );

@@ -23,3 +23,4 @@
  - Populate the travel page
  - Remove blue underline from header
  - Have a separating line under header
+ - Clickable header should just be the text region
