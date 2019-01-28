@@ -6,9 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 let currentLocation = window.location;
 
-console.log('Hostname: ' + currentLocation);
-
-if (currentLocation.hostname === "http://osamjaved.com") {
+if (currentLocation.hostname === "osamjaved.com") {
     window.location.replace('http://sammyjaved.com');
 }
 
