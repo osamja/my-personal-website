@@ -5,25 +5,25 @@
     * sudo netstat -tulpn
  
 ### Sprint Backlog 1/21/19 - 2/4/19
- - 
+ - Enable https:// via SSL certificate
  - 
  - 
  - 
  - 
  
 ### Product Backlog
- - Redirect osamjaved.com to sammyjaved.com
  - Populate the Bio page
  - Populate the travel page
  - Remove blue underline from header
- - Have a separating line under header
  - Clickable header should just be the text region
- - Enable https:// via SSL certificate
  - Underline should appear under header upon hover, or bold/italicize text
  - osamjaved.com should redirect to sammyjaved.com
  - Allow full url paths to fetch the appropriate route content
- - Replace the fake 'black' color img on website today
+ - Add Home icon in Header
  - Create an error 404 page
  - Introduce a file for constant variables. 
     Ideally static files can be more easily hosted on a dedicated server in
     the future. 
+    
+    
+    
