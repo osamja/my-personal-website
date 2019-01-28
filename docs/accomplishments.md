@@ -6,3 +6,4 @@ Sprint 99 Accomplishments (1/21/19 - 2/4/19)
   - Add the photography section
   - Added content to projects page
   - Edit the books page (Fix two headers)
+  - Remove the '#' that is appearing in the URLs

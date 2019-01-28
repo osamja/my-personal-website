@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Route, HashRouter} from 'react-router-dom';
+import { Route, BrowserRouter } from 'react-router-dom'
 import Homepage from '../src/pages/Homepage';
 import Books from '../src/pages/Books';
 import Photography from '../src/pages/Photography';
@@ -11,7 +11,7 @@ import Projects from '../src/pages/Projects';
 class App extends Component {
     render() {
         return (
-            <HashRouter>
+            <BrowserRouter>
                 <div className="App">
                     <Header/>
                     <div className="routes">
@@ -22,7 +22,7 @@ class App extends Component {
                         <Route path="/photography" component={Photography}/>
                     </div>
                 </div>
-            </HashRouter>
+            </BrowserRouter>
         );
     }
 }
