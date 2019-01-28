@@ -23,7 +23,7 @@ export default class Gallery extends Component {
     renderGridItem(image_content, index) {
         let gridItem;
         if (image_content.redirect === true) {
-            gridItem = (<a href={image_content.url}>
+            gridItem = (<a href={image_content.url} target="_blank">
                 <img src={image_content.src} alt={image_content.text.toString()}/>
                 <h2 style={this.state.imageText}>{image_content.text}</h2>
             </a>)
