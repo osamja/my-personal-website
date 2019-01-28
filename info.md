@@ -12,7 +12,6 @@
  - 
  
 ### Product Backlog
- - Create an error 404 page
  - Redirect osamjaved.com to sammyjaved.com
  - Populate the Bio page
  - Populate the travel page
@@ -22,3 +21,6 @@
  - Enable https:// via SSL certificate
  - Underline should appear under header upon hover, or bold/italicize text
  - osamjaved.com should redirect to sammyjaved.com
+ - Allow full url paths to fetch the appropriate route content
+ - Replace the fake 'black' color img on website today
+ - Create an error 404 page
