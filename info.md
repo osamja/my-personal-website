@@ -24,3 +24,6 @@
  - Allow full url paths to fetch the appropriate route content
  - Replace the fake 'black' color img on website today
  - Create an error 404 page
+ - Introduce a file for constant variables. 
+    Ideally static files can be more easily hosted on a dedicated server in
+    the future. 
