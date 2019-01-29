@@ -10,7 +10,7 @@
 
  
 ### Sprint Backlog 1/21/19 - 2/4/19
- - Header should have some effect when hovered over
+ - 
  - 
  - 
  - 
@@ -30,6 +30,7 @@
     Ideally static files can be more easily hosted on a dedicated server in
     the future. 
  - URL redirect should occur server side
+ - Spike how SASS works with create-react-app build setup
     
     
     

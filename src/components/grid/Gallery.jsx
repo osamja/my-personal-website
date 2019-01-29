@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
+import '../style/Gallery.css';
 
 export default class Gallery extends Component {
     constructor(props) {
@@ -35,7 +36,7 @@ export default class Gallery extends Component {
             </NavLink>)
         }
         return (
-            <div key={image_content.text.toString()}>
+            <div className="grid-item" key={image_content.text.toString()}>
                 {gridItem}
             </div>
         )

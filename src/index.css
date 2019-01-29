@@ -70,10 +70,6 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.gallery-grid img {
-  width: 100%;
-  border: 5px solid black;
-}
 
 .gallery-grid div {
   position: relative;

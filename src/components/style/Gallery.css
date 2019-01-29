@@ -1,0 +1,12 @@
+.grid-item {
+    border: 5px solid rgba(13,49,75,1);
+}
+
+.grid-item img{
+    width: 100%;
+}
+
+.grid-item:hover {
+    width: 100%;
+    border: 5px solid gold;
+}
