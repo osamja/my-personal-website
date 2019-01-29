@@ -11,7 +11,6 @@ export default class Header extends Component {
             fontFamily: 'rig-solid-light-fill',
             fontWeight: '300',
             fontStyle: 'normal',
-            fontSize: '48px',
         };
         this.state = {
             name: this.props.name,

@@ -10,7 +10,7 @@
 
  
 ### Sprint Backlog 1/21/19 - 2/4/19
- - 
+ - Header should have some effect when hovered over
  - 
  - 
  - 
@@ -21,7 +21,7 @@
  - Populate the travel page
  - Remove blue underline from header
  - Clickable header should just be the text region
- - Underline should appear under header upon hover, or bold/italicize text
+ - 
  - osamjaved.com should redirect to sammyjaved.com
  - Allow full url paths to fetch the appropriate route content
  - Add Home icon in Header

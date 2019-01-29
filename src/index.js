@@ -6,13 +6,13 @@ import * as serviceWorker from './serviceWorker';
 
 let currentLocation = window.location;
 
-if (currentLocation.hostname === "osamjaved.com") {
+// Redirect to HTTPS unless localhost
+if (currentLocation.hostname !== "localhost" &&
+    (currentLocation.hostname === "osamjaved.com"
+    || currentLocation.protocol !== 'https:')) {
     window.location.replace('https://sammyjaved.com');
 }
 
-if (window.location.protocol !== 'https:') {
-	window.location.replace('https://sammyjaved.com');
-}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
