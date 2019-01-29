@@ -12,7 +12,7 @@ export const imgUrls = [
     {
         'src': 'static/images/home/compressed/cal.jpg',
         'text': 'Bio',
-        'url': '#',
+        'url': '/bio',
     },
     {
         'src': 'static/images/home/compressed/evc-lake.jpg',

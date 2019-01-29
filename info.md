@@ -17,11 +17,12 @@
  - 
  
 ### Product Backlog
+ - Add custom favicon
  - Populate the Bio page
  - Populate the travel page
  - Remove blue underline from header
  - Clickable header should just be the text region
- - 
+ - Create a text component, when a gallery grid item is clicked
  - osamjaved.com should redirect to sammyjaved.com
  - Allow full url paths to fetch the appropriate route content
  - Add Home icon in Header
@@ -31,6 +32,7 @@
     the future. 
  - URL redirect should occur server side
  - Spike how SASS works with create-react-app build setup
+ - Create Academic section with link to work
     
     
     
