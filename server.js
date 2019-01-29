@@ -1,13 +1,21 @@
 const express = require('express');
 const path = require('path');
+const https = require('https');
 const app = express();
+const fs = require('fs');
 
 const port_number = Number.parseInt(process.argv[2], 10)
-console.log("Port: " + port_number);
+
+const options = {
+    ca: fs.readFileSync('/home/sammy/config/sammyjaved_com/sammyjaved_com.ca-bundle'),
+    key: fs.readFileSync('/home/sammy/config/sammyjaved_com/example_com.key'),
+    cert: fs.readFileSync('/home/sammy/config/sammyjaved_com/sammyjaved_com.crt'),
+};
+
 
 app.use(express.static(path.join(__dirname, 'build')));
 
-// respond with "hello world" when a GET request is made to the homepage
+// respond with certifcate number when a GET request is made to the homepage
 app.get('/.well-known/pki-validation/9F2F8C2065C8A044C6CE2027826598AA.txt', function (req, res) {
   res.sendfile('/.well-known/pki-validation/9F2F8C2065C8A044C6CE2027826598AA.txt')
 });
@@ -18,7 +26,7 @@ app.get('/.well-known/pki-validation/file.txt', function (req, res) {
 });
 
 if (Number.isInteger(port_number)) {
-	app.listen(port_number);
+	https.createServer(options, app).listen(port_number);
 } else {
 	console.log("Invalid port number");
 }
