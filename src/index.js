@@ -7,7 +7,11 @@ import * as serviceWorker from './serviceWorker';
 let currentLocation = window.location;
 
 if (currentLocation.hostname === "osamjaved.com") {
-    window.location.replace('http://sammyjaved.com');
+    window.location.replace('https://sammyjaved.com');
+}
+
+if (location.protocol != 'https:') {
+	window.location.replace('https://sammyjaved.com');
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
