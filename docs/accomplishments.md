@@ -10,4 +10,5 @@ Sprint 99 Accomplishments (1/21/19 - 2/4/19)
   - Redirect osamjaved.com to sammyjaved.com
   - Have a separating line under header
   - Replace the fake 'black' color img on website today
+  - Enable https:// via SSL certificate
   

@@ -10,7 +10,7 @@ if (currentLocation.hostname === "osamjaved.com") {
     window.location.replace('https://sammyjaved.com');
 }
 
-if (window.location.protocol != 'https:') {
+if (window.location.protocol !== 'https:') {
 	window.location.replace('https://sammyjaved.com');
 }
 

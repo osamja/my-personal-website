@@ -10,7 +10,7 @@
 
  
 ### Sprint Backlog 1/21/19 - 2/4/19
- - Enable https:// via SSL certificate
+ - 
  - 
  - 
  - 
