@@ -10,7 +10,7 @@
 
  
 ### Sprint Backlog 1/21/19 - 2/4/19
- - 
+ -
  - 
  - 
  - 
@@ -20,11 +20,8 @@
  - Populate the Bio page
  - Populate the travel page
  - Remove blue underline from header
- - 
  - Create a text component, when a gallery grid item is clicked
- - osamjaved.com should redirect to sammyjaved.com
  - Allow full url paths to fetch the appropriate route content
- - Add Home icon in Header
  - Create an error 404 page
  - Introduce a file for constant variables. 
     Ideally static files can be more easily hosted on a dedicated server in

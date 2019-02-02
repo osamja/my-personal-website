@@ -28,6 +28,6 @@ export const imgUrls = [
     {
         'src': 'static/images/home/compressed/bosphorus.jpg',
         'text': 'Random',
-        'url': '#',
+        'url': '/random',
     },
 ];
