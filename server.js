@@ -4,7 +4,7 @@ const https = require('https');
 const app = express();
 const fs = require('fs');
 
-const port_number = Number.parseInt(process.argv[2], 10)
+const port_number = Number.parseInt(process.argv[2], 10);
 
 const options = {
     ca: fs.readFileSync('Config/sammyjaved_com/sammyjaved_com.ca-bundle'),
@@ -12,18 +12,7 @@ const options = {
     cert: fs.readFileSync('Config/sammyjaved_com/sammyjaved_com.crt'),
 };
 
-
 app.use(express.static(path.join(__dirname, 'build')));
-
-// respond with certifcate number when a GET request is made to the homepage
-app.get('/.well-known/pki-validation/9F2F8C2065C8A044C6CE2027826598AA.txt', function (req, res) {
-  res.sendfile('/.well-known/pki-validation/9F2F8C2065C8A044C6CE2027826598AA.txt')
-});
-
-// respond with "hello world" when a GET request is made to the homepage
-app.get('/.well-known/pki-validation/file.txt', function (req, res) {
-  res.sendfile('/.well-known/pki-validation/file.txt')
-});
 
 if (Number.isInteger(port_number)) {
 	console.log("Creating server at port " + port_number);

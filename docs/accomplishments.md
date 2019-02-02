@@ -13,4 +13,6 @@ Sprint 99 Accomplishments (1/21/19 - 2/4/19)
   - Enable https:// via SSL certificate
   - Header should have some effect when hovered over
   - Gallery Grid items should have an effect when hovered over (change border color)
+  - Add custom favicon
+  - Clickable header should just be the text region
   
