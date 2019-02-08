@@ -18,7 +18,6 @@
  
 ### Product Backlog
  - Ensure google lighthouse rating is  > 90%
- - Populate the Bio page
  - Populate the travel page
  - Remove blue underline from header
  - Create a text component, when a gallery grid item is clicked
@@ -34,6 +33,7 @@
  - Create script that uploads one image a day from a DB that I have.
  - Create a Calendar Gallery component.  Should allow user to index by year, then month, then day
  - Highlight picture of the day on the homepage.
+ - Setup secure FTP. Set a max storage limit in case of breach.d
     
     
     

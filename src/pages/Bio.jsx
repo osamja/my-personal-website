@@ -6,7 +6,6 @@ export default class Bio extends Component {
         let style = {
             color: '#e0e0e0',
             textAlign: 'center',
-            // fontSize: 32
         };
         this.state = {
             name: this.props.name,
@@ -41,6 +40,7 @@ export default class Bio extends Component {
                     <li>Location: San Francisco Bay Area</li>
                     <li>Favorite Movie: Back to the Future</li>
                     <li>2nd Favorite Movie: The Matrix</li>
+                    <li>Favorite Book: Harry Potter 4 (Goblet)</li>
                     <li>Education: UC Berkeley</li>
                     <li>Degree: Computer Science</li>
                 </ul>

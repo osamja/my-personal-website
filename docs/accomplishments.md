@@ -17,4 +17,5 @@ Sprint 99 Accomplishments (1/21/19 - 2/4/19)
   - Clickable header should just be the text region
   - osamjaved.com should redirect to sammyjaved.com
   - Add Home icon in Header
+  - Populate the Bio page
   
