@@ -16,7 +16,7 @@ export default class Random extends Component {
 
     render() {
         return (
-            <div className="Random">
+            <div className="Academic">
                 <h5 style={this.state.style}>I told you this page was going to be random!</h5>
             </div>
         );

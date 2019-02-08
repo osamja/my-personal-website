@@ -10,7 +10,7 @@ export const imgUrls = [
         'url': '/books',
     },
     {
-        'src': 'static/images/home/compressed/cal.jpg',
+        'src': 'static/images/home/compressed/bosphorus.jpg',
         'text': 'Bio',
         'url': '/bio',
     },
@@ -26,8 +26,8 @@ export const imgUrls = [
         'url': '/photography',
     },
     {
-        'src': 'static/images/home/compressed/bosphorus.jpg',
-        'text': 'Random',
-        'url': '/random',
+        'src': 'static/images/home/compressed/cal.jpg',
+        'text': 'Academic',
+        'url': '/academic',
     },
 ];

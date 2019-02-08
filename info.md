@@ -10,30 +10,22 @@
 
  
 ### Sprint Backlog 1/21/19 - 2/4/19
- - Remove bootstrap dependency
- - 
- - 
- - 
- - 
+ - Ensure google lighthouse rating is  > 90%
+ - Allow full url paths to fetch the appropriate route content
+ - HTTPS URL redirect should occur server side
+ - Create Academic section with link to work
+ - Encrypt SSL keys in server. chmod the individual files
  
 ### Product Backlog
- - Ensure google lighthouse rating is  > 90%
  - Populate the travel page
- - Remove blue underline from header
  - Create a text component, when a gallery grid item is clicked
- - Allow full url paths to fetch the appropriate route content
  - Create an error 404 page
  - Introduce a file for constant variables. 
     Ideally static files can be more easily hosted on a dedicated server in
     the future. 
- - URL redirect should occur server side
  - Spike how SASS works with create-react-app build setup
- - Create Academic section with link to work
- - Encrypt SSL keys in server. chmod the individual files
  - Create script that uploads one image a day from a DB that I have.
  - Create a Calendar Gallery component.  Should allow user to index by year, then month, then day
  - Highlight picture of the day on the homepage.
  - Setup secure FTP. Set a max storage limit in case of breach.d
-    
-    
-    
+ - Add 3D photos to website (similar to AR presenter at mini summit). he also used a ML model to 

@@ -1,4 +1,8 @@
-Sprint 99 Accomplishments (1/21/19 - 2/4/19)
+Sprint 2 Accomplishments (2/4/19 - 2/18/19)
+  - Populate the Bio page
+  - Remove bootstrap dependency
+
+Sprint 1 Accomplishments (1/21/19 - 2/4/19)
   - Create a /books page using React router
   - Create a header with link to home in every page
   - Create a /projects page using React router
@@ -16,6 +20,4 @@ Sprint 99 Accomplishments (1/21/19 - 2/4/19)
   - Add custom favicon
   - Clickable header should just be the text region
   - osamjaved.com should redirect to sammyjaved.com
-  - Add Home icon in Header
-  - Populate the Bio page
-  
+  - Add Home icon in Header  

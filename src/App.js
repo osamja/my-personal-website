@@ -5,7 +5,7 @@ import Homepage from '../src/pages/Homepage';
 import Books from '../src/pages/Books';
 import Photography from '../src/pages/Photography';
 import Bio from '../src/pages/Bio';
-import Random from '../src/pages/Random';
+import Academic from './pages/Academic';
 import Travel from '../src/pages/Travel';
 import Header from '../src/components/Header';
 import Projects from '../src/pages/Projects';
@@ -23,7 +23,7 @@ class App extends Component {
                         <Route path="/travel" component={Travel}/>
                         <Route path="/photography" component={Photography}/>
                         <Route path="/bio" component={Bio}/>
-                        <Route path="/random" component={Random}/>
+                        <Route path="/academic" component={Academic}/>
                     </div>
                 </div>
             </BrowserRouter>
