@@ -10,13 +10,14 @@
 
  
 ### Sprint Backlog 1/21/19 - 2/4/19
- -
+ - Remove bootstrap dependency
  - 
  - 
  - 
  - 
  
 ### Product Backlog
+ - Ensure google lighthouse rating is  > 90%
  - Populate the Bio page
  - Populate the travel page
  - Remove blue underline from header
@@ -29,6 +30,10 @@
  - URL redirect should occur server side
  - Spike how SASS works with create-react-app build setup
  - Create Academic section with link to work
+ - Encrypt SSL keys in server. chmod the individual files
+ - Create script that uploads one image a day from a DB that I have.
+ - Create a Calendar Gallery component.  Should allow user to index by year, then month, then day
+ - Highlight picture of the day on the homepage.
     
     
     
