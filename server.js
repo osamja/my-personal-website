@@ -3,6 +3,16 @@ const path = require('path');
 const https = require('https');
 const app = express();
 const fs = require('fs');
+const morganBody = require('morgan-body');
+const bodyParser = require('body-parser');
+const process = require('process');
+require('dotenv').config();
+
+if (process.env.environment === 'local' ||
+    process.env.environment === 'development') {
+    app.use(bodyParser.json());
+    morganBody(app);
+}
 
 const port_number = Number.parseInt(process.argv[2], 10);
 
@@ -16,7 +26,11 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 if (Number.isInteger(port_number)) {
 	console.log("Creating server at port " + port_number);
-	https.createServer(options, app).listen(port_number);
+	try {
+        https.createServer(options, app).listen(port_number);
+    } catch (e) {
+	    console.log(e.toString());
+    }
 } else {
 	console.log("Invalid port number");
 }
