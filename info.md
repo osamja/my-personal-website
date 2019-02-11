@@ -10,7 +10,6 @@
 
  
 ### Sprint Backlog 1/21/19 - 2/4/19
- - Ensure google lighthouse rating is  > 90%
  - Allow full url paths to fetch the appropriate route content
  - HTTPS URL redirect should occur server side
  - Create Academic section with link to work
@@ -28,4 +27,5 @@
  - Create a Calendar Gallery component.  Should allow user to index by year, then month, then day
  - Highlight picture of the day on the homepage.
  - Setup secure FTP. Set a max storage limit in case of breach.d
- - Add 3D photos to website (similar to AR presenter at mini summit). he also used a ML model to 
+ - Add 3D photos to website (similar to AR presenter at mini summit). he also used a ML model to
+ - Create a 'Moonbeam' like CI/CD, that pushes changes through each environment automaticaly, asking dev at each stage to validate changes 

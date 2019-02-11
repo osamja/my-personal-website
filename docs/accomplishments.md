@@ -1,6 +1,7 @@
 Sprint 2 Accomplishments (2/4/19 - 2/18/19)
   - Populate the Bio page
   - Remove bootstrap dependency
+  - Ensure google lighthouse rating is  > 90%
 
 Sprint 1 Accomplishments (1/21/19 - 2/4/19)
   - Create a /books page using React router
