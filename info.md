@@ -10,12 +10,12 @@
 
  
 ### Sprint Backlog 1/21/19 - 2/4/19
- - Allow full url paths to fetch the appropriate route content
- - HTTPS URL redirect should occur server side
- - Create Academic section with link to work
- - Encrypt SSL keys in server. chmod the individual files
+ - Allow full url paths to fetch the appropriate route content (5 pts)
+ - HTTPS URL redirect should occur server side (3 pts)
+ - Create Academic section with link to work (2 pts)
  
 ### Product Backlog
+ - Create a movies watched in 2019 page similar to books
  - Populate the travel page
  - Create a text component, when a gallery grid item is clicked
  - Create an error 404 page
@@ -28,4 +28,6 @@
  - Highlight picture of the day on the homepage.
  - Setup secure FTP. Set a max storage limit in case of breach.d
  - Add 3D photos to website (similar to AR presenter at mini summit). he also used a ML model to
- - Create a 'Moonbeam' like CI/CD, that pushes changes through each environment automaticaly, asking dev at each stage to validate changes 
+ - Create a 'Moonbeam' like CI/CD, that pushes changes through each environment automaticaly, asking dev at each stage to validate changes
+ - Encrypt SSL keys in server. chmod the individual files
+ - Create a date  
