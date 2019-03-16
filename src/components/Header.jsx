@@ -8,7 +8,6 @@ export default class Header extends Component {
         let headerStyle = {
             color: '#e0e0e0',
             textAlign: 'center',
-            fontFamily: 'rig-solid-light-fill',
             fontWeight: '300',
             fontStyle: 'normal',
             display: 'inline-block',
@@ -27,9 +26,6 @@ export default class Header extends Component {
         return (
             <NavLink to="/">
             <div className="Header">
-                <link rel="stylesheet" href="https://use.typekit.net/pxs6ily.css">
-
-                </link>
                 <h1 style={this.state.headerStyle} className="HeaderText">
                     <span className="glyphicon glyphicon-home" style={this.state.iconStyle}>
                     </span>

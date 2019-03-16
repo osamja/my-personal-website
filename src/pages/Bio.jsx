@@ -33,16 +33,16 @@ export default class Bio extends Component {
             <div className="Bio" style={this.state.style}>
                 <p>
                     Hey there, I'm Sammy.  I'm a software developer in the San Francisco Bay Area.
-                    I am approximately {Bio.getAgeInYears()} years old.
                 </p>
                 <ul>
-                    <li>Occupation: Software Developer</li>
+                    <li>Occupation: Software Developer at Adobe</li>
                     <li>Location: San Francisco Bay Area</li>
                     <li>Favorite Movie: Back to the Future</li>
                     <li>2nd Favorite Movie: The Matrix</li>
                     <li>Favorite Book: Harry Potter 4 (Goblet)</li>
                     <li>Education: UC Berkeley</li>
                     <li>Degree: Computer Science</li>
+                    <li>Hobbies: Guitar & Photography</li>
                 </ul>
             </div>
         );
