@@ -24,15 +24,17 @@ export default class Header extends Component {
 
     render() {
         return (
-            <NavLink to="/">
+
             <div className="Header">
+                <NavLink to="/">
                 <h1 style={this.state.headerStyle} className="HeaderText">
                     <span className="glyphicon glyphicon-home" style={this.state.iconStyle}>
                     </span>
                     <span>Sammy Javed</span>
                 </h1>
+                </NavLink>
             </div>
-            </NavLink>
+
         );
     }
 }

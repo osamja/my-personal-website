@@ -8,6 +8,7 @@
  - I have setup old-server.js which runs on port 80.
  - It does a redirect to the https version of the site https://sammyjaved.com
 
+my-personal-website/node_modules/nodemon/bin
  
 ### Sprint Backlog 1/21/19 - 2/4/19
  - Allow full url paths to fetch the appropriate route content (5 pts)
