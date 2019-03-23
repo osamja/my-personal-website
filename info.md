@@ -32,3 +32,4 @@ my-personal-website/node_modules/nodemon/bin
  - Encrypt SSL keys in server. chmod the individual files
  - Create a date  
  - Setup NodeJS debugging
+ - Backup Berkeley project writeups locally

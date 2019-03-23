@@ -1,24 +1,11 @@
 import React, { Component } from 'react';
+import Gallery from "../components/grid/Gallery";
+import {imgUrls} from "../scripts/Gallery/academic/academic";
 
-export default class Random extends Component {
-    constructor(props) {
-        super(props);
-        let style = {
-            color: '#e0e0e0',
-            textAlign: 'center',
-        };
-        this.state = {
-            name: this.props.name,
-            style: style
-        };
-
-    }
-
+export default class Academic extends Component {
     render() {
         return (
-            <div className="Academic">
-                <h5 style={this.state.style}>I told you this page was going to be random!</h5>
-            </div>
+            <Gallery gridData={imgUrls}/>
         );
     }
 }
