@@ -9,8 +9,7 @@ const bodyParser = require('body-parser');
 const process = require('process');
 require('dotenv').config();
 
-if (process.env.environment === 'local' ||
-    process.env.environment === 'development') {
+if (process.env.environment !== 'production') {
     app.use(bodyParser.json());
     morganBody(app);
 }

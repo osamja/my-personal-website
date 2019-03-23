@@ -10,8 +10,7 @@
 
 my-personal-website/node_modules/nodemon/bin
  
-### Sprint Backlog 1/21/19 - 2/4/19
- - Allow full url paths to fetch the appropriate route content (5 pts)
+### Sprint Backlog
  - HTTPS URL redirect should occur server side (3 pts)
  - Create Academic section with link to work (2 pts)
  
@@ -32,3 +31,4 @@ my-personal-website/node_modules/nodemon/bin
  - Create a 'Moonbeam' like CI/CD, that pushes changes through each environment automaticaly, asking dev at each stage to validate changes
  - Encrypt SSL keys in server. chmod the individual files
  - Create a date  
+ - Setup NodeJS debugging
