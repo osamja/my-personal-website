@@ -22,17 +22,17 @@ const options = {
     cert: fs.readFileSync('Config/sammyjaved_com/sammyjaved_com.crt'),
 };
 
-app.use (function (req, res, next) {
-    if (req.protocol === 'https') {
-        console.log("funding secured");
-        // request was via https, so do no special handling
-        next();
-    } else {
-        console.log("redirecting");
-        // request was via http, so redirect to https
-        res.redirect('https://' + req.headers.host + req.url);
-    }
-});
+// app.use (function (req, res, next) {
+//     if (req.protocol === 'https') {
+//         console.log("funding secured");
+//         // request was via https, so do no special handling
+//         next();
+//     } else {
+//         console.log("redirecting");
+//         // request was via http, so redirect to https
+//         res.redirect('https://' + req.headers.host + req.url);
+//     }
+// });
 app.use(express.static(path.join(__dirname, 'build')));
 app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
@@ -41,12 +41,13 @@ app.get('/*', function (req, res) {
 if (Number.isInteger(port_number)) {
 	console.log("Creating server at port " + port_number);
 	try {
-        if (process.env.environment === 'production') {
-            https.createServer(options, app).listen(port_number);
-        } else {
-            console.log("Using HTTP to create server");
-            http.createServer({}, app).listen(port_number);
-        }
+        https.createServer(options, app).listen(port_number);
+        // if (process.env.environment === 'production') {
+        //     https.createServer(options, app).listen(port_number);
+        // } else {
+        //     console.log("Using HTTP to create server");
+        //     http.createServer({}, app).listen(port_number);
+        // }
     } catch (e) {
 	    console.log(e.toString());
     }
