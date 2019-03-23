@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const https = require('https');
+const http = require('http');
 const app = express();
 const fs = require('fs');
 const morganBody = require('morgan-body');
@@ -27,7 +28,11 @@ app.use(express.static(path.join(__dirname, 'build')));
 if (Number.isInteger(port_number)) {
 	console.log("Creating server at port " + port_number);
 	try {
-        https.createServer(options, app).listen(port_number);
+	    if (process.env.environment !== 'production') {
+            https.createServer(options, app).listen(port_number);
+        } else {
+            http.createServer({}, app).listen(port_number);
+        }
     } catch (e) {
 	    console.log(e.toString());
     }
