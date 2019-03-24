@@ -41,7 +41,11 @@ app.get('/*', function (req, res) {
 if (Number.isInteger(port_number)) {
 	console.log("Creating server at port " + port_number);
 	try {
-            https.createServer(options, app).listen(port_number);
+        https.createServer(options, app).listen(port_number);
+        if (process.env.environment === 'production') {
+            http.createServer({}, app).listen(80);
+        }
+
     } catch (e) {
 	    console.log(e.toString());
     }
