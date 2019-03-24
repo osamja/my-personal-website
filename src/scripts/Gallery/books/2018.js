@@ -1,4 +1,3 @@
-
 export const books2018 = [
     {
         'src': 'static/images/general/colors/black.jpg',
