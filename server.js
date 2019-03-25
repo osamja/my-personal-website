@@ -22,17 +22,17 @@ const options = {
     cert: fs.readFileSync('Config/sammyjaved_com/sammyjaved_com.crt'),
 };
 
-// app.use (function (req, res, next) {
-//     if (req.protocol === 'https') {
-//         console.log("funding secured");
-//         // request was via https, so do no special handling
-//         next();
-//     } else {
-//         console.log("redirecting");
-//         // request was via http, so redirect to https
-//         res.redirect('https://' + req.headers.host + req.url);
-//     }
-// });
+app.use (function (req, res, next) {
+    if (req.protocol === 'https') {
+        // request was via https, so do no special handling
+        next();
+    } else {
+        console.log("redirecting");
+        // request was via http, so redirect to https
+        res.redirect('https://' + req.headers.host + req.url);
+    }
+});
+
 app.use(express.static(path.join(__dirname, 'build')));
 app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));

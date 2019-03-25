@@ -9,4 +9,9 @@ export const books2019 = [
         'text': 'Extreme Ownership - Jocko Willink',
         'url': '#',
     },
+    {
+        'src': 'static/images/general/colors/black.jpg',
+        'text': 'I.M. Wright Hard Code - Eric Brechner',
+        'url': '#',
+    },
 ];
