@@ -12,7 +12,6 @@ my-personal-website/node_modules/nodemon/bin
  
 ### Sprint Backlog
  - HTTPS URL redirect should occur server side (3 pts)
- - Create Academic section with link to work (2 pts)
  
 ### Product Backlog
  - Create a movies watched in 2019 page similar to books
