@@ -15,7 +15,7 @@ export const imgUrls = [
         'url': '/bio',
     },
     {
-        'src': 'static/images/home/compressed/evc-lake.jpg',
+        'src': 'static/images/home/compressed/travel.jpg',
         'text': 'Travel',
         'url': '/travel',
     },
@@ -29,5 +29,10 @@ export const imgUrls = [
         'src': 'static/images/home/compressed/cal.jpg',
         'text': 'Academic',
         'url': '/academic',
+    },
+    {
+        'src': 'static/images/home/compressed/movies.jpg',
+        'text': 'Movies',
+        'url': '/movies',
     },
 ];

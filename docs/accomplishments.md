@@ -1,12 +1,14 @@
-Sprint 5 MPW Accomplishments
+Sprint 6 MPW Accomplishments (4/1/19 - 4/15/19)
+
+
+Sprint 5 MPW Accomplishments (3/18/19 - 4/1/19)
   - Create Academic section with link to work (2 pts)
   - Allow full url paths to fetch the appropriate route content (5 pts)
+  - HTTPS URL redirect should occur server side (3 pts)
 
 Sprint 4 MPW Accomplishments (3/4/19 - 3/18/19)
-  - 
 
 Sprint 3 MPW Accomplishments (2/18/19 - 3/4/19)
-  - 
 
 Sprint 2 MPW Accomplishments (2/4/19 - 2/18/19)
   - Populate the Bio page

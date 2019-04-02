@@ -6,6 +6,7 @@ import Books from '../src/pages/Books';
 import Photography from '../src/pages/Photography';
 import Bio from '../src/pages/Bio';
 import Academic from './pages/Academic';
+import Movies from './pages/Movies';
 import Travel from '../src/pages/Travel';
 import Header from '../src/components/Header';
 import Projects from '../src/pages/Projects';
@@ -24,6 +25,7 @@ class App extends Component {
                         <Route path="/photography" component={Photography}/>
                         <Route path="/bio" component={Bio}/>
                         <Route path="/academic" component={Academic}/>
+                        <Route path="/movies" component={Movies}/>
                     </div>
                 </div>
             </BrowserRouter>

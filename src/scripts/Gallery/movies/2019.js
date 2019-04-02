@@ -1,0 +1,12 @@
+export const movies2019 = [
+    {
+        'src': 'static/images/general/colors/black.jpg',
+        'text': 'Free Solo',
+        'url': '#',
+    },
+    {
+        'src': 'static/images/general/colors/black.jpg',
+        'text': 'Spiderman: Into the Spider-Verse',
+        'url': '#',
+    },
+];
