@@ -1,6 +1,5 @@
 Sprint 6 MPW Accomplishments (4/1/19 - 4/15/19)
 
-
 Sprint 5 MPW Accomplishments (3/18/19 - 4/1/19)
   - Create Academic section with link to work (2 pts)
   - Allow full url paths to fetch the appropriate route content (5 pts)
