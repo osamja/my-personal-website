@@ -9,4 +9,9 @@ export const movies2019 = [
         'text': 'Spiderman: Into the Spider-Verse',
         'url': '#',
     },
+    {
+        'src': 'static/images/general/colors/black.jpg',
+        'text': 'The Man from Earth',
+        'url': '#',
+    },
 ];

@@ -1,6 +1,6 @@
 export const travel2018 = [
     {
-        'src': 'static/images/general/colors/black.jpg',
+        'src': 'static/images/travel/cover/peru.jpg',
         'text': 'Peru',
         'duration': '14 days',
         'url': '#',

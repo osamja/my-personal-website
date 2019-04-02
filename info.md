@@ -2,21 +2,18 @@
  - To deploy, rather than running the deploy script, we should just run 
     `npm run build`
  - Find out which processes are listening on which ports
-    * sudo netstat -tulpn
+    `sudo netstat -tulpn`
 
- - In order to keep, osamjaved.com and sammyjaved.com workign properly, 
- - I have setup old-server.js which runs on port 80.
- - It does a redirect to the https version of the site https://sammyjaved.com
-
-my-personal-website/node_modules/nodemon/bin
+# Development
+ - Use nodemon to detect changes to server and hot reload page
+    `node_modules/nodemon/bin/nodemon.js server.js`
  
 ### Sprint Backlog
  - Create a movies watched in 2019 page similar to books
- - 
+ - Populate the travel page 
  
 ### Product Backlog
  - Create a movies watched in 2019 page similar to books
- - Populate the travel page
  - Create a text component, when a gallery grid item is clicked
  - Create an error 404 page
  - Introduce a file for constant variables. 
@@ -33,3 +30,7 @@ my-personal-website/node_modules/nodemon/bin
  - Create a date  
  - Setup NodeJS debugging
  - Backup Berkeley project writeups locally
+ - Update static asset images on homepage
+ - All pics should be low res unless leaf node. e.g. clicking on image from /photography should download full res img
+ - Find better way to point to static assets, create JS variable for path
+    `'src': 'static/images/general/colors/black.jpg',` 
