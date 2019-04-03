@@ -8,17 +8,15 @@
  - Use nodemon to detect changes to server and hot reload page
     `node_modules/nodemon/bin/nodemon.js server.js`
  
-### Sprint Backlog
+### Sprint Backlo
  - Create a movies watched in 2019 page similar to books
- - Populate the travel page 
+ - Populate the travel page
+ - Introduce a file for constant variables. 
+     Ideally static files can be more easily hosted on a dedicated server in
+     the future.  
  
 ### Product Backlog
- - Create a movies watched in 2019 page similar to books
  - Create a text component, when a gallery grid item is clicked
- - Create an error 404 page
- - Introduce a file for constant variables. 
-    Ideally static files can be more easily hosted on a dedicated server in
-    the future. 
  - Spike how SASS works with create-react-app build setup
  - Create script that uploads one image a day from a DB that I have.
  - Create a Calendar Gallery component.  Should allow user to index by year, then month, then day
@@ -27,10 +25,10 @@
  - Add 3D photos to website (similar to AR presenter at mini summit). he also used a ML model to
  - Create a 'Moonbeam' like CI/CD, that pushes changes through each environment automaticaly, asking dev at each stage to validate changes
  - Encrypt SSL keys in server. chmod the individual files
- - Create a date  
- - Setup NodeJS debugging
  - Backup Berkeley project writeups locally
  - Update static asset images on homepage
  - All pics should be low res unless leaf node. e.g. clicking on image from /photography should download full res img
+ 
  - Find better way to point to static assets, create JS variable for path
     `'src': 'static/images/general/colors/black.jpg',` 
+ - Grid items that are leafs (don't point to another URL should not be displayed as URLs) 

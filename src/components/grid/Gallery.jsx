@@ -12,6 +12,8 @@ export default class Gallery extends Component {
             left: '12px',
             backgroundColor: 'black',
             opacity: '0.7',
+            fontWeight: 300,
+            fontStyle: 'normal'
         };
         this.state = {
             currentIndex: null,
