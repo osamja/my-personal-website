@@ -6,19 +6,19 @@ export const travel2018 = [
         'url': '#',
     },
     {
-        'src': 'static/images/general/colors/black.jpg',
+        'src': 'static/images/travel/cover/karachi.jpg',
         'text': 'Karachi, Pakistan',
         'duration': '3 days',
         'url': '#',
     },
     {
-        'src': 'static/images/general/colors/black.jpg',
+        'src': 'static/images/travel/cover/istanbul.jpg',
         'text': 'Istanbul, Turkey',
         'duration': '4 days',
         'url': '#',
     },
     {
-        'src': 'static/images/general/colors/black.jpg',
+        'src': 'static/images/travel/cover/nyc.jpg',
         'text': 'New York City',
         'duration': '7 days',
         'url': '#',

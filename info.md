@@ -8,7 +8,7 @@
  - Use nodemon to detect changes to server and hot reload page
     `node_modules/nodemon/bin/nodemon.js server.js`
  
-### Sprint Backlo
+### Sprint Backlog
  - Create a movies watched in 2019 page similar to books
  - Populate the travel page
  - Introduce a file for constant variables. 

@@ -14,8 +14,6 @@ export default class Bio extends Component {
 
     }
 
-
-
     static getAgeInYears() {
         let curDate = new Date();
         let birthDate = new Date('Jan 1, 1994');
@@ -24,7 +22,6 @@ export default class Bio extends Component {
         let ageInYears = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
         return (<span>{ageInYears}</span>);
     }
-
 
     // https://reactjsexample.com/a-vertical-timeline-component-for-react/
 
