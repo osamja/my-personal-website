@@ -10,6 +10,10 @@ export default class Academic extends Component {
                     Computational Photography
                 </h1>
                 <Gallery gridData={imgUrls}/>
+                <h1>
+                    Computer Graphics
+                </h1>
+                <h4>Coming soon</h4>
             </div>
 
         );
