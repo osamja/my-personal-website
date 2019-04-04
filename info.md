@@ -28,4 +28,5 @@
  - All pics should be low res unless leaf node. e.g. clicking on image from /photography should download full res img
  - Find better way to point to static assets, create JS variable for path
     `'src': 'static/images/general/colors/black.jpg',` 
- - Grid items that are leafs (don't point to another URL should not be displayed as URLs, no hand icon should be displayed) 
+ - Grid items that are leafs (don't point to another URL should not be displayed as URLs, no hand icon should be displayed)
+ - Move static scripts into public folder which can one day be delivered via a CDN. 

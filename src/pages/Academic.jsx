@@ -20,7 +20,6 @@ export default class Academic extends Component {
                 </h1>
                 <h4>Coming soon</h4>
             </div>
-
         );
     }
 }
