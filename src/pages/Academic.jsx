@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Gallery from "../components/grid/Gallery";
-import {imgUrls} from "../scripts/Gallery/academic/academic";
+import {computationalPhotography} from "../scripts/Gallery/academic/compPhoto";
+import {sideAcademicProjects} from "../scripts/Gallery/academic/side";
 
 export default class Academic extends Component {
     render() {
@@ -9,7 +10,11 @@ export default class Academic extends Component {
                 <h1>
                     Computational Photography
                 </h1>
-                <Gallery gridData={imgUrls}/>
+                <Gallery gridData={computationalPhotography}/>
+                <h1>
+                    Fun academic side projects
+                </h1>
+                <Gallery gridData={sideAcademicProjects} />
                 <h1>
                     Computer Graphics
                 </h1>

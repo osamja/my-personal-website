@@ -10,12 +10,10 @@
  
 ### Sprint Backlog
  - Create a movies watched in 2019 page similar to books
- - Populate the travel page
- - Introduce a file for constant variables. 
-     Ideally static files can be more easily hosted on a dedicated server in
-     the future.  
+ - Populate the travel page 
  
 ### Product Backlog
+ - Get basic site analytics setup to monitor traffic
  - Create a text component, when a gallery grid item is clicked
  - Spike how SASS works with create-react-app build setup
  - Create script that uploads one image a day from a DB that I have.
@@ -28,7 +26,6 @@
  - Backup Berkeley project writeups locally
  - Update static asset images on homepage
  - All pics should be low res unless leaf node. e.g. clicking on image from /photography should download full res img
- 
  - Find better way to point to static assets, create JS variable for path
     `'src': 'static/images/general/colors/black.jpg',` 
- - Grid items that are leafs (don't point to another URL should not be displayed as URLs) 
+ - Grid items that are leafs (don't point to another URL should not be displayed as URLs, no hand icon should be displayed) 

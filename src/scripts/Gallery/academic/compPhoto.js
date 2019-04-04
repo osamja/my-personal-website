@@ -1,4 +1,4 @@
-export const imgUrls = [
+export const computationalPhotography = [
     {
         'src': 'static/images/academic/proj1-colorizing-photos.jpg',
         'text': 'Colorizing the Prokudin-Gorskii photo collection',

@@ -19,7 +19,6 @@ export const imgUrls = [
         'text': 'Travel',
         'url': '/travel',
     },
-
     {
         'src': 'static/images/home/compressed/laska.jpg',
         'text': 'Photography',

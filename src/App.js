@@ -10,6 +10,7 @@ import Movies from './pages/Movies';
 import Travel from '../src/pages/Travel';
 import Header from '../src/components/Header';
 import Projects from '../src/pages/Projects';
+import MyPersonalWebsite from '../src/pages/projects/MyPersonalWebsite';
 
 class App extends Component {
     render() {
@@ -19,13 +20,14 @@ class App extends Component {
                     <Header/>
                     <div className="routes">
                         <Route exact path="/" component={Homepage}/>
-                        <Route path="/books" component={Books}/>
-                        <Route path="/projects" component={Projects}/>
-                        <Route path="/travel" component={Travel}/>
-                        <Route path="/photography" component={Photography}/>
-                        <Route path="/bio" component={Bio}/>
-                        <Route path="/academic" component={Academic}/>
-                        <Route path="/movies" component={Movies}/>
+                        <Route exact path="/books" component={Books}/>
+                        <Route exact path="/projects" component={Projects}/>
+                        <Route exact path="/travel" component={Travel}/>
+                        <Route exact path="/photography" component={Photography}/>
+                        <Route exact path="/bio" component={Bio}/>
+                        <Route exact path="/academic" component={Academic}/>
+                        <Route exact path="/movies" component={Movies}/>
+                        <Route exact path="/projects/my-personal-website" component={MyPersonalWebsite}/>
                     </div>
                 </div>
             </BrowserRouter>
