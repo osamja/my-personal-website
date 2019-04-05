@@ -31,16 +31,12 @@ export default class Bio extends Component {
                 <p>
                     Hey there, I'm Sammy.  I'm a software developer in the San Francisco Bay Area.
                 </p>
-                <ul>
-                    <li>Occupation: Software Developer at Adobe</li>
-                    <li>Location: San Francisco Bay Area</li>
-                    <li>Favorite Movie: Back to the Future</li>
-                    <li>2nd Favorite Movie: The Matrix</li>
-                    <li>Favorite Book: Harry Potter 4 (Goblet)</li>
-                    <li>Education: UC Berkeley</li>
-                    <li>Degree: Computer Science</li>
-                    <li>Hobbies: Guitar & Photography</li>
-                </ul>
+                <h5>Occupation: Software Developer at Adobe</h5>
+                <h5>Location: San Francisco Bay Area</h5>
+                <h5>Favorite Movies: Back to the Future, The Matrix</h5>
+                <h5>Education: UC Berkeley</h5>
+                <h5>Degree: Computer Science</h5>
+                <h5>Hobbies: Guitar & Photography</h5>
             </div>
         );
     }
