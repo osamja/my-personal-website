@@ -30,3 +30,4 @@
     `'src': 'static/images/general/colors/black.jpg',` 
  - Grid items that are leafs (don't point to another URL should not be displayed as URLs, no hand icon should be displayed)
  - Move static scripts into public folder which can one day be delivered via a CDN. 
+ - Create an upload service with image magic behind the scenes to crop the img to 500x500 and ensure it's compressed

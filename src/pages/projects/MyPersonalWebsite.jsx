@@ -4,10 +4,10 @@ export default class MyPersonalWebsite extends Component {
     render() {
         return (
             <div className="Academic" style={{color: "white"}}>
-                <h1>
+                <h3>
                     My Personal Website
-                </h1>
-                <p style={{textAlign: "left"}}>
+                </h3>
+                <p>
                     Welcome
                 </p>
             </div>

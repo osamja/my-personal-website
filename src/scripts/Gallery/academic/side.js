@@ -1,5 +1,11 @@
 export const sideAcademicProjects = [
     {
+        'src': 'static/images/general/colors/black.jpg',
+        'text': 'Give Em the Axe',
+        'url': '#',
+        'redirect': true,
+    },
+    {
         'src': 'static/images/projects/centroid-classifier.jpg',
         'text': 'Simple Centroid Classifier',
         'url': 'https://github.com/osamja/SimpleCentroidClassifier/blob/master/centroid.ipynb',
