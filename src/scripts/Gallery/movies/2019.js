@@ -14,4 +14,9 @@ export const movies2019 = [
         'text': 'The Man from Earth',
         'url': '#',
     },
+    {
+    'src': 'static/images/general/colors/black.jpg',
+    'text': 'Happy',
+    'url': '#',
+    },
 ];

@@ -1,4 +1,8 @@
 Sprint 6 MPW Accomplishments (4/1/19 - 4/15/19)
+  - Create a movies watched in 2019 page similar to books (2 pts)
+  - Populate the travel page (2 pts)
+  - Change font for Gallery grid item image text (1 pt)
+  
 
 Sprint 5 MPW Accomplishments (3/18/19 - 4/1/19)
   - Create Academic section with link to work (2 pts)
