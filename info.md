@@ -11,6 +11,12 @@
 ### Sprint Backlog
  - Create a movies watched in 2019 page similar to books
  - Populate the travel page 
+ - Create a movies watched in 2019 page similar to books (2pts)
+ - Populate the travel page (2pts)
+ - Change font for Gallery grid item image text (1 pt)
+ - Introduce a file for constant variables. (3 pts) 
+    - Ideally static files can be more easily hosted on a dedicated server in the future.
+ - Upload CS 184 Project writeups to Academic page (2 pts)  
  
 ### Product Backlog
  - Get basic site analytics setup to monitor traffic
