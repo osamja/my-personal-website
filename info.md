@@ -14,6 +14,7 @@
     - Upload CS 184 Project writeups to Academic page (2 pts)
  
 ### Product Backlog
+ - Have entire website be extremely timeline driven with the grid system indexing into granular timeframes. folder <year><month><date>.
  - Create text component.  Upload markdown file in folder <year><month><date>.
  - Get basic site analytics setup to monitor traffic
  - Create a text component, when a gallery grid item is clicked
