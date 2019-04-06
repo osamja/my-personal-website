@@ -8,12 +8,13 @@
  - Use nodemon to detect changes to server and hot reload page
     `node_modules/nodemon/bin/nodemon.js server.js`
  
-### Sprint Backlo
- - Create a movies watched in 2019 page similar to books
- - Populate the travel page
- - Introduce a file for constant variables. 
-     Ideally static files can be more easily hosted on a dedicated server in
-     the future.  
+### Sprint Backlog (Sprint 6)
+- Create a movies watched in 2019 page similar to books (2pts)
+- Populate the travel page (2pts)
+- Change font for Gallery grid item image text (1 pt)
+- Introduce a file for constant variables. (3 pts) 
+   - Ideally static files can be more easily hosted on a dedicated server in the future.
+- Upload CS 184 Project writeups to Academic page (2 pts)  
  
 ### Product Backlog
  - Create a text component, when a gallery grid item is clicked
