@@ -6,6 +6,9 @@ export default class Header extends Component {
     constructor(props) {
         super(props);
         let headerStyle = {
+            borderTop: '3px solid #E0E0E0',
+        };
+        let headerTextStyle = {
             color: '#e0e0e0',
             textAlign: 'center',
             fontWeight: '300',
@@ -18,6 +21,7 @@ export default class Header extends Component {
         this.state = {
             name: this.props.name,
             headerStyle: headerStyle,
+            headerTextStyle: headerTextStyle,
             iconStyle: iconStyle,
         };
     }
@@ -25,9 +29,9 @@ export default class Header extends Component {
     render() {
         return (
 
-            <div className="Header">
+            <div className="Header" style={this.state.headerStyle}>
                 <NavLink to="/">
-                <h1 style={this.state.headerStyle} className="HeaderText">
+                <h1 style={this.state.headerTextStyle} className="HeaderText">
                     <span className="glyphicon glyphicon-home" style={this.state.iconStyle}>
                     </span>
                     <span>Sammy Javed</span>
