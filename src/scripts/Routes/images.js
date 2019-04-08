@@ -6,9 +6,14 @@ const PROTOCOL = 'https://';
 const BASE_PATH = 'static';
 const CATEGORY = 'images';
 
+/**
+ * Returns the base domain used for retrieving static images
+ * TODO: Utilize switch() statement
+ * @returns {string}
+ */
 function getBaseDomain() {
   if (process.env.environment === 'local') {
-    return 'localhost:3000';
+    return 'localhost:8002';
   } else if (process.env.environment === 'development') {
       return BASE_DOMAIN + ':8001';
   } else if (process.env.environment === 'staging') {
@@ -16,7 +21,7 @@ function getBaseDomain() {
   } else if (process.env.environment === 'production') {
       return BASE_DOMAIN;
   } else {
-      return BASE_DOMAIN;
+      return 'localhost:3000';
   }
 }
 
@@ -25,8 +30,11 @@ function getBaseDomain() {
  * @returns {string}
  */
 export function getBaseUrl() {
-  const baseUrl = PROTOCOL + getBaseDomain();
-  return baseUrl;
+  if (process.env.environment) {
+      return PROTOCOL + getBaseDomain();
+  } else {
+      return 'http://' + getBaseDomain();
+  }
 }
 
 /**
