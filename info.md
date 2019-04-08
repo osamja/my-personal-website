@@ -35,3 +35,4 @@
  - Move static scripts into public folder which can one day be delivered via a CDN. 
  - Create an upload service with image magic behind the scenes to crop the img to 500x500 and ensure it's compressed
  - Document a consistent way to do file imports (probably establishing how to import files with their absolute path)
+ - Begin using a JS linter

@@ -37,3 +37,5 @@ export function getBasePath() {
   const basePath = BASE_PATH + '/' + CATEGORY;
   return basePath;
 }
+
+export const DEFAULT_BLACK_IMAGE_PATH = getBaseUrl() + '/' + getBasePath() + '/' + 'general/colors/black.jpg';

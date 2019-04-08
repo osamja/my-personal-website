@@ -1,22 +1,34 @@
+import {
+  getBaseUrl,
+  getBasePath,
+  DEFAULT_BLACK_IMAGE_PATH,
+} from '../../scripts/Routes/images.js';
+
+const projectPath = 'projects';
+
+function getProjectSource(imageFileName) {
+  return getBaseUrl() + '/' + getBasePath() + '/' + projectPath + '/' + imageFileName;
+}
+
 export const imgUrls = [
     {
-        'src': 'static/images/general/colors/black.jpg',
+        'src': DEFAULT_BLACK_IMAGE_PATH,
         'text': 'My Personal Website',
         'url': '/projects/my-personal-website',
     },
     {
-        'src': 'static/images/projects/home-server.jpg',
+        'src': getProjectSource('home-server.jpg'),
         'text': 'Home Server',
         'url': '#',
     },
     {
-        'src': 'static/images/projects/led-staircase.jpg',
+        'src': getProjectSource('led-staircase.jpg'),
         'text': 'LED Staircase',
         'url': 'https://www.youtube.com/watch?v=_BEs13h95DY',
         'redirect': true,
     },
     {
-        'src': 'static/images/projects/local-sockets.jpg',
+        'src': getProjectSource('local-sockets.jpg'),
         'text': 'Local File Sharing',
         'url': 'https://github.com/osamja/local_sockets',
         'redirect': true,
