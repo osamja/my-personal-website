@@ -6,11 +6,17 @@ const PROTOCOL = 'https://';
 const BASE_PATH = 'static';
 const CATEGORY = 'images';
 
-export function getBaseDomain() {
+function getBaseDomain() {
   if (process.env.environment === 'local') {
     return 'localhost:3000';
+  } else if (process.env.environment === 'development') {
+      return BASE_DOMAIN + ':8001';
+  } else if (process.env.environment === 'staging') {
+      return BASE_DOMAIN + ':8000';
+  } else if (process.env.environment === 'production') {
+      return BASE_DOMAIN;
   } else {
-    return BASE_DOMAIN;
+      return BASE_DOMAIN;
   }
 }
 
@@ -19,7 +25,7 @@ export function getBaseDomain() {
  * @returns {string}
  */
 export function getBaseUrl() {
-  const baseUrl = BASE_DOMAIN + PROTOCOL;
+  const baseUrl = PROTOCOL + getBaseDomain();
   return baseUrl;
 }
 
