@@ -6,7 +6,7 @@ import {
 const photographyPath = 'photography';
 
 function getPhotographySource(imageFileName) {
-  return getBaseUrl() + '/' + getBasePath() + '/' + photographyPath + '/' + imageFileName
+  return getBaseUrl() + '/' + getBasePath() + '/' + photographyPath + '/' + imageFileName;
 }
 
 export const imgUrls = [

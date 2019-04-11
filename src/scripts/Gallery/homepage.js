@@ -6,7 +6,7 @@ import {
 const homepagePath = 'home/compressed';
 
 function getHomePageSource(imageFileName) {
-    return getBaseUrl() + '/' + getBasePath() + '/' + homepagePath + '/' + imageFileName
+    return getBaseUrl() + '/' + getBasePath() + '/' + homepagePath + '/' + imageFileName;
 }
 
 export const imgUrls = [
