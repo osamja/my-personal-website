@@ -1,6 +1,17 @@
+import {
+    getBaseUrl,
+    getBasePath,
+} from '../../scripts/Routes/images.js';
+
+const photographyPath = 'photography';
+
+function getPhotographySource(imageFileName) {
+  return getBaseUrl() + '/' + getBasePath() + '/' + photographyPath + '/' + imageFileName
+}
+
 export const imgUrls = [
     {
-        'src': 'static/images/photography/sammy-hafiz.jpg',
+        'src': getPhotographySource('sammy-hafiz.jpg'),
         'text': 'Hafiz Juice',
         'url': '#',
     },

@@ -46,4 +46,4 @@ export function getBasePath() {
   return basePath;
 }
 
-export const DEFAULT_BLACK_IMAGE_PATH = getBaseUrl() + '/' + getBasePath() + '/' + 'general/colors/black.jpg';
+export const DEFAULT_BLACK_IMAGE_PATH = getBaseUrl() + '/' + getBasePath() + '/general/colors/black.jpg';
