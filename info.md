@@ -9,8 +9,6 @@
     `node_modules/nodemon/bin/nodemon.js server.js`
  
 ### Sprint Backlog
-    - Introduce a file for constant variables. (3 pts) 
-        - Ideally static files can be more easily hosted on a dedicated server in the future.
     - Upload CS 184 Project writeups to Academic page (2 pts)
  
 ### Product Backlog

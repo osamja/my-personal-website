@@ -1,18 +1,30 @@
+import {
+  getBaseUrl,
+  getBasePath,
+  DEFAULT_BLACK_IMAGE_PATH,
+} from '../../../scripts/Routes/images.js';
+
+const sideAcademicProjectsPath = 'academic/side';
+
+function getCompPhotoSource(imageFileName) {
+  return getBaseUrl() + '/' + getBasePath() + '/' + sideAcademicProjectsPath + '/' + imageFileName;
+}
+
 export const sideAcademicProjects = [
     {
-        'src': 'static/images/general/colors/black.jpg',
+        'src': DEFAULT_BLACK_IMAGE_PATH,
         'text': 'Give Em the Axe',
         'url': '#',
         'redirect': true,
     },
     {
-        'src': 'static/images/projects/centroid-classifier.jpg',
+        'src': getCompPhotoSource('centroid-classifier.jpg'),
         'text': 'Simple Centroid Classifier',
         'url': 'https://github.com/osamja/SimpleCentroidClassifier/blob/master/centroid.ipynb',
         'redirect': true,
     },
     {
-        'src': 'static/images/projects/nextwalk.jpg',
+        'src': getCompPhotoSource('nextwalk.jpg'),
         'text': 'NextWalk iOS App',
         'url': 'https://www.youtube.com/watch?v=ZAlZrwFGx04&feature=youtu.be',
         'redirect': true,

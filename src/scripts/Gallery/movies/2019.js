@@ -1,22 +1,26 @@
+import {
+  DEFAULT_BLACK_IMAGE_PATH,
+} from '../../../scripts/Routes/images.js';
+
 export const movies2019 = [
     {
-        'src': 'static/images/general/colors/black.jpg',
+        'src': DEFAULT_BLACK_IMAGE_PATH,
         'text': 'Free Solo',
         'url': '#',
     },
     {
-        'src': 'static/images/general/colors/black.jpg',
+        'src': DEFAULT_BLACK_IMAGE_PATH,
         'text': 'Spiderman: Into the Spider-Verse',
         'url': '#',
     },
     {
-        'src': 'static/images/general/colors/black.jpg',
+        'src': DEFAULT_BLACK_IMAGE_PATH,
         'text': 'The Man from Earth',
         'url': '#',
     },
     {
-    'src': 'static/images/general/colors/black.jpg',
-    'text': 'Happy',
-    'url': '#',
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Happy',
+        'url': '#',
     },
 ];
