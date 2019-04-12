@@ -1,5 +1,5 @@
-const process = require('process');
-require('dotenv').config();
+// const process = require('process');
+// require('dotenv').config();
 
 const BASE_DOMAIN = 'sammyjaved.com';
 const PROTOCOL = 'https://';
@@ -12,13 +12,13 @@ const CATEGORY = 'images';
  * @returns {string}
  */
 function getBaseDomain() {
-  if (process.env.environment === 'local') {
+  if (process.env.REACT_APP_ENV === 'local') {
     return 'localhost:8002';
-  } else if (process.env.environment === 'development') {
+  } else if (process.env.REACT_APP_ENV === 'development') {
       return BASE_DOMAIN + ':8001';
-  } else if (process.env.environment === 'staging') {
+  } else if (process.env.REACT_APP_ENV === 'staging') {
       return BASE_DOMAIN + ':8000';
-  } else if (process.env.environment === 'production') {
+  } else if (process.env.REACT_APP_ENV === 'production') {
       return BASE_DOMAIN;
   } else {
       return 'localhost:3000';
@@ -30,7 +30,7 @@ function getBaseDomain() {
  * @returns {string}
  */
 export function getBaseUrl() {
-  if (process.env.environment) {
+  if (process.env.REACT_APP_ENV) {
       return PROTOCOL + getBaseDomain();
   } else {
       return 'http://' + getBaseDomain();
