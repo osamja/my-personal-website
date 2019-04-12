@@ -8,7 +8,7 @@ echo $environment;
 if [ "$environment" == "local" ]; then
 	npm install && npm run build && sudo nohup node server.js 8002
 elif [ "$environment" == "development" ]; then
-	npm install && npm run build && sudo nohup node server.js 8001 &
+	sudo fuser -n tcp -k 8001 && npm install && npm run build && sudo nohup node server.js 8001 &
 elif [ "$environment" == "staging" ]; then
 	npm install && npm run build && sudo nohup node server.js 8000 &
 elif [ "$environment" == "production" ]; then
