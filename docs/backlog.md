@@ -20,3 +20,4 @@
  - Make a writeup about re-creating my personal website
  - Improve Google Lighthouse performance
     - Text compression
+ - Enable text compression on website. Look into dynamic vs static compression
