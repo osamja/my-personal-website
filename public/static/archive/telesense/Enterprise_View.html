@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Enterprise View!</title>
+  <link rel="stylesheet" href="./Enterprise_View_files/style.css">
+  <!-- CSS style from Riyaz Faizullabhoy -->
+  <link rel="icon" type="image/png" href="http://osamjaved.com/subsites/static/img/favicon.gif">
+
+</head>
+<body>
+
+  <div id="container">
+    <div class="header">
+      <h1>Enterprise View</h1>
+    <code>The company names below have been modified for customer privacy.</code>
+	<h3>Overview</h3>
+	<p>
+	In the summer of 2016, I interned at an Internet of Things startup
+ called <a href="http://telesense.com/">Telesense</a>.  The Internet of 
+Things, or IoT for short, attempts to bring everyday objects online.  An IoT device
+typically includes a bunch of sensors monitoring temperature, humidity, light, etc. 
+By placing an IoT device in say a garden for example, the IoT device could sense when the 
+garden needs more water or light, and send a reminder (via email/text) to the owner.    Our goal 
+was to put our IoT devices in industrial environments (ex. food storage) where knowing 
+real time info can be really helpful.  This included server rooms, grocery stores, food storage, and food distribution companies. 
+	</p>
+	<h3>Enterprise View</h3>
+	<p>
+	During my time at Telesense, I built an application, called the 'Enterprise View'.  The purpose of this application was to create a platform that could better tailor the needs of larger enterprise customers.  Large companies have multiple locations so we needed an interface that could display locations and their associative device status on one screen.
+	</p>
+	<p> Here's the color map used for each location/device</p>
+	<ul>
+		<li> Green: Device is currently within temperature and humidity thresholds.  </li>
+		<li> Gray: Device is not connected to the internet, or not reporting. </li>
+		<li> Red: Device is violating it's temperature or humidity threshold (too high or low). </li>
+		<li>Location name of IoT device is shown above each device box </li>
+	</ul>
+	
+	<h4>Technology</h4>
+	<p>I built the Enterprise View using PHP, MySQL, Javascript, and HTML5/CSS.  
+The platform updated every minute dynamically via AJAX calls.
+ The grid boxes were all dynamically resized thanks to the simple css responsive tricks by Graham Miller's <a href="http://responsivegridsystem.com">Responsive Grid</a>.
+     The https certificate warnings displayed below are only because the pictures were taken off my development server.  </p>
+    </div>  <!-- Header -->
+<br><br><br>
+
+    </div> <!-- Container -->
+
+
+<hr>
+<table>
+	<tr>
+		<td><figure>
+		  <img style="max-width:700px; max-height:auto" src="images/map.png">
+		  <figcaption>A view typically includes location/device names, temperature, status icons, and color coded box depending on whether the device is currently within its pre-defined threshold.</figcaption>
+		</figure></td>
+	</tr>
+</table>
+
+<hr>
+<table>
+	<tr>
+		<td><figure>
+		  <img style="max-width:700px; max-height:auto" src="images/bird.png">
+		  <figcaption>Notice that the Sunnyvale Data Center device 'Under Floor' which is gray, has no displayed temperature.  Since this device was disconnected, we chose not to display temperature unless it's an accurate and current reading.</figcaption>
+		</figure></td>
+	</tr>
+</table>
+
+
+<hr>
+<table>
+	<tr>
+		<td><figure>
+		  <img style="max-width:700px; max-height:auto" src="images/TS_BV.png">
+		  <figcaption>If a company has too many locations, displaying all the associative devices on one screen can become problematic.  To address this, I created a location view hierarchy.  For a given enterprise, only the locations will be shown.  Each location is clickable, and doing so will take you to the device page, showing all devices associated with the clicked location.  </figcaption>
+		</figure></td>
+	</tr>
+</table>
+
+<hr>
+<table>
+	<tr>
+		<td><figure>
+		  <img style="max-height:700px; max-height:auto" src="images/mobile.png">
+		  <figcaption>My platform was dynamic for all devices.  So no matter what device you're on, the platform will scale itself accordingly for the optimal viewing experience.  This was the mobile view displayed from my iPhone.  Pretty convenient!</figcaption>
+		</figure></td>
+	</tr>
+</table>
+
+<hr>
+<table>
+	<tr>
+		<td><figure>
+		  <img style="max-width:700px; max-height:auto" src="images/disti.png">
+		  <figcaption>This was a scrollable view that showed all locations and devices on one webpage.  These temperature seemed pretty good for all our devices on this day!</figcaption>
+		</figure></td>
+	</tr>
+</table>
+<hr>
+<table>
+	<tr>
+		<td><figure>
+		  <img style="max-width:700px; max-height:auto" src="images/disti_scroll.png">
+		  <figcaption>For location Matt's Diner, device Repeater North, we can see it's been colored yellow.  This is because this device was close to passing it's temperature threshold.     </figcaption>
+		</figure></td>
+	</tr>
+</table>
+<hr>
+
+<p>Thank you for checking out my Summer 2016 internship project!</p>
+<br><br>
+<code>
+Note: None of the above company/location names are representative of our customers.  They are fictional names I made up.  
+Some of these screenshots may not be the most up-to-date versions of the Enterprise View. Please excuse some of the
+misalignment of text/icons in the above screenshots.  These errors were produced when I was photoshopping the customer names. 
+</code>
+
+
+</body></html>

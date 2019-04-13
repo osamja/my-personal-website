@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>  
+    div.padded {  
+      padding-top: 0px;  
+      padding-right: 100px;  
+      padding-bottom: 0.25in;  
+      padding-left: 100px;  
+    }  
+  </style> 
+<title>Osam Javed  |  CS 184</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+<br />
+<h1 align="middle">Assignment 4: Len Simulator</h1>
+    <h2 align="middle">Osam Javed</h2>
+
+    <div class="padded">
+        <p> Provide a brief overview of the assignment here. </p>
+
+    <h2 align="middle">Part 1: Ray Generation and Intersection</h2>
+        <p>The difference between using a pinhole camera and a fully
+        simulated lens system really comes down to the fact that in a
+        lens system, we can have defocused blur.  Whereas in a pinhole
+        system, the entire image will be focused.  In addition, using
+        lenses (and various sensor depths) allows us to change the
+        field of view, and have a depth of field in our scene.  These
+        changes are what allows 'photographer's perspective' to be
+        captured in our scene. </p>
+        <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/part1/lenstester_focus/lens1.png" width="480px" />
+                    <figcaption align="middle">Lens 1: trace forward</figcaption>
+                </tr>
+            </table>
+	  </div>
+        <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/part1/lenstester_focus/lens1b.png" width="480px" />
+                    <figcaption align="middle">Lens 1 : trace backward</figcaption>
+                </tr>
+            </table>
+	  </div>
+        <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/part1/lenstester_focus/lens2.png" width="480px" />
+                    <figcaption align="middle">Lens 2 : trace forward</figcaption>
+                </tr>
+            </table>
+	  </div>
+        <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/part1/lenstester_focus/lens2b.png" width="480px" />
+                    <figcaption align="middle">Lens 2 : trace backward</figcaption>
+                </tr>
+            </table>
+	  </div>
+        <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/part1/lenstester_focus/lens3.png" width="480px" />
+                    <figcaption align="middle">Lens 3 : trace forward</figcaption>
+                </tr>
+            </table>
+	  </div>
+        <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/part1/lenstester_focus/lens3b.png" width="480px" />
+                    <figcaption align="middle">Lens 3 : trace backward</figcaption>
+                </tr>
+            </table>
+	  </div>
+        <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/part1/lenstester_focus/lens4.png" width="480px" />
+                    <figcaption align="middle">Lens 4 : trace forward</figcaption>
+                </tr>
+            </table>
+	  </div>
+        <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/part1/lenstester_focus/lens4b.png" width="480px" />
+                    <figcaption align="middle">Lens 4 : trace backward</figcaption>
+                </tr>
+            </table>
+	  </div>
+                </tr>
+            </table>
+	  </div>
+	  <table border="1">
+<tr>
+<td>D-GAUSS F/2 22deg HFOV</td>
+<td>Infinity focus depth is 51.2609</td>
+<td>Close focus depth is 64.7099</td>
+<td>True focal length is 50.3582</td>
+</tr>
+<tr>
+<td>Wide-angle (38-degree) lens. Nakamura</td>
+<td>Infinity focus depth is 28.7635</td>
+<td>Close focus depth is 38.4589</td>
+<td>True focal length is 22.0235</td>
+</tr>
+<tr>
+<td>SIGLER Super achromate telephoto, EFL=254mm, F/5.6</td>
+<td>Infinity focus depth is 188.758</td>
+<td>Close focus depth is 241.025</td>
+<td>True focal length is 249.567</td>
+</tr>
+<tr>
+<td>Muller 16mm/f4 155.9FOV fisheye lens</td>
+<td>Infinity focus depth is 28.7443</td>
+<td>Close focus depth is 42.0407</td>
+<td>True focal length is 9.99142</td>
+</tr>
+</table>
+
+       
+    <h2 align="middle">A Few Notes On Webpages</h2>
+        <p>Here are a few problems students have encountered in the past. You will probably encounter these problems at some point, so don't wait until right before the deadline to check that everything is working. Test your website on the instructional machines early!</p>
+        <ul>
+        <li>Your main report page should be called index.html.</li>
+        <li>Be sure to include and turn in all of the other files (such as images) that are linked in your report!</li>
+        <li>Use only <em>relative</em> paths to files, such as <pre>"./images/image.jpg"</pre>
+        Do <em>NOT</em> use absolute paths, such as <pre>"/Users/student/Desktop/image.jpg"</pre></li>
+        <li>Pay close attention to your filename extensions. Remember that on UNIX systems (such as the instructional machines), capitalization matters. <pre>.png != .jpeg != .jpg != .JPG</pre>
+        <li>Be sure to adjust the permissions on your files so that they are world readable. For more information on this please see this tutorial: <a href="http://www.grymoire.com/Unix/Permissions.html">http://www.grymoire.com/Unix/Permissions.html</a></li>
+        <li>And again, test your website on the instructional machines early!</li>
+</div>
+</body>
+</html>
+
+
+
+

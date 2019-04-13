@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Gallery from "../components/grid/Gallery";
 import {computationalPhotography} from "../scripts/Gallery/academic/compPhoto";
 import {sideAcademicProjects} from "../scripts/Gallery/academic/side";
+import {graphicsImages} from "../scripts/Gallery/academic/graphics";
 
 export default class Academic extends Component {
     render() {
@@ -18,6 +19,7 @@ export default class Academic extends Component {
                 <h1>
                     Computer Graphics
                 </h1>
+                <Gallery gridData={graphicsImages} />
                 <h4>Coming soon</h4>
             </div>
         );

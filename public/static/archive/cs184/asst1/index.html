@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>  
+    div.padded {  
+      padding-top: 0px;  
+      padding-right: 100px;  
+      padding-bottom: 0.25in;  
+      padding-left: 100px;  
+    }  
+  </style> 
+<title>Osam Javed  |  CS 184</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+<br />
+<h1 align="middle">Assignment 1: Rasterizester</h1>
+    <h2 align="middle">Osam Javed</h2>
+
+    <div class="padded">
+        <p>In this first assignment, we covered a variety of topics that all ended with something drawn or rasterized to the screen. We drew lines, points inside triangles, created high res images that were rasterized at a fraction of the size, transformed objects by scaling, rotation, and translation, used barycentric coordinates for color interpolation across a triangle, and did some pixel and level sampling for texture mapping. It was a lot of work, really fun, and totally worth it. Even the basics like drawing a line on a screen, which seemed like a trivial task, become a fascinating topic when I learned the subtelties of how to appproximate where the next pixel should be drawn. At a very high level, this assignment was about how to draw onto a screen. And then how to draw better.  By using antialias methods and filtering. </p>
+
+    <h2 align="middle">Part 1: Rasterizing Lines</h2>
+        <p> For rasterizing lines, I used Bresenham's line drawing algorithm.  When <a href="http://www.cs.helsinki.fi/group/goa/mallinnus/lines/bresenh.html">reading</a> about this line drawing algorithm, I found it pretty clever. There are 8 octants any line can go through depending on its coordinate values. We can have a negative or positve slope and either the 'rise' or 'run' will dominate how we draw our line. If the rise is greater than run, then we will be incrementing y each 'step' or iteration, and if the run is greater, we will increment the x coordinate each step. The heart of Bresenham's algorithm seemed to be in how we determine when to increment/decrement the conditional coordinate. For example, if the run > rise, then we know we will be incrementing x constantly, but we're less sure when to increment y since we know that the 'run' must dominant the slope of our line. To accomplish this, we introduce an error value epsilon. This value is along with our slope value m helps us determine if our line height y, is greater, equal, or less than y + 0.5, the midpoint value. We use this midpoint value to determine if we should draw our line on the y or y+1 coordinate. The epsilon works by balancing out the rounding off we do when we decide to plot the y or y+1'th coordinate. For example, if we plotted y then on our next iteration when plotting x+1, our epsilon value will take on a larger value so that we are closer to our midpoint value. In other words, the epsilon value is what helps us keep our line consistent with the slope m, and reduce the effects of rounding our plotted points. <a href =images/lineDrawingBrainstorm.jpg> Here </a> is a brainstorm I sketched when I was trying to cover all the possible cases for inverted coordinates, run/rise dominance, and positive or negative slopes. </p>
+        <div align="left">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/part1/part1Deliver.png" width="800px" />
+                    <figcaption align="middle">Lines that have positive/negative slope, varying rise/run dominance. This is the first 'quadrant' of our circle where we can see jagged, aliased lines stemming out of the origin.</figcaption>
+                </tr>
+            </table>
+        </div>
+
+    <h2 align="middle">Part 2: Rasterizing single-color triangles</h2>
+<p>For part 2, I fortunately used Barycentric coordinates. Barycentric coordinates are a coordinate system for triangles that can help you determine if a point lies within a triangle, and it can help you interpolate colors/textures by looking at where points lie on a triangle. The way I think about Barycentric coordinates is that they are weights on the vertices of a triangle. Thus if one weight is 1 and the other two 0, then that vertex holds all the weight. Likewise if two vertices have share all the weight while another vertex has weight 0, then we know that our point lies on an edge between the two weigted vertices. I determined which points to rasterize on my triangle by determining the min and max x,y coordinates. I would then move from left to right, bottom-up and rasterize all my points if each barycentric coordinate, (alpha, beta, gamma) was greater than zero.  This meant that our point was forced to be somewhere in our triangle and not on an edge (triangles with adjacent borders would not have their borders drawn very well). </p>
+    <div align="left">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/part2/part2Deliver.png" width="800px" />
+                    <figcaption align="middle">Dragon rasterized using barycentric coordinates! Sample rate is 1, hence the aliasing. Pixel inspector is focused on the dragon's mouth.</figcaption>
+                </tr>
+            </table>
+	  </div>
+
+	      <div align="left">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/part2/part2DeliverTri.png" width="800px" />
+                    <figcaption align="middle">Triangles rasterized. Staircase pattern on hypotenuse shows why we need a way to antialias lines.</figcaption>
+                </tr>
+            </table>
+    </div>
+	  <!-- Implement edge rule for barycentric coordinates-->
+
+    <h2 align="middle">Part 3: Antialiasing triangles</h2>
+    <p> This was the most difficult part of the assignment for me because I found it difficult to index from our created super framebuffer into the framebuffer we were going to draw onto the screen.  The super framebuffer was created by using a vector with size equal to that of our original buffer but multiplied by our sample rate.  We antialiased our triangles by supersampling our images at a sample rate of 1, 4, 9, and 16. By taking more sample points across our image, we were able to more accurately render our images. We essentially created a large high-res version of our image, and then drew this onto a smaller screen which resulted in an image that looked sharper and more refined.  The results of supersampling are evident among the edges of our triangle where instead of seeing jaggies or a staircase pattern, you can start to notice much more smoother lines.  </p>
+<!-- Include old vs new picture of dragon and shapes. Include the pixel inspector!-->
+    <div align="left">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/part3/part3_sr1.png" width="800px" />
+                    <figcaption align="middle">Red triangle is poorly drawn as we see a gap in between the shape. Sample rate is 1.</figcaption>
+                </tr>
+            </table>
+    </div>
+<div align="left">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/part3/part3_sr4.png" width="800px" />
+                    <figcaption align="middle">The gap in between our red triangle is now filled in and blurred to look smoother.</figcaption>
+                </tr>
+            </table>
+	  </div>
+
+	  <div align="left">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/part3/part3_sr9.png" width="800px" />
+                    <figcaption align="middle">Hypotenuse is now less aliased, and blurred to give it a smoother look. Bug - color distorts for certain images with sample rate >=9</figcaption>
+                </tr>
+            </table>
+	  </div>
+	  <div align="left">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/part3/part3_sr16.png" width="800px" />
+                    <figcaption align="middle">The edges look even more smooth with the sampling rate set to 16.</figcaption>
+                </tr>
+            </table>
+	  </div>
+	  <div align="left">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/part3/part3_drMouth_sr4.png" width="800px" />
+                    <figcaption align="middle">Dragon rasterized with supersampling. Sample rate = 4, huge difference among edges of picture (less aliasing especially around its mouth).</figcaption>
+                </tr>
+            </table>
+    </div>
+    <h2 align="middle">Part 4: Transforms</h2>
+    <p>In this part, I used transformation matrices to scale, rotate, and translate pictures across the screen. We used the group element in svg to group together our rectangle and triangle under one transformation stack. Orginally I had a rectangle and triangle positioned at the top left of our screen. After scaling the matrix with a 3x3 matrix of width and height 2,  could see that both objects were scaled together since they've been grouped under the same transformation stack. I then rotated the matrix by -45 degrees, followed by a translation at x' =400, y'= 200. From which we can see the objects move closer to the center of our screen and closer to the bottom of the svg frame. Finally, I pushed our triangle on another transformation stack where it was rotated back -45 degrees.  </p>
+    <div align="left">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/transforms/rectB.png" width="800px" />
+                    <figcaption align="middle">Original rectangle and triangle, not yet transformed..</figcaption>
+                </tr>
+            </table>
+    </div>
+    <div align="left">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/transforms/scale.png" width="800px" />
+                    <figcaption align="middle">Rectangle and triangle both scaled by a factor of 2 in width and height.</figcaption>
+                </tr>
+            </table>
+    </div>
+    <div align="left">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/transforms/rotate.png" width="800px" />
+                    <figcaption align="middle">Scaled rectangle and triangle, both rotated 45 degrees, out of frame.</figcaption>
+                </tr>
+            </table>
+    </div>
+    <div align="left">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/transforms/translate.png" width="800px" />
+                    <figcaption align="middle">Both objects now translated closer to the center of our frame.</figcaption>
+                </tr>
+            </table>
+    </div>
+    <div align="left">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/transforms/matrixRotate.png" width="800px" />
+                    <figcaption align="middle">The triangle undergoes its own rotation, back -45 degrees.</figcaption>
+                </tr>
+            </table>
+    </div>
+    <h2 align="middle">Part 5: Barycentric coordinates</h2>
+    <p>Here I used Barycentric Coordinates to interpolate colors whereas in part2 I used barycentric coordinates to only determine if a point lied within my triangle.  It's easy to see the red, green, blue values on our circle condensed in their own 'weighted' corners. To determine the color of an object, we evaluate </p>
+    <p align="middle"><pre align="middle">percent red = red triangle area/total area</pre>
+    <pre align="middle">percent green = green triangle area/total area</pre>
+    <pre align="middle">percent blue = blue triangle area/total area</pre>
+    So for example when given a triangle with its three (uv texture) vertices, we can determine the color of the uv point by interpolating it with our barycentric coordinates. We multiply alpha, beta, and gama weights given the vertices with the uv coordinate and determine what color that uv coordinate should be.
+    </p>
+    <div align="left">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/bary5.png" width="800px" />
+                    <figcaption align="middle">We can see the effect of using barycentric coordinates to easily interpolate colors across objects..</figcaption>
+                </tr>
+            </table>
+    </div>
+    <h2 align="middle">Part 6: Pixel sampling for texture mapping</h2>
+    <p>Here I implemented nearest neighbor and bilinear sampling. 
+    Nearest neighbor sampling is when given a uv coordinate, we sample what color that texel is based on what point it is closest to. Thus after finding the texel coordinate and scaling it with its corresponding MipLevel, we returned the interpolated color of the texel in our texture map.  Bilinear sampling required that we get the four points surrounding our uv coordinate. Thus we sampled the x, y, x+1, y+1 point and interpolated their colors to return the color of our uv texel. Bilinear interpolation usually results in pixels being in the same point/area they were before but these points may be blurred since they've been blended by their 2x2 surroundings. Nearest neighbor sampling on the other hand can result in the same point but its location/position on screen could move due to the pixel being drawn to where its nearest neighboring pixel was. There will be a large difference between nearest neighbor and bilinear sampling when we see objects that have sloped curves and sharp edges.  The difference won't matter very much when you're mapping textures with areas that vary very little. For example, in these world maps, looking at the ocean will not matter much between the two.  The difference is really on the borders where we have varying slope.
+    </p>
+    <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="center">
+                    <img src="images/part6/nearestSR1.png" width="800px" />
+                    <figcaption align="middle">Nearest neighbor sampling with sample rate 1. We can see the right fork of water have a gap because the nearest neighbor neighbor can result in pixels being drawn off position.</figcaption>
+                </tr>
+            </table>
+	  </div>
+	  <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="center">
+                    <img src="images/part6/bilinearSR1.png" width="800px" />
+                    <figcaption align="middle">Bilinear sampling with sample rate 1. The right fork in this picture has no gap and looks like a much smoother line than NN sampling. </figcaption>
+                </tr>
+            </table>
+	  </div>
+	  
+	  <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="center">
+                    <img src="images/part6/nearestSR4.png" width="800px" />
+                    <figcaption align="middle">Nearest neighbor sampling with sample rate 4. We see an improvement over the SR=1 picture but the bilinear sampling seems to have a better left fork of water than NN with a sample rate of 4!</figcaption>
+                </tr>
+            </table>
+	  </div>
+	  <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="center">
+                    <img src="images/part6/bilinearSR4.png" width="800px" />
+                    <figcaption align="middle">Bilinear sampling with sample rate 4.  This is the most accurate and smooth picture. Both forks of water in the pixel inspector have no gaps and seem like two streams of water. </figcaption>
+                </tr>
+            </table>
+	  </div>
+    <!--
+Describe what you did in Part 6. Discuss the two different pixel sampling methods. Show a good example from svg/texmap/ of a case where bilinear looks much better than nearest sampling. Talk about when there will be a large difference between the two methods and when the difference will not matter
+    -->
+
+    <h2 align="middle">Part 7: Level sampling with mipmaps for texture mapping</h2>
+	  <p>Here we enabled sampling on different mipmap levels. We took the derivative of the uv vectors and computed the difference vectors du and dv. Using these vectors, we passed them into our nearest and bilinear functions.  The math for calcuating the appropriate mipmap level is a little tricky and I'm not sure I understand how its done, but here's what I think is going on. The appropriate mipmap level is determind by getting the difference vectors scaled onto our texture map. We calculate our length vector by taking the max vector norm of our difference vectors in respect to our uv vector. Once we have this length, since mipmap levels are a power of 2, we take the log of our max length vector and recieve our level. When the level sample method was set to linear, I got two adjacent levels by getting the level using our uv and difference vectors, and then adding one to the level that was returned since we know that our bound was between 0 and (mipmap level-1).   </p>
+	  <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="center">
+                    <img src="images/part7/pnearest_lzero_sr9.png" width="800px" />
+                    <figcaption align="middle">Nearest neighbor sampling on level 0 with sample rate 9.</figcaption>
+                </tr>
+            </table>
+	  </div>
+	  <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="center">
+                    <img src="images/part7/plinear_lzero_sr9.png" width="800px" />
+                    <figcaption align="middle">Bilinear sampling on level 0 with sample rate 9.</figcaption>
+                </tr>
+            </table>
+	  </div>
+	  <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="center">
+                    <img src="images/part7/pnear_lnear_sr9.png" width="800px" />
+                    <figcaption align="middle">Nearest neighbor sampling on nearest level mipmap with sample rate 9.</figcaption>
+                </tr>
+            </table>
+	  </div>
+	  <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="center">
+                    <img src="images/part7/plinear_lnear_sr9.png" width="800px" />
+                    <figcaption align="middle">Bilinear sampling on nearest level mipmap with sample rate 9.</figcaption>
+                </tr>
+            </table>
+	  </div>
+	  <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="center">
+                    <img src="images/part7/pnear_llinear_sr9.png" width="800px" />
+                    <figcaption align="middle">Nearest neighbor sampling on linear level mipmap with sample rate 9.</figcaption>
+                </tr>
+            </table>
+	  </div>
+	  <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="center">
+                    <img src="images/part7/plinear_llinear_sr9.png" width="800px" />
+                    <figcaption align="middle">Bilinear sampling on linear level mipmap with sample rate 9.</figcaption>
+                </tr>
+            </table>
+	  </div>
+
+	  <!--
+Describe what you did in Part 7. Pull some png images from the internet and create your own svg files to demonstrate the strengths and weaknesses of various techniques at different zoom levels. You can take existing files in svg/texmap/ and replace the texture filename to try out new images. Show at least one example (using a png file you find yourself) comparing all four combinations of one of L_ZERO and L_NEAREST with one of P_NEAREST and P_BILINEAR at a zoomed out viewpoint. If you implement any extra filtering methods, describe them and show comparisons.
+	  -->
+
+    <h2 align="middle">Part 8: My drawing</h2>
+	  <p>I intended to draw a house in this picture. haha still got some ways to go on this one.</p>
+
+	  <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="center">
+                    <img src="images/myDrawing.png" width="800px" />
+                    <figcaption align="middle"> Nice house.</figcaption>
+                </tr>
+            </table>
+	  </div>
+
+	  <h2> Bugs </h2>
+	  <p>
+	  Unfortunately, this project didn't go 100% smooth and I ran into some problems that I didn't have enough time to debug (need to start earlier!). For example, when supersampling at 9 or above or 9, my images would start to render dark colors from the bottom of the image. 
+	  </p>
+	 
+   
+</div>
+</body>
+</html>
+
+
+
+

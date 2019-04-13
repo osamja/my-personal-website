@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>
+img {
+     max-width: 100%;
+     height: auto;
+     width: auto\9; /* ie8 */
+    }
+div.padded {
+      display: inline-block;
+      padding-top: 0px;  
+      padding-right: 100px;  
+      padding-bottom: 0.25in;  
+      padding-left: 100px;  
+    }  
+  </style> 
+<title>Osam Javed  |  CS 184</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+<br />
+<h1 align="middle">Assignment 2: GeoMenagerie</h1>
+    <h2 align="middle">Osam Javed</h2>
+
+    <div class="padded">
+      <p>
+      <!-- Overview of assignment -->
+      In this assignment, I worked with Bezier surfaces and control
+      points to draw curves.  Averaged the normals of meshes
+      to interpolate shading across smooth surfaces. Split and flipped the
+      edges of a halfedge data structure. Upsampled our triangles with
+      4-1 loop subdivision. Implemented the Blinn-Phong and
+      environment reflection shading model, and designed my own mesh. 
+      </p>
+
+    <h2 align="middle">Part 1: Fun with Bezier Patches</h2>
+        <p>In part 1, I tessellated a Bezier surface into triangles on
+        an 8x8 grid. Tessellating a surface is analagous to sampling a
+        surface. Since we're sampling on an 8x8 grid, I uniformly
+        sampled the uv coordinates of the mesh by sampling every 1/8th
+        interval. With bezier surfaces, we are given control points
+        that determine the shape of our curve. In this assignment, we
+        were given 16 control points, and to evaluate what points our
+        curve would use, I had two choices. The first choice was to
+        use De Casteljau's algorithm which works geometrically by
+        recursively splits bezier curves until we basically have a
+        tangent line to all the points in our curve, from which we can
+        that start drawing our curve. The second approach to
+        evaluating the uv coordinates was to use Bernstein
+        polynomials. I used this approach because it was a more
+        algebraic approach that I could easily translate into
+        code. 3rd degree Bernstein polynomials allow us to evaluate
+        fractions of a curve and then combine all these curves at the
+        end to make one smooth curve. Using our control points and
+        evaluating the uv coordinates, we were able to get all the
+        3D points needed for our curve.  Finally, since we are working
+        with meshes, it was important that once we had all the points
+        for our triangle, that we could draw our triangle in a
+        direction that was consistent for both our triangles. This
+        allowed for our normal vector to point outward of our teapot
+        rather than inward, which greatly affets the lighting of our object!
+      </p>
+      <p>One (embarrasing) debugging error I had during this part of
+        the assignment was that I implemented the choose function
+        wrong for the Bernstein polynomials. Fortunately, this led
+        to me double checking all my work, which helped me gain a
+        better understanding of what was going on.  </p>
+        <div align="left">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/Part1/goodAngle.png" width="800px" />
+                    <figcaption align="middle"></figcaption>
+                </tr>
+            </table>
+	  </div>
+	<div align="left">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/Part1/Part1.png" width="800px" />
+                    <figcaption align="middle"></figcaption>
+                </tr>
+            </table>
+	  </div>
+
+    <h2 align="middle">Part 2: Average normals for half-edge meshes</h2>
+        <p>In part2, I took the area-weighted average of the vertex
+        normals to to get smoother shading on our surfaces.  Similar
+        to anti-aliasing, averaging the vertex normals sort of blurs
+        our image to make it more smooth. We're using the weighted
+        average of the vertex normals to create a smooth gradient
+        across our surface. Essentially, by giving openGL more surface
+        normals to work with, we can create more accurate lighting
+	  that results in smooth shading. </p>
+	<p>The most difficult aspect with this part of the assignment
+        was familiarizing and working with the halfedge data
+        structure. Since we didn't have to change any values of our
+        original mesh, I used const iterators for the traversal. The
+	way I got the vectors was by getting each neighboring vertex,
+	subtracting it by our vertex position and then
+	  crossing it with the next neighboring vertex.  </p>
+	  	  
+<div style="max-width: 800px; border:2px black solid">
+    <div style="height: auto; border:1px blue solid"">
+      <img src="images/Part2/before.png" />
+      <p>Before weighted average normals</p>
+    </div>
+    <div style="height: auto; border:1px green solid"">
+      <img src="images/Part2/Part2.png"/>
+      <p>After. The improved smoothness on the body of teapot is insane.</p>
+    </div>
+</div>
+
+    <h2 align="middle">Part 3: Edge Flip</h2>
+        <p>In part 3, I implemented edge flips.  This would flip any
+        non-boundary edge, such that the edge would disconnect from
+        its old 2 vertex endpoints, and connect with the two adjacent
+        endpoints. Although this operation seemed trivial at first, I
+        had no idea the amount of pointers that would need to be
+        involved and reassigned for an edge flip. Luckily, the
+        edge/split guide on how to properly assign pointers really
+        helped me learn the association between halfedges, vertices,
+        edges, and faces. Once I drew my before/after edge flip
+        diagram, assigning the pointers became a lot easier.
+        Somethings to watch out for are to properly assign the
+        halfedge pointers so that the direction is consistent for all
+        triangles. (We don't want our surface normal to point inward,
+        but outward of the teapot). Also the vertex corresponding to
+        an halfedge is at its base, not where the hook of the halfedge
+        lies.</p>
+        <p>When I was initially assigning my halfedge pointers, I
+        didn't use the setNeighbors function, which turned 5 lines of
+        code into 1 for each halfedge pointer. The first time I tried
+        to flip an edge, I was getting holes in my teapot. I knew the
+        cause of this was a misassigned pointer, which it was!
+        However, I knew that if I wanted to gain a better grasp of my
+        pointers, the setNeighbors function would be more necessary
+        since it greatly reduced the complexity of maintaining my flip
+        and soon split edge functions. A progamming lesson I took away
+        from part 3 is that software in a way is really about just
+        managing complexity. There can be a lot of moving parts in a
+        large program and so if I can make my code more concise, it
+        would make my code more readable and easier to debug.</p>
+
+<div style="max-width: 800px; border:2px black solid">
+    <div style="height: auto; border:1px blue solid"">
+      <img src="images/Part3/before.png" />
+      <p>Before edge flip.</p>
+    </div>
+    <div style="height: auto; border:1px green solid"">
+      <img src="images/Part3/after.png"/>
+      <p>After 4 edge flips.</p>
+    </div>
+</div>
+
+<!-- INCLUDE diagram of before and after edge flip/split. -->
+    <h2 align="middle">Part 4: Edge Split</h2>
+        <p>The edge split was more challenging than the flip since
+        splitting in edge resulted in creating 6 halfedges, 1
+        vertex, 3 edges, and 2 faces. By splitting an edge between two
+        triangles, we now get 4 triangles. All 4 of them being split
+        where the newest vertex was created. My before diagram of the
+        edge split was identical to that of the edge flip. However, my
+        after diagram was much different partially because of how the
+        newly allocated halfedge objects were now halfeges for the two
+        created triangles.  
+        </p>
+        <p>
+        The biggest challenge I had with split edge was creating the
+    new halfedge objects. I tried creating objects similar to how they
+    were made in edge flip, but this resulted in a dead end since I
+    would not have a halfedge defined before its twin, and the twin
+    not assigned before the halfedge. This circular loop made me
+    realize that there had to be some other way of creating new
+    halfedge objects. The real anchor in split edge, really happens at
+    the newly created vertex where we specify its position to be the
+    midpoint of the the edge it just split. We use this vertex, as an
+    anchor to start defining all our other halfedge objects around
+    this vertex point. (I could finally say that halfedge h0 points to
+    the newly created vertex4)
+        </p>
+
+<div style="max-width: 800px; border:2px black solid">
+    <div style="height: auto; border:1px blue solid"">
+      <img src="images/Part4/before.png" />
+      <figcapiton align="middle">Before.</figcaption>
+    </div>
+    <div style="height: auto; border:1px green solid"">
+      <img src="images/Part4/after.png"/>
+      <figcaption align="middle">After 4 edge splits.</figcaption>
+    </div>
+        <div style="height: auto; border:1px green solid"">
+      <img src="images/Part4/splitFlip.png"/>
+      <figcaption align="middle">Some flips after splitting the edge.</figcaption>
+    </div>
+</div>
+
+    <h2 align="middle">Part 5: Upsampling via Loop Subdivision</h2>
+        <p>In part 5 I implemented upsampling via loop subdivision. What this basically does is split every triangle into 4 triangles smaller triangles. In this way, we are sort of subdividing our mesh to get finer and finer triangles across our surface. Although it may seem like we are just making smaller triangles, we are also recalculating the vertex positions and where they would be placed by approximating the values of our original triangle. We're using information about our original triangle to determine how the newer triangles should be placed on our surface. </p>
+
+		<p>
+			Part 5 was by far the most time consuming and challenging part of the project for me. It took me 3 weekend days! (But was totally worth it) Part 5 used the edge split in part 4 to subdivide all of our edges, and then we used the edge flip in part 4 to flip the edge to neatly get our 4-1 triangle. A lot of work was done in pre-processing the triangle where we set all the old vertices and edges as not being new. This was to know what edges would need to be split later since we don't want to split edges that were just created. The major bugs I had with this part was that I was flipping edges I thought were to be new rather than false. These 2 edges were among the edge that we just split. My other bug was that when I was determining whether or not to flip an edge, I was looking at its first and last vertices and seeing if they were new and old. I didn't think about the possibility that the first endpoint could have been old and the second endpoint new. 
+	    </p>
+		
+<div style="max-width: 800px; border:2px black solid">
+    <div style="height: auto; border:1px blue solid"">
+      <img src="images/Part5/cube1.png" />
+      <figcapiton align="middle">cube after upsampling once</figcaption>
+    </div>
+    <div style="height: auto; border:1px green solid"">
+      <img src="images/Part5/cube2.png"/>
+      <figcaption align="middle">cube after upsampling twice.</figcaption>
+    </div>
+        <div style="height: auto; border:1px green solid"">
+      <img src="images/Part5/cube3.png"/>
+      <figcaption align="middle">cube after upsampling three times.</figcaption>
+    </div>
+    </div>
+        <div style="height: auto; border:1px green solid"">
+      <img src="images/Part5/quadball.png"/>
+      <figcaption align="middle">Quadball after upsampling.</figcaption>
+    </div>
+    </div>
+        <div style="height: auto; border:1px green solid"">
+      <img src="images/Part5/teapot.png"/>
+      <figcaption align="middle">Teapot after upsampling.</figcaption>
+    </div>
+    </div>
+        <div style="height: auto; border:1px green solid"">
+      <img src="images/Part5/smoother_cube.png"/>
+      <figcaption align="middle">Cube after preprocessing edges with splits to make subdivison more symmetric and less ragged.</figcaption>
+    </div>
+</div>
+		<p>
+		(Picture above)I'm not sure if I was able to perfectly subdivide my cube, but I did split all the edges prior to upsampling.  What I noticed was that my upsampled cube was a lot less rigged, especially around the edges. The sharp edges of the cube also began to go away and the result were edges that were extremeley rounded. I think this was happening because our re-weighing of the vertices didn't know how to approximate the corners of our cube accurately (where three edges are meeting). 
+	    </p>
+
+    <h2 align="middle">Part 6: Fun with Shaders</h2>
+        <p>For part 6, I implemented the Blinn-Phong reflection model and environment map reflection shading. For the Phong shading model, I computed the ambient, diffused, and specular values. The trick with getting the specular value right was that I needed to make the brighntess very intense, to do this I raised the dot product of my normal and halfvector near normal to the 65th power! As seen from the cosine power plots slide, increasing the p or power, made a more narrow and higher intensity light on my object. For the environment mapping, I was a little less sure of what I was doing.  Primarily because I was dealing with the theta/phi angles. These angles are used to get the spherical coordinates from which then we can then access the texture coordinates of our surface by dividng by 2pi and pi. </p>
+		<p>
+			Initially, I had some trouble working with the GLSL language. I tried importing some libraries, which I found out I wasn't allowed to do! I was also thrown off with some of the type declarations such as creating a vec3 type. The result of this shading was just awesome!
+			</p>
+
+<div style="max-width: 800px; border:2px black solid">
+    <div style="height: auto; border:1px blue solid"">
+      <img src="images/Part6/goldRotate.png" />
+      <figcapiton align="middle">Gold teapot with speculars!</figcaption>
+    </div>
+    <div style="height: auto; border:1px green solid"">
+      <img src="images/Part6/env.png"/>
+      <figcaption align="middle">Environment map reflection of the teapot. Looks like a warehouse!</figcaption>
+    </div>
+</div>
+
+    <h2 align="middle">Part 7: My own mesh!</h2>
+        <p>My mesh is a work in progress...</p>
+        <div align="left">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/Part7/mesh.png" width="800px" />
+                    <figcaption align="middle">Results Caption: my mesh is the worst mesh</figcaption>
+                </tr>
+            </table>
+        </div>
+	  
+    <h2 align="middle">Fun with Bugs</h2>
+        <p>184 wouldn't be 184 without the bugs.</p>
+
+<div style="max-width: 800px; border:2px black solid">
+    <div style="height: auto; border:1px blue solid"">
+      <img src="images/PartBugs/dislocated.png" />
+      <figcapiton align="middle">When my teapot began dislocating itself.</figcaption>
+    </div>
+    <div style="height: auto; border:1px green solid"">
+      <img src="images/PartBugs/dog_lines.png"/>
+      <figcaption align="middle">My cow lost some weight.</figcaption>
+    </div>
+        <div style="height: auto; border:1px green solid"">
+      <img src="images/PartBugs/lines.png"/>
+      <figcaption align="middle">Lot of lines.</figcaption>
+    </div>
+    </div>
+        <div style="height: auto; border:1px green solid"">
+      <img src="images/PartBugs/pumpkin.png"/>
+      <figcaption align="middle">My angry pumpkin.</figcaption>
+    </div>
+    </div>
+        <div style="height: auto; border:1px green solid"">
+      <img src="images/PartBugs/spike.png"/>
+      <figcaption align="middle">A very spiky ball.</figcaption>
+    </div>
+</div>
+	
+</div>
+</body>
+</html>
+
+
+
+
