@@ -1,3 +1,7 @@
+Sprint 7 MPW Accomplishments (4/15/19 - 4/29/19)
+  - Get basic site analytics setup to monitor traffic (2 pts)
+        - Google analytics
+
 Sprint 6 MPW Accomplishments (4/1/19 - 4/15/19)
   - Create a movies watched in 2019 page similar to books (2 pts)
   - Populate the travel page (2 pts)
