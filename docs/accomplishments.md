@@ -4,6 +4,11 @@ Sprint 6 MPW Accomplishments (4/1/19 - 4/15/19)
   - Change font for Gallery grid item image text (1 pt)
   - Introduce a file for static routes. (3 pts) 
       - Will allow static files to be more easily hosted on a dedicated server in the future.
+      - Find better way to point to static assets, create JS variable for path
+          `'src': 'static/images/general/colors/black.jpg',`
+      - Move static scripts into public folder which can one day be delivered via a CDN.
+  - Upload CS 184 Project writeups to Academic page (2 pts)
+    
 
 Sprint 5 MPW Accomplishments (3/18/19 - 4/1/19)
   - Create Academic section with link to work (2 pts)
