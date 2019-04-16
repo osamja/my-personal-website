@@ -6,7 +6,7 @@ export default class Header extends Component {
     constructor(props) {
         super(props);
         let headerStyle = {
-            borderTop: '3px solid #E0E0E0',
+            borderTop: '3px solid lightblue',
         };
         let headerTextStyle = {
             color: '#e0e0e0',
