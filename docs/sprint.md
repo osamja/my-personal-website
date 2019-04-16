@@ -2,7 +2,6 @@
 
 ------------------------------------
 TODO
-
     
     - [SPIKE] Create text component  (2 pts)
         Write journal entry in markdown. 
@@ -10,19 +9,23 @@ TODO
         Block element layout (img and text never on same line)  
         Upload markdown file in folder <year><month><date>.
         e.g. when a gallery grid item is clicked
+        Investigate whether a writing service should be created.
+        Create POC with public/static/text/prose/mypersonalwebsite.md
+        
 
 ------------------------------------    
 IN PROGRESS
 
+    - 
     
 
 ------------------------------------
 TEST
 
-    - Create a 'Professional' section to homepage (3 pts)
     - Update static assets images on homepage (2 pts)
-            - Size should be 400x300 
-            - They should not be blurry
+        - Size should be 400x300 
+        - They should not be blurry    
+    - Create a 'Professional' section to homepage (3 pts)    
 
 ------------------------------------
 DONE

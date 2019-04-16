@@ -26,6 +26,7 @@
  - Add linkedin section to professional page
  - Add text to some of the pages explaining what the page is about
  - Import a timeline react component
+ - SPIKE: Unit testing
  
  
 ##### Image Uplaod Service
