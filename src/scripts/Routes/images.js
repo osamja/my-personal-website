@@ -50,3 +50,4 @@ export function getBasePath() {
 }
 
 export const DEFAULT_BLACK_IMAGE_PATH = getBaseUrl() + '/' + getBasePath() + '/general/colors/black.jpg';
+export const DEFAULT_BLACK_THUMBNAIL_IMAGE_PATH = getBaseUrl() + '/' + getBasePath() + '/general/colors/black-thumbnail.jpg';

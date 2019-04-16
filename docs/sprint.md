@@ -3,10 +3,7 @@
 ------------------------------------
 TODO
 
-    - Create a 'Professional' section to homepage (3 pts)
-        * Add Telesense, Juniper projects. Include Adobe Stock Logo
-    - Update static assets images on homepage (2 pts) 
-        * They should not be blurry
+    
     - [SPIKE] Create text component  (2 pts)
         Write journal entry in markdown. 
         Be able to reference images. 
@@ -17,12 +14,15 @@ TODO
 ------------------------------------    
 IN PROGRESS
 
-    -
+    - Update static assets images on homepage (2 pts)
+        - Size should be 400x300 
+        - They should not be blurry
 
 ------------------------------------
 TEST
 
-    -
+    - Create a 'Professional' section to homepage (3 pts)
+    
 
 ------------------------------------
 DONE

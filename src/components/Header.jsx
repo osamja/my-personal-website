@@ -34,7 +34,7 @@ export default class Header extends Component {
                 <h1 style={this.state.headerTextStyle} className="HeaderText">
                     <span className="glyphicon glyphicon-home" style={this.state.iconStyle}>
                     </span>
-                    <span>Sammy Javed</span>
+                    {/*<span>Sammy Javed</span>*/}
                 </h1>
                 </NavLink>
             </div>

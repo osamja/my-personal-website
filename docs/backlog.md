@@ -21,3 +21,20 @@
  - Improve Google Lighthouse performance
     - Text compression
  - Enable text compression on website. Look into dynamic vs static compression
+ - Create a recently added section on homepage so viewers can quickly checkout new content
+    * Maybe we could pull changes from Git or Changelog and have link to newly changed content
+ - Add linkedin section to professional page
+ - Add text to some of the pages explaining what the page is about
+ 
+ 
+ 
+##### Image Uplaod Service
+    - Upload image to REST endpoint
+    - Create thumbnail for image 
+         - Automatically resize it in process (400 x 300
+         - Convert to JPG and compress to <30 kb
+    - Image file should be in location specified in API request
+    - Authenticate + Authorization for endpont
+    - Thumbnail and original image location should be automatically determined
+    - Support POST, PUT, DELETE types
+    - A super low res image should be loaded.  Lazy load in thumbnail after
