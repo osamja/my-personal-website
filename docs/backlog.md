@@ -25,7 +25,7 @@
     * Maybe we could pull changes from Git or Changelog and have link to newly changed content
  - Add linkedin section to professional page
  - Add text to some of the pages explaining what the page is about
- 
+ - Import a timeline react component
  
  
 ##### Image Uplaod Service
