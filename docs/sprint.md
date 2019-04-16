@@ -3,6 +3,11 @@
 ------------------------------------
 TODO
     
+    -   
+
+------------------------------------    
+IN PROGRESS
+
     - [SPIKE] Create text component  (2 pts)
         Write journal entry in markdown. 
         Be able to reference images. 
@@ -11,13 +16,6 @@ TODO
         e.g. when a gallery grid item is clicked
         Investigate whether a writing service should be created.
         Create POC with public/static/text/prose/mypersonalwebsite.md
-        
-
-------------------------------------    
-IN PROGRESS
-
-    - 
-    
 
 ------------------------------------
 TEST
@@ -25,7 +23,7 @@ TEST
     - Update static assets images on homepage (2 pts)
         - Size should be 400x300 
         - They should not be blurry    
-    - Create a 'Professional' section to homepage (3 pts)    
+    - Create a 'Professional' section to homepage (3 pts)
 
 ------------------------------------
 DONE
