@@ -1,7 +1,6 @@
 import {
     getBaseUrl,
     getBasePath,
-    DEFAULT_BLACK_IMAGE_PATH,
 } from '../../scripts/Routes/images.js';
 
 const homepagePath = 'home/compressed';

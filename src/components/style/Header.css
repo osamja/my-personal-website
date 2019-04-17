@@ -2,12 +2,6 @@
     font-size: 60px;
 }
 
-.HeaderText:after {
-    content:' ';
-    display:block;
-    border:2px solid black;
-}
-
 .HeaderText:hover {
-    border:2px solid gold;
+    font-size: 61px;
 }
