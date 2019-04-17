@@ -15,11 +15,13 @@
     - Add write up for CS 189 ML and link to Give Em the Axe project
     - All pics should be low res unless leaf node. e.g. clicking on image from /photography should download full res img 
     - Grid items that are leafs (don't point to another URL should not be displayed as URLs, no hand icon should be displayed) 
-    - Create an upload service with image magic behind the scenes to crop the img to 500x500 and ensure it's compressed
     - Document a consistent way to do file imports (probably establishing how to import files with their absolute path)
     - Begin using a JS linter
     - Make a writeup about re-creating my personal website
     - Improve Google Lighthouse performance
+        Enable text compression
+        Defer non-critical CSS
+        Ensure no errors are logged to console
     - Text compression
     - Enable text compression on website. Look into dynamic vs static compression
     - Create a recently added section on homepage so viewers can quickly checkout new content
@@ -29,6 +31,7 @@
     - Import a timeline react component
     - SPIKE: Unit testing
     - Fix image size of computational photography
+    - Add animation project to Academic section
  
 
 ### Content Backlog
