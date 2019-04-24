@@ -32,6 +32,10 @@
     - SPIKE: Unit testing
     - Fix image size of computational photography
     - Add animation project to Academic section
+    - Add gallery page for personal website highlighting tech stack used
+    - Background should have a gradient dark gray.  Light source with color fading both ways
+    - Title should not bulge on hover
+    - [SPIKE] Integrating Hexo with create-react-app
  
 
 ### Content Backlog
