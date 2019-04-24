@@ -1,34 +1,29 @@
-### Sprint Backlog (4-15 - 4/29)
+### Sprint Backlog (4/29/19 - 5/13/19)
 
 ------------------------------------
 TODO
-    
-    -   
+  - Title should not bulge on hover (1 pt)
+  - SPIKE Integrating Hexo with create-react-app (2pts)
+  - Fix image size of computational photography (2 pts)
+  - Add animation project to Academic section (1 pt)
+  - Add home icon/back button on Sammy Javed header (2 pts)
+  - Add text to pages to give user context (2 pts)
+    - One/two line description of what page is about
+    - Add description for each item on homepage
+   
 
 ------------------------------------    
 IN PROGRESS
 
-    - [SPIKE] Create text component  (2 pts)
-        Write journal entry in markdown. 
-        Be able to reference images. 
-        Block element layout (img and text never on same line)  
-        Upload markdown file in folder <year><month><date>.
-        e.g. when a gallery grid item is clicked
-        Investigate whether a writing service should be created.
-        Create POC with public/static/text/prose/mypersonalwebsite.md
+    
 
 ------------------------------------
 TEST
 
-    - Update static assets images on homepage (2 pts)
-        - Size should be 400x300 
-        - They should not be blurry    
-    - Create a 'Professional' section to homepage (3 pts)
+
 
 ------------------------------------
 DONE
 
-    - Get basic site analytics setup to monitor traffic (2 pts)
-    Google analytics
 
 ------------------------------------

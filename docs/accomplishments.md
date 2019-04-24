@@ -1,6 +1,12 @@
 Sprint 7 MPW Accomplishments (4/15/19 - 4/29/19)
   - Get basic site analytics setup to monitor traffic (2 pts)
         - Google analytics
+  - [SPIKE] Create text component  (2 pts)
+    - Will use Hexo as blogging service
+  - Update static assets images on homepage (2 pts)
+    - Size should be 400x300 
+    - They should not be blurry    
+  - Create a 'Professional' section to homepage (3 pts)
 
 Sprint 6 MPW Accomplishments (4/1/19 - 4/15/19)
   - Create a movies watched in 2019 page similar to books (2 pts)

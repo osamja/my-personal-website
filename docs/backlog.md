@@ -4,7 +4,7 @@
     - Create text component (3 pts)
     Upload markdown file in folder <year><month><date>.
     e.g. when a gallery grid item is clicked
-    - Have a home icon or back button on Sammy Javed header
+    
     - Spike how SASS works with create-react-app build setup
     - Create script that uploads one image a day from a DB that I have.
     - Create a Calendar Gallery component.  Should allow user to index by year, then month, then day
@@ -27,15 +27,14 @@
     - Create a recently added section on homepage so viewers can quickly checkout new content
     * Maybe we could pull changes from Git or Changelog and have link to newly changed content
     - Add linkedin section to professional page
-    - Add text to some of the pages explaining what the page is about
     - Import a timeline react component
     - SPIKE: Unit testing
-    - Fix image size of computational photography
-    - Add animation project to Academic section
+    
+    
     - Add gallery page for personal website highlighting tech stack used
     - Background should have a gradient dark gray.  Light source with color fading both ways
-    - Title should not bulge on hover
-    - [SPIKE] Integrating Hexo with create-react-app
+    
+    
  
 
 ### Content Backlog
@@ -57,3 +56,10 @@
 
 ##### Writing Upload Service
     - Upload blog in markdown to REST endpoint
+    Block element layout (img and text never on same line)
+    - Write journal entry in markdown.
+        - Be able to reference images. 
+    Upload markdown file in folder <year><month><date>.
+    e.g. when a gallery grid item is clicked
+    Investigate whether a writing service should be created.
+    Create POC with public/static/text/prose/mypersonalwebsite.md
