@@ -3,7 +3,6 @@
 ------------------------------------
 TODO
   - SPIKE Integrating Hexo with create-react-app (2pts)
-  - Add animation project to Academic section (1 pt)
   - Add home icon/back button on Sammy Javed header (2 pts)
   - Add text to pages to give user context (2 pts)
     - One/two line description of what page is about
@@ -11,7 +10,7 @@ TODO
 
 ------------------------------------    
 IN PROGRESS
-  
+  - Add animation project to Academic section (1 pt)
     
 
 ------------------------------------

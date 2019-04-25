@@ -26,13 +26,14 @@ involved with working on a new application.  React, Webpack, and a solid file
 structure has already been provided.  This has allowed me to focus on the
 application code and providing the content I wish.  
 
+### Tech Stack
 In summary, this is my tech stack for this website.
-At the moment, this web application is a front-end app only.  
+At the moment, this web application is a front-end app only.
 
-    User Interface - React Framework
-        - Gallery component created to maximize re-usability
+    UI - React
+    Build - Webpack Config (Bootstrapped using create-react-app) 
     Server side framework - Express JS 
-    Build setup: Webpack
-    Hosting provider: Linode (1 GB RAM) 
+    Hosting provider: Linode 
     Domain provider: Namecheap
+    Routing: React Router
     

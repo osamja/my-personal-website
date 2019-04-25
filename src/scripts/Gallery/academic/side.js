@@ -12,12 +12,6 @@ function getCompPhotoSource(imageFileName) {
 
 export const sideAcademicProjects = [
     {
-        'src': DEFAULT_BLACK_IMAGE_PATH,
-        'text': 'Give Em the Axe',
-        'url': '#',
-        'redirect': true,
-    },
-    {
         'src': getCompPhotoSource('centroid-classifier.jpg'),
         'text': 'Simple Centroid Classifier',
         'url': 'https://github.com/osamja/SimpleCentroidClassifier/blob/master/centroid.ipynb',
