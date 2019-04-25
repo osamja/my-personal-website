@@ -2,7 +2,6 @@
 
 ------------------------------------
 TODO
-  - Title should not bulge on hover (1 pt)
   - SPIKE Integrating Hexo with create-react-app (2pts)
   - Fix image size of computational photography (2 pts)
   - Add animation project to Academic section (1 pt)
@@ -14,12 +13,12 @@ TODO
 
 ------------------------------------    
 IN PROGRESS
-
+  
     
 
 ------------------------------------
 TEST
-
+  - Title should not bulge on hover (1 pt)
 
 
 ------------------------------------
