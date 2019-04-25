@@ -23,4 +23,14 @@ export const movies2019 = [
         'text': 'Happy',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Bohemian Rhapsody',
+        'url': '#',
+    },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'The Beach',
+        'url': '#',
+    },
 ];
