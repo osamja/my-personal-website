@@ -29,8 +29,7 @@
     - Add linkedin section to professional page
     - Import a timeline react component
     - SPIKE: Unit testing
-    - Add gallery page for personal website highlighting tech stack used
-    - Background should have a gradient dark gray.  Light source with color fading both ways
+    
     - Add travel video to each place
     
     
