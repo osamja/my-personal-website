@@ -6,6 +6,10 @@ export default class Movies extends Component {
     render() {
         return (
             <div className="Movies" style={{color: "white"}}>
+              <div className="intro-text" style={{color: "#e0e0e0", fontWeight: 200}}>
+                <p>Ok, people have said it's ridiculous to count movies here like it's some achievement. </p>
+                <p>But I think there's a benefit to watching movies. We can often take something away and learn from interesting films.</p>
+              </div>
                 <h1>
                     2019
                 </h1>

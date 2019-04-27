@@ -33,4 +33,9 @@ export const movies2019 = [
         'text': 'The Beach',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': '40 Year Old Virgin',
+        'url': '#',
+    },
 ];

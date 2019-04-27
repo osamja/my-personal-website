@@ -8,6 +8,9 @@ export default class Academic extends Component {
     render() {
         return (
             <div className="Academic" style={{color: "white"}}>
+                <div className="intro-text" style={{color: "#e0e0e0", fontWeight: 200}}>
+                  <p>Here are some academic projects I did while studying Computer Science at UC Berkeley.</p>
+                </div>
                 <h1>
                   Computer Graphics
                 </h1>
