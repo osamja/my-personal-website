@@ -29,7 +29,7 @@
     - Add linkedin section to professional page
     - Import a timeline react component
     - SPIKE: Unit testing
-    
+    - [EPIC] Add text to pages to give user context
     - Add travel video to each place
     
     

@@ -31,7 +31,7 @@ body {
   font-family: helvetica, serif;
   position: relative;
   font-size: 100%;
-  background: #222222;
+  background-image: radial-gradient(gray,black);
 }
 
 .gallery-container {

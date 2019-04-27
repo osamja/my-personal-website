@@ -8,14 +8,11 @@ import {
 
 export default class Header extends Component {
   getHeaderIconPath() {
-    return (getBaseUrl() + '/' + getBasePath() + '/home-icon.png');
+    return (getBaseUrl() + '/' + getBasePath() + '/home-icon3.png');
   }
 
     constructor(props) {
         super(props);
-        let headerStyle = {
-            borderTop: '3px solid rgba(13,49,75,1)',
-        };
         let headerTextStyle = {
             color: '#e0e0e0',
             textAlign: 'center',
@@ -29,7 +26,6 @@ export default class Header extends Component {
       };
         this.state = {
             name: this.props.name,
-            headerStyle: headerStyle,
             headerTextStyle: headerTextStyle,
             headerIconPath: this.getHeaderIconPath(),
             homeIconStyle: homeIconStyle,
@@ -40,7 +36,7 @@ export default class Header extends Component {
 
     render() {
         return (
-            <div className="Header" style={this.state.headerStyle}>
+            <div className="Header">
                 <NavLink to="/">
                 <img src={this.state.headerIconPath} style={this.state.homeIconStyle}/>
                 <h1 style={this.state.headerTextStyle} className="HeaderText">
