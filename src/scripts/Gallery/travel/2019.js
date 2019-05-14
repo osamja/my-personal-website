@@ -21,4 +21,10 @@ export const travel2019 = [
         'duration': '4 days',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Los Angeles, CA',
+        'duration': '2 days',
+        'url': '#',
+    },
 ];

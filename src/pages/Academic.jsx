@@ -3,14 +3,16 @@ import Gallery from "../components/grid/Gallery";
 import {computationalPhotography} from "../scripts/Gallery/academic/compPhoto";
 import {sideAcademicProjects} from "../scripts/Gallery/academic/side";
 import {graphicsImages} from "../scripts/Gallery/academic/graphics";
+import {coursesAcademicProjects} from "../scripts/Gallery/academic/courses";
 
 export default class Academic extends Component {
     render() {
         return (
             <div className="Academic" style={{color: "white"}}>
-                <div className="intro-text" style={{color: "#e0e0e0", fontWeight: 200}}>
-                  <p>Here are some academic projects I did while studying Computer Science at UC Berkeley.</p>
-                </div>
+                <h1>
+                  Self-Paced Courses
+                </h1>
+                <Gallery gridData={coursesAcademicProjects} />
                 <h1>
                   Computer Graphics
                 </h1>
