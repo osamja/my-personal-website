@@ -1,10 +1,13 @@
+### Green Room
+- Google Lighthouse: Enable text compression on website (3pts)
+        * Look into dynamic vs static compression
+
 ### Product Backlog
 
     - Have entire website be extremely timeline driven with the grid system indexing into granular timeframes. folder <year><month><date>.
     - Create text component (3 pts)
     Upload markdown file in folder <year><month><date>.
     e.g. when a gallery grid item is clicked
-    
     - Spike how SASS works with create-react-app build setup
     - Create script that uploads one image a day from a DB that I have.
     - Create a Calendar Gallery component.  Should allow user to index by year, then month, then day
@@ -17,13 +20,8 @@
     - Grid items that are leafs (don't point to another URL should not be displayed as URLs, no hand icon should be displayed) 
     - Document a consistent way to do file imports (probably establishing how to import files with their absolute path)
     - Begin using a JS linter
-    - Make a writeup about re-creating my personal website
     - Improve Google Lighthouse performance
-        Enable text compression
         Defer non-critical CSS
-        Ensure no errors are logged to console
-    - Text compression
-    - Enable text compression on website. Look into dynamic vs static compression
     - Create a recently added section on homepage so viewers can quickly checkout new content
     * Maybe we could pull changes from Git or Changelog and have link to newly changed content
     - Add linkedin section to professional page

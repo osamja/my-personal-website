@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Gallery from "../components/grid/Gallery";
 import {books2019} from "../scripts/Gallery/books/2019";
 import {books2018} from "../scripts/Gallery/books/2018";
-import {imgUrls} from "../scripts/Gallery/projects";
 
 export default class Homepage extends Component {
     render() {

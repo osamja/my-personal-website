@@ -1,14 +1,6 @@
 import {
-  getBaseUrl,
-  getBasePath,
   DEFAULT_BLACK_IMAGE_PATH,
 } from '../../../scripts/Routes/images.js';
-
-const coursesAcademicProjectsPath = 'academic/courses';
-
-function getCompPhotoSource(imageFileName) {
-  return getBaseUrl() + '/' + getBasePath() + '/' + coursesAcademicProjectsPath + '/' + imageFileName;
-}
 
 export const coursesAcademicProjects = [
   {

@@ -8,6 +8,7 @@ Sprint 8 MPW Accomplishments (4/29/19 - 5/13/19)
   - MPW 7.6 Add text to pages to give user context (2 pts)
     - One/two line description of what page is about
     - Add description for each item on homepage
+  - Add self-paced courses section to Academic ( 2pts)    
 
 Sprint 7 MPW Accomplishments (4/15/19 - 4/29/19)
   - Get basic site analytics setup to monitor traffic (2 pts)

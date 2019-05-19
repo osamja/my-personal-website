@@ -38,7 +38,7 @@ export default class Header extends Component {
         return (
             <div className="Header">
                 <NavLink to="/">
-                <img src={this.state.headerIconPath} style={this.state.homeIconStyle}/>
+                <img src={this.state.headerIconPath} style={this.state.homeIconStyle} alt={"home"}/>
                 <h1 style={this.state.headerTextStyle} className="HeaderText">
                     <span>Sammy Javed</span>
                 </h1>

@@ -1,26 +1,21 @@
-### Sprint Backlog (4/29/19 - 5/13/19)
+### Sprint Backlog (5/13/19 - 5/27/19)
 
 ------------------------------------
 TODO
-  
+  - Add Peru video as link to it's travel page (1 pt)
+  - Google Lighthouse: Ensure no errors are logged to console (2 pt)
+  - Publish New Orleans trip video (5 pts)
+  - Record Why Georgia (2 pts)
 
 ------------------------------------    
 IN PROGRESS
-  - Add courses section to Academic ( 2pts)    
+  
 
 ------------------------------------
 TEST
 
 ------------------------------------
 DONE
-  - MPW 7.1: Title should not bulge on hover (1 pt)
-  - MPW 7.2: Fix image size of computational photography (2 pts)
-  - MPW 7.3: Add animation project to Academic section (1 pt)
-  - MPW 7.4: Add home icon/back button on Sammy Javed header (2 pts)
-  - MPW 7.5: Background should have a gradient dark gray (2 pts)
-    - Light source with color fading both ways
-  - MPW 7.6 Add text to pages to give user context (2 pts)
-    - One/two line description of what page is about
-    - Add description for each item on homepage
+  - Make a writeup about re-creating my personal website
 
 ------------------------------------
