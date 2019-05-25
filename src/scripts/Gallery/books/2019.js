@@ -18,4 +18,9 @@ export const books2019 = [
         'text': 'I.M. Wright Hard Code - Eric Brechner',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'TB12 Method',
+        'url': '#',
+    },
 ];

@@ -38,4 +38,14 @@ export const movies2019 = [
         'text': '40 Year Old Virgin',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Avengers Endgame',
+        'url': '#',
+    },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'John Wick Chapter 3',
+        'url': '#',
+    },
 ];

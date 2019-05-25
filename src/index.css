@@ -18,6 +18,9 @@ code {
 sammy stuff below
  */
 
+html, body, #root {
+  height: 100%;
+}
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -31,7 +34,7 @@ body {
   font-family: helvetica, serif;
   position: relative;
   font-size: 100%;
-  background-image: radial-gradient(gray,black);
+  background-image: radial-gradient(circle, dimgray 1%,black 99%);
 }
 
 .gallery-container {

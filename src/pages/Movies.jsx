@@ -7,8 +7,8 @@ export default class Movies extends Component {
         return (
             <div className="Movies" style={{color: "white"}}>
               <div className="intro-text" style={{color: "#e0e0e0", fontWeight: 200}}>
-                <p>Ok, people have said it's ridiculous to count movies here like it's some achievement. </p>
-                <p>But I think there's a benefit to watching movies. We can often take something away and learn from interesting films.</p>
+                <p>Ok, people have said it's ridiculous to count movies here like it's some achievement.
+                But I might as well be tracking this information :)</p>
               </div>
                 <h1>
                     2019

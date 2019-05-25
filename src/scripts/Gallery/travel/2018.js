@@ -14,7 +14,8 @@ export const travel2018 = [
         'src': getTravel2018Source('peru.jpg'),
         'text': 'Peru',
         'duration': '14 days',
-        'url': '#',
+        'redirect': true,
+        'url': 'https://www.youtube.com/watch?v=n7LcDyO7-WI',
     },
     {
         'src': getTravel2018Source('karachi.jpg'),
