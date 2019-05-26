@@ -1,13 +1,22 @@
 import {
   DEFAULT_BLACK_IMAGE_PATH,
+  getBaseUrl,
+  getBasePath,
 } from '../../../scripts/Routes/images.js';
+
+const travel2019Path = 'travel/cover';
+
+function getHomePageSource(imageFileName) {
+    return getBaseUrl() + '/' + getBasePath() + '/' + travel2019Path + '/' + imageFileName;
+}
 
 export const travel2019 = [
     {
-        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'src': getHomePageSource('LA-19.jpg'),
         'text': 'Los Angeles, CA',
         'duration': '3 days',
-        'url': '#',
+        'redirect': true,
+        'url': 'https://youtu.be/fDHBSap9X28',
     },
     {
         'src': DEFAULT_BLACK_IMAGE_PATH,

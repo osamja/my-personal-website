@@ -29,6 +29,7 @@
     - [EPIC] Add text to pages to give user context
     - Add travel video to each place
         1. Create cuzco travel video
+    - Create a Guitar section on homepage
  
 
 ### Content Backlog
