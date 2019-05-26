@@ -28,15 +28,9 @@ export default class Bio extends Component {
     render() {
         return (
             <div className="Bio" style={this.state.style}>
-                <p>
-                    Hey there, I'm Sammy.  I'm a software developer in the San Francisco Bay Area.
-                </p>
-                <h5>Occupation: Software Developer at Adobe</h5>
-                <h5>Location: San Francisco Bay Area</h5>
-                <h5>Favorite Movies: Back to the Future, The Matrix</h5>
-                <h5>Education: UC Berkeley</h5>
-                <h5>Degree: Computer Science</h5>
-                <h5>Hobbies: Guitar & Photography</h5>
+                <p>Hey there, I'm Sammy.  </p>
+                <p>I'm a software developer in the San Francisco Bay Area.</p>
+                <p>My interests are building cool things (software), shooting travel videos, and occasionaly picking up the guitar.</p>
             </div>
         );
     }

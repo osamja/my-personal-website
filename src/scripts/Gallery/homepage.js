@@ -21,11 +21,6 @@ export const imgUrls = [
         'url': '/books',
     },
     {
-        'src': getHomePageSource('bosphorus.jpg'),
-        'text': 'Bio',
-        'url': '/bio',
-    },
-    {
         'src': getHomePageSource('travel.jpg'),
         'text': 'Travel',
         'url': '/travel',
@@ -44,10 +39,5 @@ export const imgUrls = [
         'src': getHomePageSource('movies.jpg'),
         'text': 'Movies',
         'url': '/movies',
-    },
-    {
-        'src': getHomePageSource('professional.jpg'),
-        'text': 'Professional',
-        'url': '/professional',
     },
 ];
