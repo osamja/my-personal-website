@@ -9,7 +9,7 @@ function getProjectSource(imageFileName) {
   return getBaseUrl() + '/' + getBasePath() + '/' + projectPath + '/' + imageFileName;
 }
 
-export const imgUrls = [
+export const projects = [
     {
         'src': getProjectSource('homepage.jpg'),
         'text': 'My Personal Website',
@@ -19,17 +19,6 @@ export const imgUrls = [
         'src': getProjectSource('axe.jpg'),
         'text': 'Give Em the Axe',
         'url': 'https://www.youtube.com/watch?v=silvjiqSnaQ',
-        'redirect': true,
-    },
-    {
-        'src': getProjectSource('home-server.jpg'),
-        'text': 'Home Server',
-        'url': '#',
-    },
-    {
-        'src': getProjectSource('led-staircase.jpg'),
-        'text': 'LED Staircase',
-        'url': 'https://www.youtube.com/watch?v=_BEs13h95DY',
         'redirect': true,
     },
     {
