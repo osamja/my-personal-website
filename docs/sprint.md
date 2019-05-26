@@ -1,20 +1,19 @@
-### Sprint Backlog (5/13/19 - 5/27/19)
+### Sprint 10 (5/27/19 - 6/10/19)
 
 ------------------------------------
 TODO
-  - Record Why Georgia (2 pts)
+- [PHOTOGRAPHY] 50: Finish LA trip video with aneeb + katie (3 pts)
+- [WEBSITE] 51: Refresh homepage hero images + thumbnail for travel  (2 pts)
+- [GUITAR] 52: Begin learning "Crash Into Me" by DMB (3 pts)
+- [WEBSITE] 53: Google analytics should not load in dev environment (2 pts)
 
 ------------------------------------    
 IN PROGRESS
- 
+  
 ------------------------------------
 TEST
 
 ------------------------------------
 DONE
-  - Make a writeup about re-creating my personal website
-  - Publish New Orleans trip video (5 pts)
-  - Add Peru video as link to it's travel page (1 pt)
-  - [SPIKE] Google Lighthouse: Ensure no errors are logged to console (2 pt)
 
 ------------------------------------

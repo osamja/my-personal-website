@@ -1,3 +1,10 @@
+Sprint 9 MPW Accomplishments (5/13/19 - 5/27/19)
+  - [WEBSITE] Make a writeup about re-creating my personal website
+  - [PHOTOGRAPHY] Publish New Orleans trip video (5 pts)
+  - [PHOTOGRAPHY] Add Peru video as link to it's travel page (1 pt)
+  - [SPIKE] Google Lighthouse: Ensure no errors are logged to console (2 pt)
+  - [GUITAR] Record Why Georgia (2 pts) 
+
 Sprint 8 MPW Accomplishments (4/29/19 - 5/13/19)
   - MPW 7.1: Title should not bulge on hover (1 pt)
   - MPW 7.2: Fix image size of computational photography (2 pts)

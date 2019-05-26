@@ -1,10 +1,8 @@
 ### Green Room
 - Google Lighthouse: Enable text compression on website (3pts)
-        * Look into dynamic vs static compression
+    * Look into dynamic vs static compression
 
-### Product Backlog
-    - Google analytics should not load in dev environment
-    - Refresh homepage hero images
+### Product Backlog    
     - Have entire website be extremely timeline driven with the grid system indexing into granular timeframes. folder <year><month><date>.
     - Create text component (3 pts)
     Upload markdown file in folder <year><month><date>.
@@ -30,10 +28,7 @@
     - SPIKE: Unit testing
     - [EPIC] Add text to pages to give user context
     - Add travel video to each place
-    
-    
-    
-    
+        1. Create cuzco travel video
  
 
 ### Content Backlog
