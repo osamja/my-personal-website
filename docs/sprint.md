@@ -2,18 +2,14 @@
 
 ------------------------------------
 TODO
-- [WEBSITE] 51: Refresh homepage hero images + thumbnail for travel  (2 pts)
-- [GUITAR] 52: Begin learning "Crash Into Me" by DMB (3 pts)
 - [WEBSITE] 53: Google analytics should not load in dev environment (2 pts)
 
 ------------------------------------    
 IN PROGRESS
-- [PHOTOGRAPHY] 50: Finish LA trip video with aneeb + katie (3 pts)
-  
-------------------------------------
-TEST
+- [WEBSITE] 51: Refresh homepage hero images + thumbnail for travel  (2 pts)
 
 ------------------------------------
 DONE
-
+- [PHOTOGRAPHY] 50: Finish LA trip video with aneeb + katie (3 pts)
+- [GUITAR] 52: Begin learning "Crash Into Me" by DMB (3 pts)
 ------------------------------------

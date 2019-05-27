@@ -3,7 +3,7 @@ import {
     getBasePath,
 } from '../../scripts/Routes/images.js';
 
-const homepagePath = 'home/compressed';
+const homepagePath = 'home';
 
 function getHomePageSource(imageFileName) {
     return getBaseUrl() + '/' + getBasePath() + '/' + homepagePath + '/' + imageFileName;
@@ -11,12 +11,12 @@ function getHomePageSource(imageFileName) {
 
 export const imgUrls = [
     {
-        'src': getHomePageSource('pier.jpg'),
+        'src': getHomePageSource('projects.jpg'),
         'text': 'Projects',
         'url': '/projects',
     },
     {
-        'src': getHomePageSource('evc2.jpg'),
+        'src': getHomePageSource('books.jpg'),
         'text': 'Books',
         'url': '/books',
     },
@@ -26,12 +26,12 @@ export const imgUrls = [
         'url': '/travel',
     },
     {
-        'src': getHomePageSource('laska.jpg'),
+        'src': getHomePageSource('photography.jpg'),
         'text': 'Photography',
         'url': '/photography',
     },
     {
-        'src': getHomePageSource('cal.jpg'),
+        'src': getHomePageSource('academic.jpg'),
         'text': 'Academic',
         'url': '/academic',
     },

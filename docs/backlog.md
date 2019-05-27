@@ -3,6 +3,8 @@
     * Look into dynamic vs static compression
 
 ### Product Backlog    
+    - [SPIKE] App to deploy in 2019
+    - Finish react native tutorial
     - Have entire website be extremely timeline driven with the grid system indexing into granular timeframes. folder <year><month><date>.
     - Create text component (3 pts)
     Upload markdown file in folder <year><month><date>.
