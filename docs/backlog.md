@@ -32,6 +32,7 @@
     - Add travel video to each place
         1. Create cuzco travel video
     - Create a Guitar section on homepage
+    - Fix image in box issue where box is slightly larger than image
  
 
 ### Content Backlog
