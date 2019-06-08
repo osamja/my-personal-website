@@ -23,4 +23,9 @@ export const books2019 = [
         'text': 'TB12 Method',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Zen and the Art of Motorcycle Maintenance',
+        'url': '#',
+    },
 ];
