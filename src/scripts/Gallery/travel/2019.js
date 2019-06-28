@@ -42,4 +42,11 @@ export const travel2019 = [
         'duration': '2 days',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'McLean, VA',
+        'duration': '3 weeks',
+        'time': 'Summer 2019',
+        'url': '#',
+    },
 ];

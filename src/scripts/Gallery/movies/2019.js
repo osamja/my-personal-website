@@ -53,4 +53,14 @@ export const movies2019 = [
         'text': 'Supertroopers',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'A Star is Born',
+        'url': '#',
+    },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Toy Story 4',
+        'url': '#',
+    },
 ];
