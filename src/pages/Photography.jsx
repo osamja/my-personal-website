@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
 import Gallery from '../components/grid/Gallery';
-import {imgUrls} from '../scripts/Gallery/photography';
+import { julyPhotography2019 } from '../scripts/Gallery/photography/2019/july';
 
 export default class Photography extends Component {
     render() {
         return (
-          <div className="intro-text" style={{color: "#e0e0e0", fontWeight: 200}}>
-            <p>Here are some photos.  Will try to update this frequently in the future.  </p>
-            <Gallery gridData={imgUrls}/>
+          <div className="Photography" style={{color: "white"}}>
+              <div className="intro-text" style={{color: "#e0e0e0", fontWeight: 200}}>
+                <p>Here are books I've read in the years listed.  I'm trying to read one book per month</p>
+              </div>
+              <h1>
+                  2019
+              </h1>
+              <h3>
+                July
+              </h3>
+              <Gallery gridData={julyPhotography2019}/>
           </div>
-        );
+      );
     }
 }
