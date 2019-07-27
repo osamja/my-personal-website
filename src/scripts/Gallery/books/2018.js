@@ -33,4 +33,9 @@ export const books2018 = [
         'text': 'Creativity Inc - Ed Catmull',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'How to American - Jimmy Yang',
+        'url': '#',
+    },
 ];

@@ -63,4 +63,14 @@ export const movies2019 = [
         'text': 'Toy Story 4',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Stuber',
+        'url': '#',
+    },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Once Upon a Time in Hollywood',
+        'url': '#',
+    },
 ];
