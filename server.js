@@ -23,6 +23,9 @@ const options = {
 };
 
 app.use (function (req, res, next) {
+    if (req.hostname === 'osamjaved.com') {
+        res.redirect('https://sammyjaved.com');
+    }
     if (req.protocol === 'https') {
         // request was via https, so do no special handling
         next();

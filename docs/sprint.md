@@ -2,11 +2,12 @@ Sprint 11 (7/22/19 - 8/5/19)
 
 ------------------------------------
 TODO
-- [WEBSITE]: Fix https security warning when users visit osamjaved.com (2 pts)
+
 - [WEBSITE] 53: Google analytics should not load in dev environment (2 pts)
 - [WEBSITE] Cloudinary Image Upload Service (3 pts) 
 ------------------------------------    
 IN PROGRESS
+- [WEBSITE]: Fix https security warning when users visit osamjaved.com (2 pts)
 - [IMAGE_MORPHING]:[BACKEND]: Get basic MVP of refactor working (3 pts)
  * Understand the fundamental algorithm that goes into image morphing
 ------------------------------------
