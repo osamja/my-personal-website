@@ -1,15 +1,17 @@
-### Sprint 10 (5/27/19 - 6/10/19)
+Sprint 11 (7/22/19 - 8/5/19)
 
 ------------------------------------
 TODO
+- [WEBSITE]: Fix https security warning when users visit osamjaved.com (2 pts)
 - [WEBSITE] 53: Google analytics should not load in dev environment (2 pts)
-
+- [WEBSITE] Cloudinary Image Upload Service (3 pts) 
 ------------------------------------    
 IN PROGRESS
-
+- [IMAGE_MORPHING]:[BACKEND]: Get basic MVP of refactor working (3 pts)
+ * Understand the fundamental algorithm that goes into image morphing
 ------------------------------------
 DONE
-- [PHOTOGRAPHY] 50: Finish LA trip video with aneeb + katie (3 pts)
-- [GUITAR] 52: Begin learning "Crash Into Me" by DMB (3 pts)
-- [WEBSITE] 51: Refresh homepage hero images (2 pts)
+- [IMAGE_MORPHING]:[BACKEND]: Get basic MVP of refactor working (3 pts)
+ * Calculate midway face for two images of same resolution and corresponding points provided by the user.
+ 
 ------------------------------------
