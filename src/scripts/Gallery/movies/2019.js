@@ -73,4 +73,9 @@ export const movies2019 = [
         'text': 'Once Upon a Time in Hollywood',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Inglorious Bastards',
+        'url': '#',
+    },
 ];

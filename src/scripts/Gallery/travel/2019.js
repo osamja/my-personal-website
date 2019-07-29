@@ -6,46 +6,62 @@ import {
 
 const travel2019Path = 'travel/cover';
 
-function getHomePageSource(imageFileName) {
+function getImageSource(imageFileName) {
     return getBaseUrl() + '/' + getBasePath() + '/' + travel2019Path + '/' + imageFileName;
 }
 
 export const travel2019 = [
     {
-        'src': getHomePageSource('LA-19.jpg'),
-        'text': 'Los Angeles, CA',
+        'src': getImageSource('sammy-hafiz-copy.jpg'),
+        'text': 'Rawalpindi, Pakistan',
+        'duration': '14 days',
+        'when': 'Winter 2018',
+        'url': '#',
+    },
+    {
+        'src': getImageSource('LA-19.jpg'),
+        'text': '(Downtown) Los Angeles, CA',
         'duration': '3 days',
+        'when': 'Winter 2018',
         'redirect': true,
         'url': 'https://youtu.be/fDHBSap9X28',
     },
     {
-        'src': DEFAULT_BLACK_IMAGE_PATH,
-        'text': 'Rawalpindi, Pakistan',
-        'duration': '14 days',
-        'url': '#',
-    },
-    {
-        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'src': getImageSource('yosemite-su-19.jpg'),
         'text': 'Yosemite, CA',
         'duration': '3 days',
         'url': '#',
     },
     {
-        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'src': getImageSource('new-orleans-april-19.jpg'),
         'text': 'New Orleans, LA',
         'duration': '4 days',
         'url': '#',
     },
     {
-        'src': DEFAULT_BLACK_IMAGE_PATH,
-        'text': 'Los Angeles, CA',
+        'src': getImageSource('west-la-spring-19.jpg'),
+        'text': '(West) Los Angeles, CA',
         'duration': '2 days',
         'url': '#',
     },
     {
-        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'src': getImageSource('mclean-su-19.jpg'),
         'text': 'McLean, VA',
         'duration': '3 weeks',
+        'time': 'Summer 2019',
+        'url': '#',
+    },
+    {
+        'src': getImageSource('nyc-su-19.jpg'),
+        'text': 'New York City',
+        'duration': '1 day',
+        'time': 'Summer 2019',
+        'url': '#',
+    },
+    {
+        'src': getImageSource('niagra-falls-su-19.jpg'),
+        'text': 'Niagara Falls',
+        'duration': '2 days',
         'time': 'Summer 2019',
         'url': '#',
     },

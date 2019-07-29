@@ -5,10 +5,4 @@ import {
 
 const photographyPath = 'photography';
 
-export const imgUrls = [
-    {
-        'src': getPhotographySource('sammy-hafiz.jpg'),
-        'text': 'Hafiz Juice',
-        'url': '#',
-    },
-];
+export const imgUrls = [];
