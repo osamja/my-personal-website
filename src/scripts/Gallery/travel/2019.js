@@ -2,17 +2,27 @@ import {
   DEFAULT_BLACK_IMAGE_PATH,
   getBaseUrl,
   getBasePath,
+  getCloudinaryBaseUrl
 } from '../../../scripts/Routes/images.js';
 
 const travel2019Path = 'travel/cover';
 
-function getImageSource(imageFileName) {
+const cloudinaryTravelPath = 'v1564458339/my-personal-website/travel/2019/';
+
+const winter2018 = 'winter%202018/';
+
+// const cloudinaryPath = 'https://res.cloudinary.com/dgrlg424p/image/upload/v1564458339/my-personal-website/travel/2019/winter%202018/sammy-hafiz.jpg';
+
+function getImageSource(imageFileName, useCloudinary, season) {
+    if (useCloudinary) {
+        return getCloudinaryBaseUrl() + cloudinaryTravelPath + winter2018 + imageFileName;
+    }
     return getBaseUrl() + '/' + getBasePath() + '/' + travel2019Path + '/' + imageFileName;
 }
 
 export const travel2019 = [
     {
-        'src': getImageSource('sammy-hafiz-copy.jpg'),
+        'src': getImageSource('sammy-hafiz-copy.jpg', true, winter2018),
         'text': 'Rawalpindi, Pakistan',
         'duration': '14 days',
         'when': 'Winter 2018',
