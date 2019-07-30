@@ -7,8 +7,9 @@ TODO
 
 ------------------------------------
 IN PROGRESS
+- Create a Guitar section on homepage
 
- * Understand the linear algebra operations that goes into image morphing (inverse warping + np array format)
+ * [IMAGE_MORPHING]: Understand the linear algebra operations that goes into image morphing (inverse warping + np array format)
 ------------------------------------
 DONE
 - [IMAGE_MORPHING]:[BACKEND]: Get basic MVP of refactor working (3 pts)
