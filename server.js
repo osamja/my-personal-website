@@ -23,7 +23,8 @@ const options = {
 };
 
 app.use (function (req, res, next) {
-    if (req.headers.host === 'osamjaved.com') {
+    if (req.headers.host === 'osamjaved.com' ||
+        req.headers.host === 'www.osamjaved.com') {
         res.redirect('https://sammyjaved.com');
     }
     if (req.protocol === 'https') {
