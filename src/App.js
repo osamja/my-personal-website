@@ -7,6 +7,7 @@ import Photography from '../src/pages/Photography';
 import Bio from '../src/pages/Bio';
 import Academic from './pages/Academic';
 import Movies from './pages/Movies';
+import Guitar from './pages/Guitar';
 import Professional from './pages/Professional';
 import Travel from '../src/pages/Travel';
 import Header from '../src/components/Header';
@@ -28,6 +29,7 @@ class App extends Component {
                         <Route exact path="/bio" component={Bio}/>
                         <Route exact path="/academic" component={Academic}/>
                         <Route exact path="/movies" component={Movies}/>
+                        <Route exact path="/guitar" component={Guitar}/>
                         <Route exact path="/professional" component={Professional}/>
                         <Route exact path="/projects/my-personal-website" component={MyPersonalWebsite}/>
                     </div>

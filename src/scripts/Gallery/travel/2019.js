@@ -16,8 +16,8 @@ const winter2018 = 'winter%202018/';
 function getImageSource(imageFileName, useCloudinary, season) {
     if (useCloudinary) {
         return getCloudinaryBaseUrl() + cloudinaryTravelPath + winter2018 + imageFileName;
-
     }
+
     return getBaseUrl() + '/' + getBasePath() + '/' + travel2019Path + '/' + imageFileName;
 }
 

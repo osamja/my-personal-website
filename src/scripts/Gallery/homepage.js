@@ -1,6 +1,7 @@
 import {
     getBaseUrl,
     getBasePath,
+    DEFAULT_BLACK_IMAGE_PATH
 } from '../../scripts/Routes/images.js';
 
 const homepagePath = 'home';
@@ -39,5 +40,10 @@ export const imgUrls = [
         'src': getHomePageSource('movies.jpg'),
         'text': 'Movies',
         'url': '/movies',
+    },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Guitar',
+        'url': '/guitar',
     },
 ];
