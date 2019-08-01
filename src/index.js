@@ -7,13 +7,13 @@ require('dotenv').config();
 
 let currentLocation = window.location;
 
-// Redirect to HTTPS unless localhost
-if (currentLocation.hostname !== "localhost" &&
-    (currentLocation.hostname === "osamjaved.com" ||
-    currentLocation.protocol !== 'https:' ||
-    currentLocation.hostname === "www.osamjaved.com")) {
-    window.location.replace('https://sammyjaved.com');
-}
+// // Redirect to HTTPS unless localhost
+// if (currentLocation.hostname !== "localhost" &&
+//     (currentLocation.hostname === "osamjaved.com" ||
+//     currentLocation.protocol !== 'https:' ||
+//     currentLocation.hostname === "www.osamjaved.com")) {
+//     window.location.replace('https://sammyjaved.com');
+// }
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
