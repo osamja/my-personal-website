@@ -32,8 +32,9 @@ app.use (function (req, res, next) {
         next();
     } else {
         console.log("redirecting");
+        res.redirect('https://sammyjaved.com');
         // request was via http, so redirect to https
-        res.redirect('https://' + req.headers.host + req.url);
+        // res.redirect('https://' + req.headers.host + req.url);
     }
 });
 
