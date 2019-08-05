@@ -23,30 +23,13 @@ const options = {
 };
 
 app.use (function (req, res, next) {
-
-    if (req.headers.host !== 'sammyjaved.com' ||
-        req.headers.host !== 'www.sammyjaved.com' ||
-        req.hostname !== 'sammyjaved.com' ||
-        req.headers.hostname !== 'www.sammyjaved.com' ||
-        req.protocol !== 'https') {
-            res.redirect('https://sammyjaved.com');
-        }
-
-    // // This if block should be deleted
-    // if (req.headers.host === 'osamjaved.com' || 
-    //     req.headers.host === 'www.osamjaved.com') {
-    //     res.redirect('https://sammyjaved.com');
-    // }
-
-    // if (req.protocol === 'https') {
-    //     // request was via https, so do no special handling
-    //     next();
-    // } else {
-    //     console.log("redirecting");
-    //     res.redirect('https://sammyjaved.com');
-    //     // request was via http, so redirect to https
-    //     // res.redirect('https://' + req.headers.host + req.url);
-    // }
+    if (req.protocol === 'https') {
+        // request was via https, so do no special handling
+        next();
+    } else {
+        // request was via http, so redirect to https
+        res.redirect('https://' + req.headers.host + req.url);
+    }
 });
 
 app.use(express.static(path.join(__dirname, 'build')));
@@ -55,7 +38,7 @@ app.get('/*', function (req, res) {
 });
 
 if (Number.isInteger(port_number)) {
-	console.log("Creating server at port " + port_number);
+	// console.log("Creating server at port " + port_number);
 	try {
         https.createServer(options, app).listen(port_number);
         if (process.env.environment === 'production') {
@@ -66,5 +49,5 @@ if (Number.isInteger(port_number)) {
 	    console.log(e.toString());
     }
 } else {
-	console.log("Invalid port number");
+	// console.log("Invalid port number");
 }

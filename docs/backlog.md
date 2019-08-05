@@ -1,10 +1,7 @@
 ### Green Room
-- [WEBSITE] Google Lighthouse: Enable text compression on website (3pts)
-    * Look into dynamic vs static compression
+
 
 ### Product Backlog   
-- [IMAGE_MORPHING]:[FRONTEND]: Create a UI that allows the user to upload two images
-- [IMAGE_MORPHING]:[BACKEND]: Create a NodeJS Express REST endpoint GET /morph
 - [IMAGE_MORPHING]:[BACKEND]: Upload MVP of image morphing service to sammyjaved.com
 - Have entire website be extremely timeline driven with the grid system indexing into granular timeframes. folder <year><month><date>.
 - Create text component (3 pts)
@@ -32,6 +29,8 @@ e.g. when a gallery grid item is clicked
     1. Create cuzco travel video
 - Fix image in box issue where box is slightly larger than image
 - Change font text website
+- All console logging should happen via a util file which logs only in staging/dev env
+- [IMAGE_MORPHING]: Understand the linear algebra operations that goes into image morphing (inverse warping + np array format)
  
 
 ### Content Backlog

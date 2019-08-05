@@ -1,21 +1,17 @@
-Sprint 11 (7/22/19 - 8/5/19)
+Sprint 12 (8/5/19 - 8/19/19)
 
 ------------------------------------
 TODO
-
-
+- [IMAGE_MORPHING]:[BACKEND]: Create a NodeJS Express REST endpoint that can launch a python subprocess (5 pts)
+- [WEBSITE] Google Lighthouse: Enable text compression on website (3pts)
+    * Look into dynamic vs static compression
 
 ------------------------------------
 IN PROGRESS
-- Create a Guitar section on homepage
+- [IMAGE_MORPHING]:[FRONTEND]: Create a UI that allows the user to upload two images
+  * Build it in React/Redux (3 pts)
 
- * [IMAGE_MORPHING]: Understand the linear algebra operations that goes into image morphing (inverse warping + np array format)
 ------------------------------------
 DONE
-- [IMAGE_MORPHING]:[BACKEND]: Get basic MVP of refactor working (3 pts)
- * Calculate midway face for two images of same resolution and corresponding points provided by the user.
-- [WEBSITE]: Fix https security warning when users visit osamjaved.com (2 pts)
-- [WEBSITE] Cloudinary Image Upload Service (3 pts)
-- [WEBSITE] Add cover images on travel page (1 pt)
  
 ------------------------------------
