@@ -54,23 +54,18 @@ export default class ImageMorpher extends Component {
     }
 
     onClickHandler = () => {
-        const data = new FormData() 
-        for(var x = 0; x<this.state.selectedFiles.length; x++) {
-            data.append('file', this.state.selectedFiles[x])
-        }
-        axios.post("http://localhost:8000/upload", data, {
-        onUploadProgress: ProgressEvent => {
-            this.setState({
-            loaded: (ProgressEvent.loaded / ProgressEvent.total*100),
-            })
-        },
-        })
+        let data = new FormData() ;
+        data.append('Image-1', this.state.selectedFiles[0]);
+        data.append('Image-2', this.state.selectedFiles[1]);
+
+        debugger;
+        axios.post("https://localhost:3000/morph", data)
         .then(res => { // then print response status
             console.log("Success!");
-            // toast.success('upload success')
         })
         .catch(err => { // then print response status
-            console.log(err)
+            console.log(err);
+            console.log(err.message);
             console.log("FAIL!");
             // toast.error('upload fail')
         })
