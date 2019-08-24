@@ -40,6 +40,8 @@ app.get('/*', function (req, res) {
 
 app.post('/morph', function (req, res) {
     // console.log("Request: ", req);
+    debugger;
+    console.log("sup man");
     res.send("I am the /morph endpoint");
 });
 
