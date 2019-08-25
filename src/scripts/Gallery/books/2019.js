@@ -33,4 +33,9 @@ export const books2019 = [
         'text': 'The Big Short',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Learn the Fundamentals of Docker',
+        'url': '#',
+    },
 ];
