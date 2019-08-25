@@ -28,4 +28,9 @@ export const books2019 = [
         'text': 'Zen and the Art of Motorcycle Maintenance',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'The Big Short',
+        'url': '#',
+    },
 ];
