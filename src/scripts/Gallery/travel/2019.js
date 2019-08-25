@@ -1,7 +1,8 @@
 import {
   getBaseUrl,
   getBasePath,
-  getCloudinaryBaseUrl
+  getCloudinaryBaseUrl,
+  DEFAULT_BLACK_IMAGE_PATH
 } from '../../../scripts/Routes/images.js';
 
 const travel2019Path = 'travel/cover';
@@ -30,7 +31,7 @@ export const travel2019 = [
     },
     {
         'src': getImageSource('LA-19.jpg'),
-        'text': '(Downtown) Los Angeles, CA',
+        'text': 'Downtown Los Angeles',
         'duration': '3 days',
         'when': 'Winter 2018',
         'redirect': true,
@@ -50,7 +51,7 @@ export const travel2019 = [
     },
     {
         'src': getImageSource('west-la-spring-19.jpg'),
-        'text': '(West) Los Angeles, CA',
+        'text': 'Hollywood, CA',
         'duration': '2 days',
         'url': '#',
     },
@@ -71,6 +72,13 @@ export const travel2019 = [
     {
         'src': getImageSource('niagra-falls-su-19.jpg'),
         'text': 'Niagara Falls',
+        'duration': '2 days',
+        'time': 'Summer 2019',
+        'url': '#',
+    },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Koreatown in LA',
         'duration': '2 days',
         'time': 'Summer 2019',
         'url': '#',
