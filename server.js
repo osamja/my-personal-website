@@ -30,11 +30,19 @@ app.use (function (req, res, next) {
         // request was via http, so redirect to https
         res.redirect('https://' + req.headers.host + req.url);
     }
-});
+}); 
 
-app.use(express.static(path.join(__dirname, 'build')));
+// Allow direct URL lookups
+app.use(express.static(path.join(__dirname, 'build'))); 
 app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+app.post('/morph', function (req, res) {
+    // console.log("Request: ", req);
+    debugger;
+    console.log("sup man");
+    res.send("I am the /morph endpoint");
 });
 
 if (Number.isInteger(port_number)) {

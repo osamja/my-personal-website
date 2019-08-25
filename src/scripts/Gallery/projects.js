@@ -1,6 +1,7 @@
 import {
   getBaseUrl,
   getBasePath,
+  DEFAULT_BLACK_IMAGE_PATH
 } from '../../scripts/Routes/images.js';
 
 const projectPath = 'projects';
@@ -26,5 +27,10 @@ export const projects = [
         'text': 'Local File Sharing',
         'url': 'https://github.com/osamja/local_sockets',
         'redirect': true,
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Image Morpher',
+      'url': '/projects/image-morpher',
     },
 ];
