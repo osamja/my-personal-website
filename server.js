@@ -51,6 +51,15 @@ app.use (function (req, res, next) {
 
 app.use(express.static(path.join(__dirname, 'build')));
 app.get('/*', function (req, res) {
+    if (req.headers.host !== 'sammyjaved.com' ||
+        req.headers.host !== 'www.sammyjaved.com' ||
+        req.hostname !== 'sammyjaved.com' ||
+        req.headers.hostname !== 'www.sammyjaved.com' ||
+        req.protocol !== 'https')
+        {
+            res.redirect('https://sammyjaved.com');
+        }	
+
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
