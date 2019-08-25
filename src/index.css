@@ -34,7 +34,8 @@ body {
   font-family: helvetica, serif;
   position: relative;
   font-size: 100%;
-  background-image: radial-gradient(circle, dimgray 1%,black 99%);
+  /* background-image: radial-gradient(circle, dimgray 1%,black 99%); */
+  background-color: #262626;
 }
 
 .gallery-container {
