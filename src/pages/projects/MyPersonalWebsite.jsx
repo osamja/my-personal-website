@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class MyPersonalWebsite extends Component {
     render() {
         return (
-            <div className="PersonalWebsite" style={{color: "white", textAlign: "left", margin: "5%"}}>
+            <div className="PersonalWebsite" style={{color: "#D8D8D8", textAlign: "left", margin: "5%"}}>
                 <h2 id="mypersonalwebsite">My Personal Website</h2>
 
                 <h3 id="what">What</h3>
