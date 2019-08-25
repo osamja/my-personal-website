@@ -1,4 +1,12 @@
+Sprint 11 MPW Accomplishments (7/22/19 - 8/5/19)
+
 Sprint 10 MPW Accomplishments (7/22/19 - 8/5/19)
+- [IMAGE_MORPHING]:[BACKEND]: Get basic MVP of refactor working (3 pts)
+ * Calculate midway face for two images of same resolution and corresponding points provided by the user.
+- [WEBSITE]: Fix https security warning when users visit osamjaved.com (2 pts)
+- [WEBSITE] Cloudinary Image Upload Service (3 pts)
+- [WEBSITE] Add cover images on travel page (1 pt)
+- [WEBSITE] Create a Guitar section on homepage
 
 Time off (6/10/19 - 7/22/19)
 - Went to DC

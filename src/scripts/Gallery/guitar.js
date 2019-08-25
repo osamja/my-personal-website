@@ -1,24 +1,16 @@
 import {
-  getBaseUrl,
-  getBasePath,
   DEFAULT_BLACK_IMAGE_PATH
 } from '../../scripts/Routes/images.js';
 
-const path = 'guitar';
-
-function getImageSource(imageFileName) {
-  return getBaseUrl() + '/' + getBasePath() + '/' + path + '/' + imageFileName;
-}
-
-const songsIdLikeToPlay = [
-  'Passionfruit - Drake',
-];
-
-const sevenMinuteSet = {
-  'Better Together': '3 min',
-  'Why Georgia': '3 min',
-  'Blackbird': '2 min'
-};
+/**
+ * Songs I'd like to learn how to play
+ * - Passionfruit
+ * 
+ * Seven minute set
+ * - Better Together
+ * - Why Georgia
+ * - Blackbird
+ */
 
 export const guitar = [
     {

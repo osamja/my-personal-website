@@ -6,8 +6,7 @@ export default class Photography extends Component {
     render() {
         return (
           <div className="Photography" style={{color: "white"}}>
-              <div className="intro-text" style={{color: "#e0e0e0", fontWeight: 200}}>
-                <p>Here are books I've read in the years listed.  I'm trying to read one book per month</p>
+              <div className="intro-text" style={{color: "#e0e0e0", fontWeight: 200}}> 
               </div>
               <h1>
                   2019

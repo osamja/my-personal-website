@@ -1,5 +1,4 @@
 import {
-  DEFAULT_BLACK_IMAGE_PATH,
   getBaseUrl,
   getBasePath,
   getCloudinaryBaseUrl

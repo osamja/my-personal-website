@@ -13,12 +13,29 @@ import Travel from '../src/pages/Travel';
 import Header from '../src/components/Header';
 import Projects from '../src/pages/Projects';
 import MyPersonalWebsite from '../src/pages/projects/MyPersonalWebsite';
+import ImageMorpher from './pages/projects/Image-Morpher/ImageMorpher';
+
+const injectGA = () => {
+    if (typeof window == 'undefined' || process.env.REACT_APP_ENV !== 'production') {
+      return;
+    }
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138249100-1');
+  };
 
 class App extends Component {
     render() {
         return (
             <BrowserRouter>
                 <div className="App">
+                {/* Global site tag (gtag.js) - Google Analytics */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138249100-1"/>
+                <script>{injectGA()}</script>
                     <Header/>
                     <div className="routes">
                         <Route exact path="/" component={Homepage}/>
@@ -32,6 +49,7 @@ class App extends Component {
                         <Route exact path="/guitar" component={Guitar}/>
                         <Route exact path="/professional" component={Professional}/>
                         <Route exact path="/projects/my-personal-website" component={MyPersonalWebsite}/>
+                        <Route exact path="/projects/image-morpher" component={ImageMorpher}/>
                     </div>
                 </div>
             </BrowserRouter>
