@@ -23,13 +23,19 @@ const options = {
 };
 
 app.use (function (req, res, next) {
-    if (req.protocol === 'https') {
-        // request was via https, so do no special handling
+    if (process.env.environment === 'local') {
+        console.log("local env, no redirect necessary");
         next();
     } else {
-        // request was via http, so redirect to https
-        res.redirect('https://' + req.headers.host + req.url);
+        if (req.protocol === 'https') {
+            // request was via https, so do no special handling
+            next();
+        } else {
+            // request was via http, so redirect to https
+            res.redirect('https://' + req.headers.host + req.url);
+        }
     }
+    
 }); 
 
 // Allow direct URL lookups
@@ -46,16 +52,20 @@ app.post('/morph', function (req, res) {
 });
 
 if (Number.isInteger(port_number)) {
-	// console.log("Creating server at port " + port_number);
 	try {
-        https.createServer(options, app).listen(port_number);
-        if (process.env.environment === 'production') {
-            http.createServer({}, app).listen(80);
+        if (process.env.environment === 'local') {
+            http.createServer({}, app).listen(port_number);
+        } else {
+            https.createServer(options, app).listen(port_number);
+            if (process.env.environment === 'production') {
+                http.createServer({}, app).listen(80);
+            }
         }
+        
 
     } catch (e) {
 	    console.log(e.toString());
     }
 } else {
-	// console.log("Invalid port number");
+	console.log("Invalid port number");
 }
