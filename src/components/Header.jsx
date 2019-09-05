@@ -44,7 +44,6 @@ export default class Header extends Component {
                 </h1>
                 </NavLink>
             </div>
-
         );
     }
 }
