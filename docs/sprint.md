@@ -1,4 +1,4 @@
-Sprint 12 (8/5/19 - 8/19/19)
+Sprint 13 (9/2/19 - 9/16/19)
 
 ------------------------------------
 TODO
@@ -8,8 +8,6 @@ TODO
 
 ------------------------------------
 IN PROGRESS
-- [IMAGE_MORPHING]:[FRONTEND]: Create a UI that allows the user to upload two images
-  * Build it in React/Redux (3 pts)
 
 ------------------------------------
 DONE
