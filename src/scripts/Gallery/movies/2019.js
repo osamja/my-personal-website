@@ -78,4 +78,14 @@ export const movies2019 = [
         'text': 'Inglorious Bastards',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Jackie Brown',
+        'url': '#',
+    },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Hobbs & Shaw',
+        'url': '#',
+    },
 ];

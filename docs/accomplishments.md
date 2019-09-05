@@ -1,6 +1,12 @@
-Sprint 11 MPW Accomplishments (7/22/19 - 8/5/19)
+Sprint 13 MPW Accomplishments 9/2/19 - 9/16/19
 
-Sprint 10 MPW Accomplishments (7/22/19 - 8/5/19)
+8/5/19 - 9/2/19
+- PTO
+
+Sprint 12 MPW Accomplishments (7/22/19 - 8/5/19)
+- [IMAGE_MORPHING]:[FRONTEND]: Create a UI that allows the user to upload two images (2pts)
+
+Sprint 11 MPW Accomplishments (7/22/19 - 8/5/19)
 - [IMAGE_MORPHING]:[BACKEND]: Get basic MVP of refactor working (3 pts)
  * Calculate midway face for two images of same resolution and corresponding points provided by the user.
 - [WEBSITE]: Fix https security warning when users visit osamjaved.com (2 pts)

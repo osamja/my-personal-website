@@ -1,13 +1,14 @@
 ### Green Room
 
 
-### Product Backlog   
+### Product Backlog
 - [IMAGE_MORPHING]:[BACKEND]: Upload MVP of image morphing service to sammyjaved.com
 - Have entire website be extremely timeline driven with the grid system indexing into granular timeframes. folder <year><month><date>.
 - Create text component (3 pts)
 Upload markdown file in folder <year><month><date>.
 e.g. when a gallery grid item is clicked
 - Spike how SASS works with create-react-app build setup
+- Add image loading state (show black img as placeholder until fully loaded)
 - Create script that uploads one image a day from a DB that I have.
 - Create a Calendar Gallery component.  Should allow user to index by year, then month, then day
 - Highlight picture of the day on the homepage.
