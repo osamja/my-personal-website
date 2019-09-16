@@ -2,6 +2,8 @@
 
 
 ### Product Backlog
+- Set up nginx web server
+- Set up failover so site automatically goes up on reboot
 - [IMAGE_MORPHING]:[BACKEND]: Upload MVP of image morphing service to sammyjaved.com
 - Have entire website be extremely timeline driven with the grid system indexing into granular timeframes. folder <year><month><date>.
 - Create text component (3 pts)
