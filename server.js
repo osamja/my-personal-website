@@ -23,7 +23,7 @@ const options = {
 };
 
 app.use (function (req, res, next) {
-    if (process.env.environment === 'local') {
+    if (process.env.environment === 'local' || process.env.environment === 'development') {
         console.log("local env, no redirect necessary");
         next();
     } else {
@@ -55,14 +55,13 @@ app.get('/*', function (req, res) {
 
 app.post('/morph', function (req, res) {
     // console.log("Request: ", req);
-    debugger;
     console.log("sup man");
     res.send("I am the /morph endpoint");
 });
 
 if (Number.isInteger(port_number)) {
 	try {
-        if (process.env.environment === 'local') {
+        if (process.env.environment === 'local' || process.env.environment === 'development') {
             http.createServer({}, app).listen(port_number);
         } else {
             https.createServer(options, app).listen(port_number);
@@ -70,8 +69,6 @@ if (Number.isInteger(port_number)) {
                 http.createServer({}, app).listen(80);
             }
         }
-        
-
     } catch (e) {
 	    console.log(e.toString());
     }

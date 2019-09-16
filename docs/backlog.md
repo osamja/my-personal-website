@@ -32,6 +32,8 @@ e.g. when a gallery grid item is clicked
     1. Create cuzco travel video
 - Fix image in box issue where box is slightly larger than image
 - Change font text website
+- [WEBSITE] Google Lighthouse: Enable text compression on website (3pts)
+    * Look into dynamic vs static compression
 - All console logging should happen via a util file which logs only in staging/dev env
 - [IMAGE_MORPHING]: Understand the linear algebra operations that goes into image morphing (inverse warping + np array format)
  
