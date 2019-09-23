@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Upload from './Upload';
+
+const base_url = 'http://sammyjaved.com:8088';
+const morph_endpoint = base_url + '/morph/';
+
 
 export default class ImageMorpher extends Component {
+    
     constructor(props) {
         super(props);
         this.state = {
@@ -53,33 +59,43 @@ export default class ImageMorpher extends Component {
         }
     }
 
-    appendImage = img => {
+    appendImage = imgSrc => {
         var image = new Image();
-        img = atob(img);
-        var encodedImg = img;       //JSON.parse(response.data).image;
-        image.src = 'data:image/jpeg;base64,';
-        image.src += encodedImg;
+        image.src = imgSrc;
         document.body.appendChild(image);
     }
 
     onClickHandler = () => {
         let data = new FormData() ;
-        // data.append('Image-1', this.state.selectedFiles[0]);
-        // data.append('Image-2', this.state.selectedFiles[1]);
-        const url = 'http://sammyjaved.com:8080/morph/';
+        data.append('Image-1', this.state.selectedFiles[0]);
+        data.append('Image-2', this.state.selectedFiles[1]);
+        let httpConfig = {
+            data: data,
+            // headers: {'Authorization': 'ImageMorpherV1'}
+        };
 
+        axios.post(morph_endpoint, data, {headers: {'Authorization': 'ImageMorpherV1'}})
+        .then(response => {
+            console.log(response);
+            let imgSrc = response.data;
+            this.appendImage(imgSrc);
+            console.log("Success!");
+        })
+        .catch(error => console.error(error));
+/*
         axios({
-            url: url,
+            url: morph_endpoint,
             method: "post",
             data: data,
+            headers: {'X-API-KEY': 'ImageMorpherV1'},
           })
           .then(response => {
             console.log(response);
-            let img = response.data;
-            this.appendImage(img);
+            let imgSrc = response.data;
+            this.appendImage(imgSrc);
             console.log("Success!");
           })
-          .catch(error => console.error(error));
+          .catch(error => console.error(error));*/
     }
 
     render() {
@@ -96,7 +112,11 @@ export default class ImageMorpher extends Component {
                 <div className="form-group">
                 </div> 
                 <button type="button" className="btn btn-success btn-block" onClick={this.onClickHandler}>Upload</button>
+
+                <Upload />
             </div>
+
+          
         );
     }
 }
