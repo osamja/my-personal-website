@@ -2,8 +2,8 @@
 
 
 ### Product Backlog
-- Set up nginx web server
-- Set up failover so site automatically goes up on reboot
+- [IMAGE_MORPHING]:[BACKEND]:SPIKE Migrate morph service to Docker
+- SPIKE Set up failover so site automatically goes up on reboot
 - [IMAGE_MORPHING]:[BACKEND]: Upload MVP of image morphing service to sammyjaved.com
 - Have entire website be extremely timeline driven with the grid system indexing into granular timeframes. folder <year><month><date>.
 - Create text component (3 pts)
@@ -32,33 +32,14 @@ e.g. when a gallery grid item is clicked
     1. Create cuzco travel video
 - Fix image in box issue where box is slightly larger than image
 - Change font text website
+- [WEBSITE] Google Lighthouse: Enable text compression on website (3pts)
+    * Look into dynamic vs static compression
 - All console logging should happen via a util file which logs only in staging/dev env
 - [IMAGE_MORPHING]: Understand the linear algebra operations that goes into image morphing (inverse warping + np array format)
  
 
 ### Content Backlog
-    
     - Create a 'My setup' blog post.
         Investigate affiliate links from Amazon 
  
  
-##### Image Upload Service
-    - Upload image to REST endpoint
-    - Create thumbnail for image 
-         - Automatically resize it in process (400 x 300
-         - Convert to JPG and compress to <30 kb
-    - Image file should be in location specified in API request
-    - Authenticate + Authorization for endpont
-    - Thumbnail and original image location should be automatically determined
-    - Support POST, PUT, DELETE types
-    - A super low res image should be loaded.  Lazy load in thumbnail after
-
-##### Writing Upload Service
-    - Upload blog in markdown to REST endpoint
-    Block element layout (img and text never on same line)
-    - Write journal entry in markdown.
-        - Be able to reference images. 
-    Upload markdown file in folder <year><month><date>.
-    e.g. when a gallery grid item is clicked
-    Investigate whether a writing service should be created.
-    Create POC with public/static/text/prose/mypersonalwebsite.md

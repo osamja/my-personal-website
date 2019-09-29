@@ -5,6 +5,11 @@ import {
 export const books2018 = [
     {
         'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Zero to One - Peter Thiel',
+        'url': '#',
+    },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
         'text': 'Modern Romance - Aziz Ansari',
         'url': '#',
     },

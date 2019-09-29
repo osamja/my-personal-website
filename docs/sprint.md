@@ -1,15 +1,16 @@
-Sprint 13 (9/2/19 - 9/16/19)
+Sprint 14 9/16/19 - 9/30/19
 
 ------------------------------------
 TODO
-- [IMAGE_MORPHING]:[BACKEND]: Create a NodeJS Express REST endpoint that can launch a python subprocess (5 pts)
-- [WEBSITE] Google Lighthouse: Enable text compression on website (3pts)
-    * Look into dynamic vs static compression
-
+- Add Upload component ( 3 pts midsprintscope)
 ------------------------------------
 IN PROGRESS
-
+- Add api-key authorization check to morph endpoint (2 pts)
 ------------------------------------
 DONE
- 
+ - [IMAGE_MORPHING]:[BACKEND]: Implement how to setup nginx to serve static files from a docker volume 3 pts
+    Acceptance Criteria:
+    * The docker volume should store the morphed jpeg images
+    * Any morphed jpeg image must be served through a URL
+    * If an image is dynamically added to the docker volume, it should be available through a URL without any manual intervention - 5pts
 ------------------------------------
