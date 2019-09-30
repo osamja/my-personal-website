@@ -1,6 +1,6 @@
 ### MVP
 * Overview
-    - Upload two pictures in web browser, same resolution
+    - Upload two pictures in web browser
     - Return the moprhed 'midway' image to the user
 
 * Details
@@ -15,6 +15,8 @@
 ### Enhancements
 * Upload user images to cloud service (cloudinary). Upload service takes in image, returns resource to those image
 * Morph endpoint is notified of resource from upload service, begins morphing the images at defined resource.  Morphed image is written to cloud service, a resource URL is returned and presented to the user.
+* Progress bar is shown while image is being morphed
+* Add paid version for morphed sequence
 
 ## Engineering development journal
 Awesome to see getting the refactored morph working
@@ -27,3 +29,5 @@ Find out how to save images, and have the /morph endpoint return the image sourc
 Find out how to serve static content through Nginx
 Find out how to setup a dockerrized nginx service that serves images through a volume
 Learning about Docker and getting hands on experience building a distributed app
+Getting redux store setup with image morpher application
+    - Adding Redux provider, using connect with components

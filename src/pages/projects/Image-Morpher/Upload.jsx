@@ -1,54 +1,25 @@
-import React, {useCallback} from 'react'
-import {useDropzone} from 'react-dropzone'
+import React from 'react'
+import DropzoneContainer from './DropzoneContainer';
+import styled from 'styled-components';
 
-export default function MyDropzone() {
-  const onDrop = useCallback(acceptedFiles => {
-    // Do something with the files
-    console.log('hey sammy')
-  }, []);
-  const {getRootProps, getInputProps} = useDropzone({onDrop});
-
-  const dropzoneStyleContainer = {
-    display: 'grid',
-    gridGap: '100px',
-  };
-
-  const dropzoneStyleContainerLeft = {
-    backgroundColor: 'lightcoral',
-    height: '250px',
-    gridColumn: '50px',
-    gridRowStart: '1',
-    gridColumnStart: '1',
-  };
-
-  const dropzoneStyleContainerRight = {
-    backgroundColor: 'lightblue',
-    height: '250px',
-    gridColumn: '50px',
-    gridRowStart: '1',
-    gridColumnStart: '2',
-  };
+export default function Upload() {
+  const StyledContainer = styled.div`
+    display: grid;
+    grid-gap: 100px;
+  `;
 
   return (
-    <div style={dropzoneStyleContainer}>
-      <div {...getRootProps()} style={dropzoneStyleContainerLeft}>
-        <input {...getInputProps()} />
-        {
-            <div style={{textAlign: 'center' }}> 
-            <p>Drag or drop the first face image here ...</p>
-            <p style={{display: 'inline'}}>or click</p> <button>Upload</button> <p style={{display: 'inline'}}>to select a file</p>
-          </div>
-        }
-      </div>
-      <div {...getRootProps()} style={dropzoneStyleContainerRight}>
-        <input {...getInputProps()} />
-        {
-            <div style={{textAlign: 'center' }}> 
-              <p>Drag or drop the second face image here ...</p>
-              <p style={{display: 'inline'}}>or click</p> <button>Upload</button> <p style={{display: 'inline'}}>to select a file</p>
-            </div>
-        }
-      </div>
-    </div>
+    <StyledContainer>
+      <DropzoneContainer 
+        dropzoneText="left"
+        dropzoneColor="lightblue"
+        gridColumn="1"
+      />
+      <DropzoneContainer 
+        dropzoneText="right"
+        dropzoneColor="lightcoral"
+        gridColumn="2"
+      />
+    </StyledContainer>
   )
 }

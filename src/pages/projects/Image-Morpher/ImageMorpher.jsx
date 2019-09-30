@@ -79,20 +79,6 @@ export default class ImageMorpher extends Component {
             console.log("Success!");
         })
         .catch(error => console.error(error));
-/*
-        axios({
-            url: morph_endpoint,
-            method: "post",
-            data: data,
-            headers: {'X-API-KEY': 'ImageMorpherV1'},
-          })
-          .then(response => {
-            console.log(response);
-            let imgSrc = response.data;
-            this.appendImage(imgSrc);
-            console.log("Success!");
-          })
-          .catch(error => console.error(error));*/
     }
 
     render() {
@@ -101,6 +87,10 @@ export default class ImageMorpher extends Component {
                 <h1 style={{textAlign: 'center'}}>Face Morpher</h1>
                 <Upload />
                 <MorphButton />
+                <div style={{display: 'flex', justifyContent: 'center'}}>
+                    {/* Leave space in alt, else morphed img does not render */}
+                    <img alt=" " src="" id="morphed-img" />
+                </div>
             </div>
         );
     }
