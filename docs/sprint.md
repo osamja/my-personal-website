@@ -2,7 +2,7 @@ Sprint 14 9/16/19 - 9/30/19
 
 ------------------------------------
 TODO
-- Add Upload component ( 3 pts midsprintscope)
+
 ------------------------------------
 IN PROGRESS
 - Add api-key authorization check to morph endpoint (2 pts)

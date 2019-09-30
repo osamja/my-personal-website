@@ -53,22 +53,33 @@ export default class ImageMorpher extends Component {
         }
     }
 
+    appendImage = img => {
+        var image = new Image();
+        img = atob(img);
+        var encodedImg = img;       //JSON.parse(response.data).image;
+        image.src = 'data:image/jpeg;base64,';
+        image.src += encodedImg;
+        document.body.appendChild(image);
+    }
+
     onClickHandler = () => {
         let data = new FormData() ;
-        data.append('Image-1', this.state.selectedFiles[0]);
-        data.append('Image-2', this.state.selectedFiles[1]);
+        // data.append('Image-1', this.state.selectedFiles[0]);
+        // data.append('Image-2', this.state.selectedFiles[1]);
+        const url = 'http://sammyjaved.com:8080/morph/';
 
-        debugger;
-        axios.post("https://localhost:3000/morph", data)
-        .then(res => { // then print response status
+        axios({
+            url: url,
+            method: "post",
+            data: data,
+          })
+          .then(response => {
+            console.log(response);
+            let img = response.data;
+            this.appendImage(img);
             console.log("Success!");
-        })
-        .catch(err => { // then print response status
-            console.log(err);
-            console.log(err.message);
-            console.log("FAIL!");
-            // toast.error('upload fail')
-        })
+          })
+          .catch(error => console.error(error));
     }
 
     render() {
@@ -83,8 +94,6 @@ export default class ImageMorpher extends Component {
                     <input type="file" className="form-control" multiple onChange={this.onChangeHandler}/>
                 </div>  
                 <div className="form-group">
-                    {/* <ToastContainer />
-                    <Progress max="100" color="success" value={this.state.loaded} >{Math.round(this.state.loaded,2) }%</Progress> */}
                 </div> 
                 <button type="button" className="btn btn-success btn-block" onClick={this.onClickHandler}>Upload</button>
             </div>
