@@ -90,4 +90,11 @@ export const travel2019 = [
         'time': 'Summer 2019',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Austin, TX',
+        'duration': '4 days',
+        'time': 'Fall 2019',
+        'url': '#',
+    },
 ];
