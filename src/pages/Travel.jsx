@@ -9,7 +9,7 @@ export default class Travel extends Component {
             <div className="Travel" style={{color: "white"}}>
                 <div className="intro-text" style={{color: "#e0e0e0", fontWeight: 200}}>
                   <h5>
-                    "The real voyage of discovery consists, not in seeking new landscapes, but in having new eyes."
+                    "The real voyage of discovery consists, not in seeking new landscapes, but in having new eyes. - Marcel Proust"
                   </h5>
                 </div>
                 <h1>

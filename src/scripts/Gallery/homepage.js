@@ -27,11 +27,6 @@ export const imgUrls = [
         'url': '/travel',
     },
     {
-        'src': getHomePageSource('photography.jpg'),
-        'text': 'Photography',
-        'url': '/photography',
-    },
-    {
         'src': getHomePageSource('academic.jpg'),
         'text': 'Academic',
         'url': '/academic',

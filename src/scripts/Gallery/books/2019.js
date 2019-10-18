@@ -38,4 +38,9 @@ export const books2019 = [
         'text': 'Learn the Fundamentals of Docker',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Principles by Ray Dalio',
+        'url': '#',
+    },
 ];

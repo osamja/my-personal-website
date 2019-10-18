@@ -88,4 +88,14 @@ export const movies2019 = [
         'text': 'Hobbs & Shaw',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Between Two Ferns',
+        'url': '#',
+    },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Joker',
+        'url': '#',
+    },
 ];
