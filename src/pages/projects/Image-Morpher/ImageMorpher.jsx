@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Upload from './Upload';
+import MorphButton from './MorphButton';
 
 const base_url = 'http://sammyjaved.com:8088';
 const morph_endpoint = base_url + '/morph/';
@@ -69,10 +70,6 @@ export default class ImageMorpher extends Component {
         let data = new FormData() ;
         data.append('Image-1', this.state.selectedFiles[0]);
         data.append('Image-2', this.state.selectedFiles[1]);
-        let httpConfig = {
-            data: data,
-            // headers: {'Authorization': 'ImageMorpherV1'}
-        };
 
         axios.post(morph_endpoint, data, {headers: {'Authorization': 'ImageMorpherV1'}})
         .then(response => {
@@ -100,23 +97,11 @@ export default class ImageMorpher extends Component {
 
     render() {
         return (
-            <div className="ImageMorpher" style={{color: "white", textAlign: "left", margin: "5%"}}>
-                <h1>Image Morpher</h1>
-                <p>
-                  This application will allow you to morph two images together!
-                </p>
-                <div className="form-group files">
-                    <label>Upload Your File </label>
-                    <input type="file" className="form-control" multiple onChange={this.onChangeHandler}/>
-                </div>  
-                <div className="form-group">
-                </div> 
-                <button type="button" className="btn btn-success btn-block" onClick={this.onClickHandler}>Upload</button>
-
+            <div className="ImageMorpher" style={{color: "white", textAlign: "left", margin: "2% 4%"}}>
+                <h1 style={{textAlign: 'center'}}>Face Morpher</h1>
                 <Upload />
+                <MorphButton />
             </div>
-
-          
         );
     }
 }

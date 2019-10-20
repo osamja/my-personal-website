@@ -10,12 +10,8 @@ const process = require('process');
 const compression = require('compression');
 require('dotenv').config();
 
-app.use(compression());
 
-if (process.env.environment !== 'production') {
-    //app.use(bodyParser.json());
-    //morganBody(app);
-}
+app.use(compression());
 
 const port_number = Number.parseInt(process.argv[2], 10);
 
