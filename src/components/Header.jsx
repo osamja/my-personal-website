@@ -22,7 +22,7 @@ export default class Header extends Component {
         };
       let homeIconStyle = {
         position: "relative",
-        top: "7px",
+        verticalAlign: "top",
       };
         this.state = {
             name: this.props.name,
@@ -36,7 +36,7 @@ export default class Header extends Component {
 
     render() {
         return (
-            <div className="Header">
+            <div className="Header" style={{marginTop: '15px'}}>
                 <NavLink to="/">
                 <img src={this.state.headerIconPath} style={this.state.homeIconStyle} alt={"home"}/>
                 <h1 style={this.state.headerTextStyle} className="HeaderText">

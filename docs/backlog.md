@@ -1,18 +1,14 @@
 ### Green Room
-- [IMAGE_MORPHING]:[FRONTEND]: Design Review (3 pts)
-    - Rounded corners for boxes
-    - Good background colors for dropzone
-    - Informative text for dropzone
-    - 
 
 ### Product Backlog
+- [WEBSITE]: Remove the bootstrap css file and find better way have the spinner state
+- [IMAGE_MORPHING]:[BACKEND]: Document face morpher project architecture
 - [IMAGE_MORPHING]:[BACKEND]: Move rest endpoint to dedicated server, maybe AWS (8 pts)
 - [IMAGE_MORPHING]:[FRONTEND]: Create tooltip with morphed img link (2 pts)
-- [IMAGE_MORPHING]: Write architecture documentation for the application
 - [IMAGE_MORPHING]:[BUSINESS]: Register domain name for application
 - [IMAGE_MORPHING]:[BUSINESS]: Create app icon/logo
 - [IMAGE_MORPHING]:[BUSINESS]: Register a LLC/Corp for service
-- [IMAGE_MORPHING]:[BUSINESS]: Create a FAQ page
+- [IMAGE_MORPHING]:[BUSINESS]: Create a FAQ + privacy + term of service page
 - [IMAGE_MORPHING]:[BUSINESS]: Receive customer feedback via survey, email, etc
 - [IMAGE_MORPHING]:[BUSINESS]: Create mobile app that leverages /morph endpoint
 - [IMAGE_MORPHING]:[BACKEND]:SPIKE Migrate morph service to Docker
