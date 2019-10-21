@@ -26,9 +26,9 @@ export const imgUrls = [
         'url': '/travel',
     },
     {
-        'src': getHomePageSource('academic.jpg'),
-        'text': 'Academic',
-        'url': '/academic',
+        'src': getHomePageSource('guitar-body.jpg'),
+        'text': 'Guitar',
+        'url': '/guitar',
     },
     {
         'src': getHomePageSource('movies.jpg'),
@@ -36,8 +36,8 @@ export const imgUrls = [
         'url': '/movies',
     },
     {
-        'src': getHomePageSource('guitar-body.jpg'),
-        'text': 'Guitar',
-        'url': '/guitar',
+        'src': getHomePageSource('academic.jpg'),
+        'text': 'Academic',
+        'url': '/academic',
     },
 ];
