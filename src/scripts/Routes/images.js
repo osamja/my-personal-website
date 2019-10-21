@@ -1,5 +1,5 @@
 const BASE_DOMAIN = 'sammyjaved.com';
-const PROTOCOL = 'https://';
+const HTTPS = 'https://';
 const BASE_PATH = 'static';
 const CATEGORY = 'images';
 
@@ -18,7 +18,7 @@ function getBaseDomain() {
   if (process.env.REACT_APP_ENV === 'local' && process.env.environment === "local") {
     return 'localhost:8002';
   } else if (process.env.REACT_APP_ENV === 'development') {
-      return BASE_DOMAIN + ':8001';
+      return BASE_DOMAIN + ':3000';
   } else if (process.env.REACT_APP_ENV === 'staging') {
       return BASE_DOMAIN + ':8000';
   } else if (process.env.REACT_APP_ENV === 'production') {
@@ -33,8 +33,8 @@ function getBaseDomain() {
  * @returns {string}
  */
 export function getBaseUrl() {
-  if (process.env.REACT_APP_ENV !== 'local' ) {
-      return PROTOCOL + getBaseDomain();
+  if (process.env.REACT_APP_ENV === 'production' ) {
+      return HTTPS + getBaseDomain();
   } else {
       return 'http://' + getBaseDomain();
   }
