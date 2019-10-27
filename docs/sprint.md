@@ -6,6 +6,8 @@ TODO
 ------------------------------------
 IN PROGRESS
 - [IMAGE_MORPHING]:[BUSINESS]: architecture drawing + planning (2 pts - midsprintscope)
+- [IMAGE_MORPHING]:[BACKEND]: spike AWS familiarity (3/5 pts - midsprintscope)
+
 ------------------------------------
 DONE
 - [IMAGE_MORPHING]:[FRONTEND]: Show morphed img URL (1 pts - midsprintscope)

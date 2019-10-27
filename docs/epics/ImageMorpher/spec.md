@@ -31,6 +31,7 @@ Find out how to setup a dockerrized nginx service that serves images through a v
 Learning about Docker and getting hands on experience building a distributed app
 Getting redux store setup with image morpher application
     - Adding Redux provider, using connect with components
+Project planning, especially the last mile where the project is in limbo and driving to finish it feels grindy :)
 
 # Project Planning
 
