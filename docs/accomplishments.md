@@ -1,4 +1,13 @@
+Sprint 16 MPW Accomplishments 10/28/19 - 11/4/19
+
 Sprint 15 MPW Accomplishments 10/14/19 - 10/28/19
+- [IMAGE_MORPHING]:[FRONTEND]: Show morphed img URL (1 pts - midsprintscope)
+- [IMAGE_MORPHING]:[FRONTEND]: Show morphed img under morph button (2 pts - midsprintscope)
+- [IMAGE_MORPHING]:[FRONTEND]: Display uploaded image in dropzone container (2 pts - midsprintscope)
+- [IMAGE_MORPHING]:[FRONTEND]: Refactor dropzone component, display informative upload text (2 pts)
+- [IMAGE_MORPHING]:[FRONTEND]: Show the final morphed image beneath morph button (2 pts)
+- [IMAGE_MORPHING]:[FRONTEND]: Morph button sends uploaded image files to /morph (2 pts)
+- [IMAGE_MORPHING]:[FRONTEND]: Add loading spinner state for Morph button (2 pts)
 
 9/30/19 - 10/14/19
 - PTO (Austin City Limits, Conference)
