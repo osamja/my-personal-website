@@ -5,7 +5,6 @@ import App from './App';
 import { Provider } from 'react-redux'
 import * as serviceWorker from './serviceWorker';
 import configureStore from './scripts/Redux/store/configureStore';
-require('dotenv').config();
 
 const store = configureStore();
 

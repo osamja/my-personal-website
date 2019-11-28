@@ -2,6 +2,7 @@ const BASE_DOMAIN = 'sammyjaved.com';
 const HTTPS = 'https://';
 const BASE_PATH = 'static';
 const CATEGORY = 'images';
+// require('dotenv').config();
 
 /**
  * React apps can only read env variables prefixed with 'REACT_APP'.
@@ -18,7 +19,7 @@ function getBaseDomain() {
   if (process.env.REACT_APP_ENV === 'local' && process.env.environment === "local") {
     return 'localhost:8002';
   } else if (process.env.REACT_APP_ENV === 'development') {
-      return BASE_DOMAIN + ':3000';
+      return BASE_DOMAIN + ':3001';
   } else if (process.env.REACT_APP_ENV === 'staging') {
       return BASE_DOMAIN + ':8000';
   } else if (process.env.REACT_APP_ENV === 'production') {
@@ -33,7 +34,7 @@ function getBaseDomain() {
  * @returns {string}
  */
 export function getBaseUrl() {
-  if (process.env.REACT_APP_ENV === 'production' ) {
+  if (process.env.REACT_APP_ENV === 'production' || process.env.REACT_APP_ENV === 'staging' ) {
       return HTTPS + getBaseDomain();
   } else {
       return 'http://' + getBaseDomain();

@@ -1,3 +1,9 @@
+# Update
+* craco has been put in between CRA and react scripts so the commands below may not work
+* see package.json + the dockerfiles for up-to-date information
+
+
+****************************************************************************************************
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

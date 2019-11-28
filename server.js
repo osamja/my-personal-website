@@ -4,12 +4,8 @@ const https = require('https');
 const http = require('http');
 const app = express();
 const fs = require('fs');
-const morganBody = require('morgan-body');
-const bodyParser = require('body-parser');
 const process = require('process');
 const compression = require('compression');
-require('dotenv').config();
-
 
 app.use(compression());
 
@@ -22,7 +18,7 @@ const options = {
 };
 
 app.use (function (req, res, next) {
-    if (process.env.environment === 'local' || process.env.environment === 'development') {
+    if (process.env.environment === 'local') {
         console.log("local env, no redirect necessary");
         next();
     } else {
@@ -39,28 +35,29 @@ app.use (function (req, res, next) {
 
 // Allow direct URL lookups
 app.use(express.static(path.join(__dirname, 'build'))); 
+
 app.get('/*', function (req, res) {
-    if (req.headers.host !== 'sammyjaved.com' ||
-        req.headers.host !== 'www.sammyjaved.com' ||
-        req.hostname !== 'sammyjaved.com' ||
-        req.headers.hostname !== 'www.sammyjaved.com' ||
-        req.protocol !== 'https')
+    const isNotProduction = (process.env.environment === "development")
+      || (process.env.environment === "staging") ;
+    const shouldRedirect = !isNotProduction && (req.headers.host !== 'sammyjaved.com' 
+      || req.headers.host !== 'sammyjaved.com' 
+      || req.hostname !== 'sammyjaved.com' || req.protocol !== 'https');
+    if (isNotProduction) { // @TODO: remove this unnecessary if
+    } else if (shouldRedirect)
         {
             res.redirect('https://sammyjaved.com');
-        }	
-
+    }
+    // res.sendFile(path.join(__dirname, 'public', 'index.html'));
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 app.post('/morph', function (req, res) {
-    // console.log("Request: ", req);
-    console.log("sup man");
     res.send("I am the /morph endpoint");
 });
 
 if (Number.isInteger(port_number)) {
 	try {
-        if (process.env.environment === 'local' || process.env.environment === 'development') {
+        if (process.env.environment === 'local') {
             http.createServer({}, app).listen(port_number);
         } else {
             https.createServer(options, app).listen(port_number);
