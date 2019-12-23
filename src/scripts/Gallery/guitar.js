@@ -100,3 +100,17 @@ export const guitarSetList2019 = [
         'url': '#',
     },
 ];
+
+export const guitarSetList2020 = [
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Passionfruit',
+        'url': '#',
+    },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Thank you, next',
+        'url': '#',
+    },
+];
+

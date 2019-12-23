@@ -97,4 +97,11 @@ export const travel2019 = [
         'time': 'Fall 2019',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Denver, CO',
+        'duration': '2 days',
+        'time': 'Fall 2019',
+        'url': '#',
+    },
 ];
