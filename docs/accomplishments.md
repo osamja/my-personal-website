@@ -1,4 +1,9 @@
-Sprint 16 MPW Accomplishments 10/28/19 - 11/4/19
+Sprint 16 12/16/19 - 12/30/19
+
+
+10/28/19 - 12/16/19
+ - Things kind of slow it the holidays
+ - busy with work (Dunamis for Web Platform)
 
 Sprint 15 MPW Accomplishments 10/14/19 - 10/28/19
 - [IMAGE_MORPHING]:[FRONTEND]: Show morphed img URL (1 pts - midsprintscope)

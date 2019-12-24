@@ -1,15 +1,13 @@
 # https://mherman.org/blog/dockerizing-a-react-app/
 
 # BUILD IMAGE: docker build -t my-personal-website:prod -f prod.Dockerfile .
-# RUN CONTAINER: docker run -p 443:443 --rm my-personal-website:prod
+# RUN CONTAINER: docker run -p 443:443 -p 80:80 -d --restart always my-personal-website:prod
 # SHELL: docker container run -it my-personal-website:prod sh
 
 # Development steps:
 #  1) run container 
 #  2) make code changes
 #  3) rebuild image and restart container
-#   - [untested] shortcut might be to ssh into container and run `npm run build-prod`
-#     to update the containers build/ directory thats being served by index.js
 
 # build environment
 FROM node:12.2.0-alpine as build

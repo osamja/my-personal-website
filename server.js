@@ -37,17 +37,14 @@ app.use (function (req, res, next) {
 app.use(express.static(path.join(__dirname, 'build'))); 
 
 app.get('/*', function (req, res) {
-    const isNotProduction = (process.env.environment === "development")
-      || (process.env.environment === "staging") ;
+    const isNotProduction = !(process.env.environment === "production");
     const shouldRedirect = !isNotProduction && (req.headers.host !== 'sammyjaved.com' 
-      || req.headers.host !== 'sammyjaved.com' 
       || req.hostname !== 'sammyjaved.com' || req.protocol !== 'https');
-    if (isNotProduction) { // @TODO: remove this unnecessary if
-    } else if (shouldRedirect)
-        {
-            res.redirect('https://sammyjaved.com');
+
+    if (shouldRedirect) {
+        res.redirect('https://sammyjaved.com');
     }
-    // res.sendFile(path.join(__dirname, 'public', 'index.html'));
+
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 

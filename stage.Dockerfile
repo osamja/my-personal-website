@@ -8,8 +8,6 @@
 #  1) run container 
 #  2) make code changes
 #  3) rebuild image and restart container
-#   - [untested] shortcut might be to ssh into container and run `npm run build-stage`
-#     to update the containers build/ directory thats being served by index.js
 
 # build environment
 FROM node:12.2.0-alpine as build

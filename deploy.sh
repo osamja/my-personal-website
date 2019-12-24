@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# @deprecrated: This deployment process is now deprecated, see dockerfile for new instructions
+
 # Import environment variables
 . .env
 
