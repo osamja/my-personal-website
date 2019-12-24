@@ -8,6 +8,9 @@
     "body-parser": "^1.19.0",
     "bootstrap": "^4.3.1",
     "compression": "^1.7.4",
+    "craco": "0.0.3",
+    "cross-env": "^6.0.3",
+    "env-cmd": "^10.0.1",
     "express": "^4.17.1",
     "lodash": "^4.17.15",
     "morgan-body": "^2.4.8",
@@ -23,10 +26,15 @@
     "styled-components": "^4.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm start",
+    "start-local": "cross-env REACT_APP_ENV=local craco start",
+    "build": "npm run build",
+    "build-dev": "cross-env REACT_APP_ENV=development craco build",
+    "build-stage": "cross-env REACT_APP_ENV=staging craco build",
+    "build-prod": "cross-env REACT_APP_ENV=production craco build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-staging": "env-cmd -f .env.staging nodemon server.js 8000"
   },
   "eslintConfig": {
     "extends": "react-app"

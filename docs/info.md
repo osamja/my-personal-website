@@ -8,4 +8,3 @@
  - Use nodemon to detect changes to server and hot reload page
     `node_modules/nodemon/bin/nodemon.js server.js`
  
- 
