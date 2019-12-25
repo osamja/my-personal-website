@@ -16,6 +16,10 @@ const CATEGORY = 'images';
  * @returns {string}
  */
 function getBaseDomain() {
+ if (process.env.REACT_APP_ENV === 'local') {
+   return BASE_DOMAIN + ':3001';
+ }
+
   if (process.env.REACT_APP_ENV === 'local' && process.env.environment === "local") {
     return 'localhost:8002';
   } else if (process.env.REACT_APP_ENV === 'development') {
