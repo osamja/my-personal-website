@@ -14,7 +14,6 @@ import Header from '../src/components/Header';
 import Projects from '../src/pages/Projects';
 import MyPersonalWebsite from '../src/pages/projects/MyPersonalWebsite';
 import ImageMorpher from './pages/projects/Image-Morpher/ImageMorpher';
-import {REACT_APP_ENV} from 'environment'; // this is how to access any page config vars we need
 
 class App extends Component {
     render() {

@@ -54,13 +54,13 @@ app.post('/morph', function (req, res) {
 
 if (Number.isInteger(port_number)) {
 	try {
-        if (process.env.environment === 'local') {
+        if (process.env.environment === 'local' || port_number === 80) {
             http.createServer({}, app).listen(port_number);
         } else {
             https.createServer(options, app).listen(port_number);
-            if (process.env.environment === 'production') {
-                http.createServer({}, app).listen(80);
-            }
+            //if (process.env.environment === 'production') {
+            //    http.createServer({}, app).listen(80);
+            // }
         }
     } catch (e) {
 	    console.log(e.toString());

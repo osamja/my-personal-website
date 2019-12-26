@@ -27,4 +27,10 @@ export const projects = [
         'url': 'https://github.com/osamja/local_sockets',
         'redirect': true,
     },
+    {
+      'src': getProjectSource('local-sockets.jpg'),
+      'text': 'Face morphing images',
+      'url': '/projects/image-morpher',
+      'redirect': true,
+  },
 ];

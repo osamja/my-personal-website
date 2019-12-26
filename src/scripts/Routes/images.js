@@ -16,14 +16,10 @@ const CATEGORY = 'images';
  * @returns {string}
  */
 function getBaseDomain() {
- if (process.env.REACT_APP_ENV === 'local') {
-   return BASE_DOMAIN + ':3001';
- }
-
-  if (process.env.REACT_APP_ENV === 'local' && process.env.environment === "local") {
-    return 'localhost:8002';
+  if (process.env.REACT_APP_ENV === 'local') {
+    return BASE_DOMAIN + ':3001';
   } else if (process.env.REACT_APP_ENV === 'development') {
-      return BASE_DOMAIN + ':3001';
+      return BASE_DOMAIN + ':8080';
   } else if (process.env.REACT_APP_ENV === 'staging') {
       return BASE_DOMAIN + ':8000';
   } else if (process.env.REACT_APP_ENV === 'production') {
@@ -38,7 +34,9 @@ function getBaseDomain() {
  * @returns {string}
  */
 export function getBaseUrl() {
-  if (process.env.REACT_APP_ENV === 'production' || process.env.REACT_APP_ENV === 'staging' ) {
+  if (process.env.REACT_APP_ENV === 'production' 
+    || process.env.REACT_APP_ENV === 'staging' 
+    || process.env.REACT_APP_ENV === 'development' ) {
       return HTTPS + getBaseDomain();
   } else {
       return 'http://' + getBaseDomain();

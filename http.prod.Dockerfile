@@ -1,9 +1,9 @@
 # https://mherman.org/blog/dockerizing-a-react-app/
 
-# BUILD IMAGE: docker build -t my-personal-website:prod -f prod.Dockerfile .
-# RUN CONTAINER: docker run -p 443:443 -p 80:80 -d --restart always my-personal-website:prod
-# RUN CONTAINER: docker run -p 443:443 -d --restart always my-personal-website:prod
-# SHELL: docker container run -it my-personal-website:prod sh
+# BUILD IMAGE: docker build -t my-personal-website:httpprod -f http.prod.Dockerfile .
+# RUN CONTAINER: docker run -p 80:80 -d --restart always my-personal-website:httpprod
+# RUN CONTAINER: docker run -p 80:80 -d --restart always my-personal-website:httpprod
+# SHELL: docker container run -it my-personal-website:httpprod sh
 
 # Development steps:
 #  1) run container 
@@ -20,4 +20,4 @@ RUN npm install --silent
 RUN npm install react-scripts@3.0.1 -g --silent
 RUN npm run build-prod
 
-CMD ["node", "server.js", "443"]
+CMD ["node", "server.js", "80"]
