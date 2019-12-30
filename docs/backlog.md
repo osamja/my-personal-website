@@ -45,6 +45,7 @@ e.g. when a gallery grid item is clicked
     * Look into dynamic vs static compression
 - All console logging should happen via a util file which logs only in staging/dev env
 - [IMAGE_MORPHING]: Understand the linear algebra operations that goes into image morphing (inverse warping + np array format)
+- Run node server with nginx https://www.digitalocean.com/community/questions/how-to-run-node-js-server-with-nginx
  
 
 ### Content Backlog

@@ -6,6 +6,8 @@
 # SHELL: docker container run -it my-personal-website:httpprod sh
 
 # Development steps:
+#  * NO DEVELOPMENT SHOULD OCCUR 
+#  * this purpose of this docker image/container is to REDIRECT to the updated prod.Dockerfile image/container where the newest business logic will be updated
 #  1) run container 
 #  2) make code changes
 #  3) rebuild image and restart container
