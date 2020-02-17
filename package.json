@@ -28,7 +28,6 @@
   "scripts": {
     "start": "npm start",
     "start-local": "cross-env REACT_APP_ENV=local craco start",
-    "build": "npm run build",
     "build-dev": "cross-env REACT_APP_ENV=development craco build",
     "build-stage": "cross-env REACT_APP_ENV=staging craco build",
     "build-prod": "cross-env REACT_APP_ENV=production craco build",

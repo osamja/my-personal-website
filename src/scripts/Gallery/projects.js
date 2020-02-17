@@ -28,7 +28,7 @@ export const projects = [
         'redirect': true,
     },
     {
-      'src': getProjectSource('local-sockets.jpg'),
+      'src': getProjectSource('face-morph.jpg'),
       'text': 'Face morphing images',
       'url': '/projects/image-morpher',
       'redirect': true,

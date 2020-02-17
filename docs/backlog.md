@@ -16,6 +16,7 @@
 - [IMAGE_MORPHING]:[BACKEND]: Upload MVP of image morphing service to sammyjaved.com
 - Have entire website be extremely timeline driven with the grid system indexing into granular timeframes. folder <year><month><date>.
 - Create text component (3 pts)
+- bind the nginx proxy service to its local ip rather than 0.0.0.0 
 Upload markdown file in folder <year><month><date>.
 e.g. when a gallery grid item is clicked
 - Spike how SASS works with create-react-app build setup

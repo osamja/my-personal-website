@@ -6,7 +6,8 @@ import axios from 'axios';
 import { startMorph, morphSuccess, morphFailure } from '../../../scripts/Redux/actions/imageMorpher';
 import Spinner from 'react-bootstrap/Spinner';
 import Alert from 'react-bootstrap/Alert';
-import {morph_endpoint} from 'environment';
+// import {morph_endpoint} from 'environment';
+const morph_endpoint = 'https://sammyjaved.com/morph'
 
 function MorphButton({
     isMorphButtonClickable,
