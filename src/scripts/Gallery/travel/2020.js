@@ -16,7 +16,7 @@ function getImageSource(imageFileName, useCloudinary, season) {
 
     return getBaseUrl() + '/' + getBasePath() + '/' + travel2019Path + '/' + imageFileName;
 }
- 
+
 export const travel2020 = [
     {
         'src': getImageSource('hawaii_ztaedu.jpg', true),
