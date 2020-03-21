@@ -3,17 +3,19 @@
 ### Product Backlog
 - [WEBSITE]: Remove the bootstrap css file and find better way have the spinner state
 - [IMAGE_MORPHING]:[BACKEND]: Document face morpher project architecture
-- [IMAGE_MORPHING]:[BACKEND]: Move rest endpoint to dedicated server, maybe AWS (8 pts)
-- [IMAGE_MORPHING]:[FRONTEND]: Create tooltip with morphed img link (2 pts)
+- [IMAGE_MORPHING]:[FRONTEND]: Create tooltip with morphed img link
 - [IMAGE_MORPHING]:[BUSINESS]: Register domain name for application
 - [IMAGE_MORPHING]:[BUSINESS]: Create app icon/logo
 - [IMAGE_MORPHING]:[BUSINESS]: Register a LLC/Corp for service
-- [IMAGE_MORPHING]:[BUSINESS]: Create a FAQ + privacy + term of service page
+- [IMAGE_MORPHING]:[FRONTEND]: Create a FAQ + privacy + term of service page.  what info is stored on the page
+- [IMAGE_MORPHING]:[FRONTEND]: Include instructions with face morpher explaining best practices for getting optimal results
 - [IMAGE_MORPHING]:[BUSINESS]: Receive customer feedback via survey, email, etc
 - [IMAGE_MORPHING]:[BUSINESS]: Create mobile app that leverages /morph endpoint
 - [IMAGE_MORPHING]:[BACKEND]:SPIKE Migrate morph service to Docker
 - SPIKE Set up failover so site automatically goes up on reboot
 - [IMAGE_MORPHING]:[BACKEND]: Upload MVP of image morphing service to sammyjaved.com
+- [IMAGE_MORPHING]:[BACKEND]: Add logging anytime an exception is thrown, include exception message and date when it happened
+- [IMAGE_MORPHING]:[BACKEND]: Fix the resize issue we are seeing (top left of img is prioritized).  Scale down both images initially if needed
 - Have entire website be extremely timeline driven with the grid system indexing into granular timeframes. folder <year><month><date>.
 - Create text component (3 pts)
 - bind the nginx proxy service to its local ip rather than 0.0.0.0 
@@ -37,7 +39,6 @@ e.g. when a gallery grid item is clicked
 * Maybe we could pull changes from Git or Changelog and have link to newly changed content
 - Add linkedin section to professional page
 - Import a timeline react component
-- [EPIC] Add text to pages to give user context
 - Add travel video to each place
     1. Create cuzco travel video
 - Fix image in box issue where box is slightly larger than image

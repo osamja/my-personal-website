@@ -1,5 +1,18 @@
-Sprint 16 12/16/19 - 12/30/19
+Sprint 18 3/21/20 - 4/4/20
 
+Sprint 17 3/6/20 - 3/20/20
+ - Added better logging; performance is essentially resolved now
+ - Refactored morpher and cleaned it up.  Solved a bug, now both images warp towards the midpoint, then cross dissolve
+ - Made morpher more robust - scale invariant so that it will resize imgs rather than failing
+ - Optimized getTriDict and getMorphedImg functions by vectorizing them 
+ - SPIKE on how others got morphing to be quick
+ - Document performance improvement plan for image morpher
+ - imagemorpher/docs/performance.md
+
+Sprint 16 12/16/19 - 12/30/19
+ - dockerrized my-personal-website, ImageMorpher applications
+ - Setup Nginx to handle all routing to the site
+ - Setup docker-compose to manage multiple services
 
 10/28/19 - 12/16/19
  - Things kind of slow it the holidays
