@@ -7,6 +7,7 @@ import { startMorph, morphSuccess, morphFailure } from '../../../scripts/Redux/a
 import Spinner from 'react-bootstrap/Spinner';
 import Alert from 'react-bootstrap/Alert';
 // import {morph_endpoint} from 'environment';
+import logMorphError from './logMorphError';
 const morph_endpoint = 'https://sammyjaved.com/morph'
 
 function MorphButton({
@@ -51,12 +52,12 @@ function MorphButton({
             onMorphSuccess(imgSrc);
         })
         .catch(error => {
+            logMorphError(error.message)
             console.error(error)
             onMorphFailure();
         });
 
         console.log('submitting...')
-        // event.preventDefault();
         return 1;
       }
 
