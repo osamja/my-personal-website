@@ -41,6 +41,8 @@ function MorphButton({
         const rightDropzoneInput = document.getElementById('right-dropzone-input').files[0];
         data.append('Image-1', leftDropzoneInput);
         data.append('Image-2', rightDropzoneInput);
+        data.append('isSequence', 'True');
+        data.append('stepSize', '25');
 
         axios.post(morph_endpoint, data, {headers: {'Authorization': 'ImageMorpherV1'}})
         .then(response => {

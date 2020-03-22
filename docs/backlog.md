@@ -1,10 +1,12 @@
 ### Green Room
 
 ### Product Backlog
+- [IMAGE_MORPHING]: Save images in a directory namespaced by date
 - [WEBSITE]: Remove the bootstrap css file and find better way have the spinner state
 - [IMAGE_MORPHING]:[BACKEND]: Document face morpher project architecture
 - [IMAGE_MORPHING]:[FRONTEND]: Create tooltip with morphed img link
 - [IMAGE_MORPHING]:[BUSINESS]: Create app icon/logo
+- [IMAGE_MORPHING]: Add feature that allows users to share morphed img with others
 - [IMAGE_MORPHING]:[BUSINESS]: Register a LLC/Corp for service
 - [IMAGE_MORPHING]:[FRONTEND]: Create a FAQ + privacy + term of service page.  what info is stored on the page
 - [IMAGE_MORPHING]:[FRONTEND]: Include instructions with face morpher explaining best practices for getting optimal results

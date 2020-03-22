@@ -6,15 +6,15 @@
 # SHELL: docker container run -it my-personal-website:prod sh
 
 # Development steps:
-#  1) run container 
-#  2) make code changes
-#  3) rebuild image and restart container
+#  1) make code changes
+#  2) run `sudo npm run build-prod` (not in container since filesystem volume is mounted)
 
 # build environment
 FROM node:12.2.0-alpine as build
 
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
+# we should copy only package.json and package-lock; this should be mounted
 COPY . /app
 RUN npm install --silent
 RUN npm install react-scripts@3.0.1 -g --silent
