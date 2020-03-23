@@ -1,53 +1,29 @@
 ### Green Room
+- [IMAGE_MORPHING]:[FRONTEND]: Include instructions with face morpher explaining best practices for getting optimal results
 
 ### Product Backlog
-- [IMAGE_MORPHING]: Save images in a directory namespaced by date
-- [WEBSITE]: Remove the bootstrap css file and find better way have the spinner state
-- [IMAGE_MORPHING]:[BACKEND]: Document face morpher project architecture
-- [IMAGE_MORPHING]:[FRONTEND]: Create tooltip with morphed img link
-- [IMAGE_MORPHING]:[BUSINESS]: Create app icon/logo
+- [IMAGE_MORPHING]: Document face morpher project architecture
+- [IMAGE_MORPHING]: Create app icon/logo for face morpher (branding)
 - [IMAGE_MORPHING]: Add feature that allows users to share morphed img with others
-- [IMAGE_MORPHING]:[BUSINESS]: Register a LLC/Corp for service
-- [IMAGE_MORPHING]:[FRONTEND]: Create a FAQ + privacy + term of service page.  what info is stored on the page
-- [IMAGE_MORPHING]:[FRONTEND]: Include instructions with face morpher explaining best practices for getting optimal results
+- [IMAGE_MORPHING]: Register a LLC/Corp for service
+- [IMAGE_MORPHING]: Create a FAQ + privacy + term of service page.  what info is stored on the page
 - [IMAGE_MORPHING]:[BUSINESS]: Receive customer feedback via survey, email, etc
+- [IMAGE_MORPHING]: Get an image dataset and test morpher under various conditions
 - [IMAGE_MORPHING]:[BUSINESS]: Create mobile app that leverages /morph endpoint
-- SPIKE Set up failover so site automatically goes up on reboot
 - [IMAGE_MORPHING]:[BACKEND]: Add logging anytime an exception is thrown, include exception message and date when it happened
 - [IMAGE_MORPHING]:[BACKEND]: Fix the resize issue we are seeing (top left of img is prioritized).  Scale down both images initially if needed
-- Have entire website be extremely timeline driven with the grid system indexing into granular timeframes. folder <year><month><date>.
-- Create a React text component (3 pts) that can be used rather than just Gallery 
-- bind the nginx proxy service to its local ip rather than 0.0.0.0 
-Upload markdown file in folder <year><month><date>.
-e.g. when a gallery grid item is clicked
-- Add image loading state (show black img as placeholder until fully loaded)
-- Create script that uploads one image a day from a DB that I have.
-- Create a Calendar Gallery component.  Should allow user to index by year, then month, then day
-- Highlight picture of the day on the homepage.
-- Setup secure FTP. Set a max storage limit in case of breach.d
-- Add 3D photos to website (similar to AR presenter at mini summit). he also used a ML model to
-- Add write up for CS 189 ML and link to Give Em the Axe project
-- All pics should be low res unless leaf node. e.g. clicking on image from /photography should download full res img 
-- Grid items that are leafs (don't point to another URL should not be displayed as URLs, no hand icon should be displayed) 
-- Document a consistent way to do file imports (probably establishing how to import files with their absolute path)
-- Improve Google Lighthouse performance
-    Defer non-critical CSS
-- Create a recently added section on homepage so viewers can quickly checkout new content
-* Maybe we could pull changes from Git or Changelog and have link to newly changed content
-- Add linkedin section to professional page
-- Import a timeline react component
-- Add travel video to each place
-    1. Create cuzco travel video
-- Fix image in box issue where box is slightly larger than image
-- Change font text website
-- [WEBSITE] Google Lighthouse: Enable text compression on website (3pts)
-    * Look into dynamic vs static compression
-- All console logging should happen via a util file which logs only in staging/dev env
-- Setup a wordpress blog on site
- 
+- [WEBSITE]: Create a React text component (3 pts) that can be used rather than just Gallery for leaf node content
+- [WEBSITE]: All pics should be low res unless leaf node. e.g. clicking on image from /photography should download full res img.  Grid items that are leafs (don't point to another URL should not be displayed as URLs, no hand icon should be displayed) 
+- [WEBSITE]: Add travel video to each place.  Create cuzco travel video
+- [WEBSITE]: Gallery component: Fix image in box issue where box is slightly larger than image
+- [WEBSITE]: Remove the bootstrap css file and find better way have the spinner state.  maybe try using React spinner instead
+- [WEBSITE]: Investigate whether docker containers are auto-restarting properly on reboot
 
-### Content Backlog
-    - Create a 'My setup' blog post.
-        Investigate affiliate links from Amazon 
+### Epic: - Setup a Wordpress blog
+- Highlight picture of the day on the homepage
+- Create a 'My setup' blog post.
+    - Discuss the at home office setup (see if product affiliate links can be linked from Amazon)
  
- 
+### Content Updates: 
+- Add write up for CS 189 ML
+

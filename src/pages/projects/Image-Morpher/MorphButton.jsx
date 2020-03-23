@@ -124,7 +124,7 @@ const mapStateToProps = state => ({
     isSuccess: _.get(state, 'imageMorpher.ui.isSuccess'),
     isFailure: _.get(state, 'imageMorpher.ui.isFailure'),
     morphedImageURL: _.get(state, 'imageMorpher.ui.responseData'),
-  });
+});
 
 const mapDispatchToProps = dispatch => ({
     onMorphStart: () => dispatch(startMorph()),

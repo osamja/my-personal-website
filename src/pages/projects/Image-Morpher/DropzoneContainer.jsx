@@ -2,7 +2,7 @@ import React, {useCallback} from 'react';
 import {useDropzone} from 'react-dropzone';
 import { uploadImageLeft, uploadImageRight } from '../../../scripts/Redux/actions/imageMorpher';
 import { connect } from 'react-redux';
-import _ from 'lodash';;
+import _ from 'lodash';
 
 function DropzoneContainer({
     dropzoneText,
@@ -59,11 +59,11 @@ function DropzoneContainer({
             <input {...getInputProps()} id={inputID}/>
             {
               <div style={{textAlign: 'center' }} id="dropzoneContentContainer"> 
-                  <p>{message}</p>
-                <p style={{display: 'inline'}}>or click</p> <button>Upload</button> <p style={{display: 'inline'}}>to select a file</p>
+                  {/* <p>{message}</p> */}
+                  <button>Upload</button>
+                {/* <p style={{display: 'inline'}}>or click</p>  <p style={{display: 'inline'}}>to select a file</p> */}
                 <img id={imgID} src="" alt=" " style={{width: '100px', height: '100px'}}/>
               </div>
-              
             }
           </div>
         </div>

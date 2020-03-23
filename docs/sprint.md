@@ -4,6 +4,7 @@ Sprint 18 3/21/20 - 4/4/20
 ------------------------------------
 TODO
 
+
 ------------------------------------
 IN-PROGRESS
 
@@ -13,4 +14,6 @@ DONE
 	- Answer: Morpher works on iphone but we're getting 413 erors claiming the request payload is too large
 - [IMAGE_MORPHING]: Add ability to return the morph sequence as a GIF
 	- GREAT WORK! (note productivity boosts may be correlated with coravirus pandemic)
+- [IMAGE_MORPHING]: Save images namespaced by date (to make future deletion easier)
+	- Note: Sprint scope increase
 ------------------------------------
