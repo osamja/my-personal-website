@@ -2,7 +2,6 @@ import {
   getBaseUrl,
   getBasePath,
   getCloudinaryBaseUrl,
-  DEFAULT_BLACK_IMAGE_PATH
 } from '../../../scripts/Routes/images.js';
 
 const travel2019Path = 'travel/cover';

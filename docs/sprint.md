@@ -16,4 +16,6 @@ DONE
 	- GREAT WORK! (note productivity boosts may be correlated with coravirus pandemic)
 - [IMAGE_MORPHING]: Save images namespaced by date (to make future deletion easier)
 	- Note: Sprint scope increase
+- [IMAGE_MORPHING]:[FRONTEND]: Include instructions with face morpher explaining best practices for getting optimal results
+	- Note: Sprint scope increase
 ------------------------------------

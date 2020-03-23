@@ -20,25 +20,17 @@ export default class Header extends Component {
             fontStyle: 'normal',
             display: 'inline-block',
         };
-      let homeIconStyle = {
-        position: "relative",
-        verticalAlign: "top",
-      };
         this.state = {
             name: this.props.name,
             headerTextStyle: headerTextStyle,
             headerIconPath: this.getHeaderIconPath(),
-            homeIconStyle: homeIconStyle,
         };
     }
-
-
 
     render() {
         return (
             <div className="Header" style={{marginTop: '15px'}}>
                 <NavLink to="/">
-                <img src={this.state.headerIconPath} style={this.state.homeIconStyle} alt={"home"}/>
                 <h1 style={this.state.headerTextStyle} className="HeaderText">
                     <span>Sammy Javed</span>
                 </h1>

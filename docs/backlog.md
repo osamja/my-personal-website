@@ -1,5 +1,5 @@
 ### Green Room
-- [IMAGE_MORPHING]:[FRONTEND]: Include instructions with face morpher explaining best practices for getting optimal results
+
 
 ### Product Backlog
 - [IMAGE_MORPHING]: Document face morpher project architecture

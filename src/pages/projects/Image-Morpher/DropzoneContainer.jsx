@@ -38,31 +38,18 @@ function DropzoneContainer({
     gridColumnStart: gridColumn,
   };
 
+  let imgID = dropzoneText + "DropzoneImg";
+
   const Dropzone = () => {
-    let message;
-    if (isLeftImageUploaded && isRightImageUploaded) {
-      message = 'Click the morph button';
-    } else if (dropzoneText==='left' && isLeftImageUploaded) {
-      message = 'Left image has been uploaded';
-    } else if (dropzoneText==='right' && isRightImageUploaded) {
-      message = 'Right image has been uploaded';
-    } else {
-      message = "Drag or drop an image of a face here ...";
-    }
-
-    let imgID = dropzoneText + "DropzoneImg";
-
     return (
       <React.Fragment>
         <div style={dropzoneStyleContainer}>
           <div {...getRootProps()} style={dropzoneStyleContainer}>
             <input {...getInputProps()} id={inputID}/>
             {
-              <div style={{textAlign: 'center' }} id="dropzoneContentContainer"> 
-                  {/* <p>{message}</p> */}
-                  <button>Upload</button>
-                {/* <p style={{display: 'inline'}}>or click</p>  <p style={{display: 'inline'}}>to select a file</p> */}
-                <img id={imgID} src="" alt=" " style={{width: '100px', height: '100px'}}/>
+              <div style={{textAlign: 'center' }} id="dropzoneContentContainer">
+                <button style={{margin: "50px", padding: "20px"}}>Upload image</button>
+                <img id={imgID} src="" alt=" " style={{width: '100px', height: '100px', marginTop: '50px',}}/>
               </div>
             }
           </div>

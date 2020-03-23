@@ -21,12 +21,12 @@ export const projects = [
         'url': 'https://www.youtube.com/watch?v=silvjiqSnaQ',
         'redirect': true,
     },
-    {
-        'src': getProjectSource('local-sockets.jpg'),
-        'text': 'Local File Sharing',
-        'url': 'https://github.com/osamja/local_sockets',
-        'redirect': true,
-    },
+    // {
+    //     'src': getProjectSource('local-sockets.jpg'),
+    //     'text': 'Local File Sharing',
+    //     'url': 'https://github.com/osamja/local_sockets',
+    //     'redirect': true,
+    // },
     {
       'src': getProjectSource('face-morph.jpg'),
       'text': 'Face morphing images',

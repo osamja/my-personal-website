@@ -12,6 +12,19 @@ function ImageMorpher () {
                 {/* Leave space in alt, else morphed img does not render */}
                 <img alt=" " src="" id="morphed-img" />
             </div>
+
+            <div>
+                <h1>Instructions</h1>
+                <ol>
+                    <li>Upload the start image by clicking the Upload Image button on the left</li>
+                        <ul>
+                            <li>For best results, upload images with a clear view of the face and similar dimensions</li>
+                        </ul>
+                    <li>Upload the end image by clicking the Upload Image button on the right</li>
+                    <li>Click the Morph button</li>
+                    <li>Once the morph completes, click on the link to see the morphed images</li>
+                </ol>
+            </div>
         </div>
     );
 }
