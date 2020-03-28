@@ -48,9 +48,9 @@ function MorphButton({
         .then(response => {
             console.log(response);
             let imgSrc = response.data;
-            appendImage(imgSrc, "morphed-img");
-            morphedImageURL = imgSrc;
-            console.log("Success!");
+            // appendImage(imgSrc, "morphed-img");
+            // morphedImageURL = imgSrc;
+            // console.log("Success!");
             onMorphSuccess(imgSrc);
         })
         .catch(error => {

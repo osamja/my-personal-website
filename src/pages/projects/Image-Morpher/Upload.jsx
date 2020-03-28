@@ -12,13 +12,13 @@ export default function Upload() {
     <StyledContainer>
       <DropzoneContainer 
         dropzoneText="left"
-        dropzoneColor="#FFB7B3"
+        dropzoneColor="#5d5b6a"
         gridColumn="1"
         borderRadisu="25px"
       />
       <DropzoneContainer 
         dropzoneText="right"
-        dropzoneColor="#C0BAF7"
+        dropzoneColor="#5d5b6a"
         gridColumn="2"
       />
     </StyledContainer>

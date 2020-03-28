@@ -3,6 +3,7 @@ import {useDropzone} from 'react-dropzone';
 import { uploadImageLeft, uploadImageRight } from '../../../scripts/Redux/actions/imageMorpher';
 import { connect } from 'react-redux';
 import _ from 'lodash';
+import { Button } from '@bootstrap-styled/v4';
 
 function DropzoneContainer({
     dropzoneText,
@@ -17,12 +18,12 @@ function DropzoneContainer({
     // Do something with the files
     console.log('hey sammy');
     if (dropzoneText === 'left') {
-      const image = document.getElementById('leftDropzoneImg');
-      image.src = URL.createObjectURL(acceptedFiles[0]);
+      // const image = document.getElementById('leftDropzoneImg');
+      // image.src = URL.createObjectURL(acceptedFiles[0]);
       onUploadLeftImg(acceptedFiles);
     } else if (dropzoneText === 'right') {
-      const image = document.getElementById('rightDropzoneImg');
-      image.src = URL.createObjectURL(acceptedFiles[0]);
+      // const image = document.getElementById('rightDropzoneImg');
+      // image.src = URL.createObjectURL(acceptedFiles[0]);
       onUploadRightImg(acceptedFiles);
     }
   }, []);
@@ -33,26 +34,26 @@ function DropzoneContainer({
 
   const dropzoneStyleContainer = {
     backgroundColor: dropzoneColor,
-    height: '250px',
+    height: '100px',
     gridRowStart: '1',
     gridColumnStart: gridColumn,
+    borderRadius: '20px',
+    textAlign: 'center',
   };
 
-  let imgID = dropzoneText + "DropzoneImg";
+  let uploadButton
+  if ((dropzoneText === 'left' && isLeftImageUploaded) || (dropzoneText === 'right' && isRightImageUploaded)) {
+    uploadButton = <Button style={{marginTop: '25px'}} disabled>Uploaded</Button>;
+  } else {
+    uploadButton = <Button style={{marginTop: '25px'}}>Upload</Button>;
+  }
 
   const Dropzone = () => {
     return (
       <React.Fragment>
-        <div style={dropzoneStyleContainer}>
-          <div {...getRootProps()} style={dropzoneStyleContainer}>
-            <input {...getInputProps()} id={inputID}/>
-            {
-              <div style={{textAlign: 'center' }} id="dropzoneContentContainer">
-                <button style={{margin: "50px", padding: "20px"}}>Upload image</button>
-                <img id={imgID} src="" alt=" " style={{width: '100px', height: '100px', marginTop: '50px',}}/>
-              </div>
-            }
-          </div>
+        <div style={dropzoneStyleContainer} {...getRootProps()}>
+        <input {...getInputProps()} id={inputID}/>
+          {uploadButton}
         </div>
       </React.Fragment>
     );

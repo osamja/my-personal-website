@@ -1,5 +1,6 @@
 ### Green Room
 - [IMAGE_MORPHING]: Trigger file download upon morph completing
+- [IMAGE_MORPHING]: Have a cached example ready for user to try
 
 ### Product Backlog
 - [IMAGE_MORPHING]: Document face morpher project architecture

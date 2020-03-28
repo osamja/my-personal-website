@@ -10,7 +10,7 @@ function ImageMorpher () {
             <MorphButton />
             <div style={{display: 'flex', justifyContent: 'center'}}>
                 {/* Leave space in alt, else morphed img does not render */}
-                <img alt=" " src="" id="morphed-img" />
+                {/* <img alt=" " src="" id="morphed-img" /> */}
             </div>
 
             <div>
