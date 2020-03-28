@@ -4,7 +4,7 @@ import MorphButton from './MorphButton';
 
 function ImageMorpher () {
     return (
-        <div className="ImageMorpher" style={{color: "white", textAlign: "left", margin: "2% 4%", backgroundColor: "#97B2F0"}}>
+        <div className="ImageMorpher" style={{color: "white", textAlign: "left", margin: "2% 4%"}}>
             <h1 style={{textAlign: 'center'}}>Face Morpher</h1>
             <Upload />
             <MorphButton />

@@ -14,6 +14,7 @@ export default function Upload() {
         dropzoneText="left"
         dropzoneColor="#FFB7B3"
         gridColumn="1"
+        borderRadisu="25px"
       />
       <DropzoneContainer 
         dropzoneText="right"
