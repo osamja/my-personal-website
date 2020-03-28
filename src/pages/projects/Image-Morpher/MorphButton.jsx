@@ -4,9 +4,6 @@ import { Button } from '@bootstrap-styled/v4';
 import { connect } from 'react-redux';
 import axios from 'axios';
 import { startMorph, morphSuccess, morphFailure } from '../../../scripts/Redux/actions/imageMorpher';
-import Spinner from 'react-bootstrap/Spinner';
-import Alert from 'react-bootstrap/Alert';
-// import {morph_endpoint} from 'environment';
 import logMorphError from './logMorphError';
 const morph_endpoint = 'https://sammyjaved.com/morph'
 
@@ -26,31 +23,20 @@ function MorphButton({
         paddingTop: '50px'
     };
 
-    const appendImage = (imgSrc, id) => {
-        var imgElement = document.getElementById(id);
-        var image = new Image();
-        image.src = imgSrc;
-        imgElement.appendChild(image);
-    }
-
     const onMorphClick = () => {
         onMorphStart();
-        console.log('hey');
         let data = new FormData() ;
         const leftDropzoneInput = document.getElementById('left-dropzone-input').files[0];
         const rightDropzoneInput = document.getElementById('right-dropzone-input').files[0];
         data.append('Image-1', leftDropzoneInput);
         data.append('Image-2', rightDropzoneInput);
         data.append('isSequence', 'True');
-        data.append('stepSize', '25');
+        data.append('stepSize', '20');
 
         axios.post(morph_endpoint, data, {headers: {'Authorization': 'ImageMorpherV1'}})
         .then(response => {
             console.log(response);
             let imgSrc = response.data;
-            // appendImage(imgSrc, "morphed-img");
-            // morphedImageURL = imgSrc;
-            // console.log("Success!");
             onMorphSuccess(imgSrc);
         })
         .catch(error => {
@@ -58,22 +44,19 @@ function MorphButton({
             console.error(error)
             onMorphFailure();
         });
-
-        console.log('submitting...')
-        return 1;
       }
 
     
     if (isSuccess) {
         return (
             <div style={morphedButtonStyleContainer}>
-                <Alert variant="success">
-                    <a href={morphedImageURL}>
-                        <span>
-                            {morphedImageURL}
-                        </span>
-                    </a>
-                </Alert>
+                <Button color="primary" size="lg">
+                <a href={morphedImageURL}>
+                    <span style={{color: 'white'}}>
+                        {morphedImageURL}
+                    </span>
+                </a>
+                </Button>
             </div>
         );
     }
@@ -92,11 +75,8 @@ function MorphButton({
                 <div>
                     <div style={morphedButtonStyleContainer}>
                         <Button color="primary" size="lg">
-                            Morph
+                            Loading...
                         </Button>
-                        <Spinner animation="border" role="status">
-                            <span className="sr-only">Loading...</span>
-                        </Spinner>
                     </div>
                 </div>
             );

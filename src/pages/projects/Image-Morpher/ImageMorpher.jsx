@@ -8,10 +8,6 @@ function ImageMorpher () {
             <h1 style={{textAlign: 'center'}}>Face Morpher</h1>
             <Upload />
             <MorphButton />
-            <div style={{display: 'flex', justifyContent: 'center'}}>
-                {/* Leave space in alt, else morphed img does not render */}
-                {/* <img alt=" " src="" id="morphed-img" /> */}
-            </div>
 
             <div>
                 <h1>Instructions</h1>
