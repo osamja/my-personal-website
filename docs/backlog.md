@@ -2,6 +2,7 @@
 - [IMAGE_MORPHING]: Trigger file download upon morph completing
 - [IMAGE_MORPHING]: Have a cached example ready for user to try
 - [IMAGE_MORPHING]: Create application logo for face morpher
+- [WEBSITE]: Use nginx rather than nodejs to serve my-personal-website since all content is static
 
 ### Product Backlog
 - [IMAGE_MORPHING]: Document face morpher project architecture
