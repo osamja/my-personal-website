@@ -5,6 +5,16 @@ import {
 export const movies2020 = [
   {
     'src': DEFAULT_BLACK_IMAGE_PATH,
+    'text': 'Man of Tai Chi',
+    'url': '#',
+  },
+  {
+    'src': DEFAULT_BLACK_IMAGE_PATH,
+    'text': 'Side by Side',
+    'url': '#',
+  },
+  {
+    'src': DEFAULT_BLACK_IMAGE_PATH,
     'text': 'Uncut Gems',
     'url': '#',
   },
