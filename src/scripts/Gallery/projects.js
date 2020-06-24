@@ -25,5 +25,11 @@ export const projects = [
       'src': getProjectSource('tiger.jpg'),
       'text': 'Face morphing images',
       'url': '/projects/image-morpher',
-  },
+    },
+    {
+      'src': getProjectSource('sf-hsh.jpg'),
+      'text': 'SF HSH',
+      'url': 'https://hsh.sfgov.org/',
+      'redirect': true,
+    },
 ];
