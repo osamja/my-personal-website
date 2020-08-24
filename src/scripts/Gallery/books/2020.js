@@ -5,6 +5,11 @@ import {
 export const books2020 = [
     {
         'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'The Messy Middle',
+        'url': '#',
+    },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
         'text': 'Becoming Kareem: Growing Up On and Off the Court',
         'url': '#',
     },

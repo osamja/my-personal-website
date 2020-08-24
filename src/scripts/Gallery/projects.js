@@ -22,7 +22,7 @@ export const projects = [
         'redirect': true,
     },
     {
-      'src': getProjectSource('tiger.jpg'),
+      'src': getProjectSource('keanu-pitt.jpg'),
       'text': 'Face morphing images',
       'url': '/projects/image-morpher',
     },

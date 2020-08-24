@@ -109,8 +109,12 @@ export const guitarSetList2020 = [
     },
     {
         'src': DEFAULT_BLACK_IMAGE_PATH,
-        'text': 'Thank you, next',
+        'text': 'Stop This Train',
+        'url': '#',
+    },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Heart of Life',
         'url': '#',
     },
 ];
-
