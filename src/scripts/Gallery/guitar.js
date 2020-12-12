@@ -117,4 +117,9 @@ export const guitarSetList2020 = [
         'text': 'Heart of Life',
         'url': '#',
     },
+    {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Edge of Desire',
+        'url': '#',
+    },
 ];
