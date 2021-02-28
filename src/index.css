@@ -4,13 +4,15 @@ body {
   font-family: adobe-garamond-pro, serif;
   font-style: normal;
   font-weight: 400;
-  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif; */
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   position: relative;
-  background-color: #262626;
-  /* -moz-osx-font-smoothing: grayscale; */
+  background-repeat: no-repeat;
+  background-color: #2e3750;
+  background-image: linear-gradient(180deg, #556683 0%, #2e3750 100%);
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
