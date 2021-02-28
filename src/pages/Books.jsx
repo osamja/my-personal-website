@@ -3,6 +3,7 @@ import Gallery from "../components/grid/Gallery";
 import {books2020} from "../scripts/Gallery/books/2020";
 import {books2019} from "../scripts/Gallery/books/2019";
 import {books2018} from "../scripts/Gallery/books/2018";
+import {books} from "../scripts/Gallery/books/books";
 
 export default class Homepage extends Component {
     render() {
@@ -11,6 +12,10 @@ export default class Homepage extends Component {
                 <div className="intro-text" style={{color: "#e0e0e0", fontWeight: 200}}>
                   <p>Here are books I've read in the years listed.  I'm trying to read one book per month</p>
                 </div>
+                <h1>
+                    2021
+                </h1>
+                <Gallery gridData={books['2021']}/>
                 <h1>
                     2020
                 </h1>
