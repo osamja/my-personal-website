@@ -83,3 +83,32 @@ html {
   border: 2px solid #737373;
 }
 
+/* Style all font awesome icons */
+.fa {
+  padding: 5px;
+  font-size: 33px;
+  /* width: 30px; */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  margin-left: 20px;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
