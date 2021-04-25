@@ -26,6 +26,11 @@ export const movies = {
     },
     {
       'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Trial of the Chicago 7',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
       'text': 'Fury',
       'url': '#',
     },
@@ -42,6 +47,16 @@ export const movies = {
     {
       'src': DEFAULT_BLACK_IMAGE_PATH,
       'text': 'Days of Thunder',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Risky Business',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Once Upon a Time in Mexico',
       'url': '#',
     },
   ],
