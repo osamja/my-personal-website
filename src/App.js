@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, BrowserRouter } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import Homepage from '../src/pages/Homepage';
 import Books from '../src/pages/Books';
 import Photography from '../src/pages/Photography';
@@ -20,7 +20,6 @@ import PrivacyPolicy from '../src/pages/projects/Image-Morpher/PrivacyPolicy';
 class App extends Component {
     render() {
         return (
-        <BrowserRouter>
             <div className="App">
                     <Header/>
                     <div className="routes">
@@ -40,7 +39,6 @@ class App extends Component {
                         <Route exact path="/imscrewed" component={TheRise}/>
                     </div>
                 </div>
-        </BrowserRouter>
         );
     }
 }
