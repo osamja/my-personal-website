@@ -6,17 +6,22 @@ export const books = {
     '2021': [
       {
         'src': DEFAULT_BLACK_IMAGE_PATH,
-        'text': 'A Promised Land',
+        'text': 'Yearbook by Seth Rogen',
         'url': '#',
       },
       {
         'src': DEFAULT_BLACK_IMAGE_PATH,
-        'text': 'The 7 Habits of Highly Effective People (In Progress)',
+        'text': 'A Promised Land by Barack Obama',
         'url': '#',
       },
       {
         'src': DEFAULT_BLACK_IMAGE_PATH,
-        'text': 'Al-Quran with English Translations (In Progress)',
+        'text': 'The 7 Habits of Highly Effective People',
+        'url': '#',
+      },
+      {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'The Quran (In Progress)',
         'url': '#',
       },
     ], 

@@ -59,5 +59,25 @@ export const movies = {
       'text': 'Once Upon a Time in Mexico',
       'url': '#',
     },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Bill and Ted (1,2,3)',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Play of State',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Billions',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': '(TV) Master of None Season 3',
+      'url': '#',
+    },
   ],
 };

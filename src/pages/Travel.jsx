@@ -14,7 +14,7 @@ export default class Travel extends Component {
                   </h5>
                 </div>
                 <h1>
-                    2020
+                    2020, 2021 :)
                 </h1>
                 <Gallery gridData={travel2020}/>
                 <h1>

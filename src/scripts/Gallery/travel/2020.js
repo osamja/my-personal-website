@@ -24,4 +24,11 @@ export const travel2020 = [
         'time': 'Winter 2020',
         'url': '#',
     },
+    {
+        'src': getImageSource('covid.png'),
+        'text': 'Shovid',
+        'duration': '2020-present',
+        'time': '2020',
+        'url': 'https://www.cdc.gov/coronavirus/2019-ncov/',
+    },
 ];
