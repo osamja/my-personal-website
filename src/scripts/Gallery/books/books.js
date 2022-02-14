@@ -19,10 +19,5 @@ export const books = {
         'text': 'The 7 Habits of Highly Effective People',
         'url': '#',
       },
-      {
-        'src': DEFAULT_BLACK_IMAGE_PATH,
-        'text': 'The Quran (In Progress)',
-        'url': '#',
-      },
     ], 
 };

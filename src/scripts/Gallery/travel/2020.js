@@ -26,7 +26,7 @@ export const travel2020 = [
     },
     {
         'src': getImageSource('covid.png'),
-        'text': 'Shovid',
+        'text': 'Covid-19 pandemic',
         'duration': '2020-present',
         'time': '2020',
         'url': 'https://www.cdc.gov/coronavirus/2019-ncov/',

@@ -3,6 +3,16 @@ import Upload from './Upload';
 import MorphButton from './MorphButton';
 
 function ImageMorpher () {
+
+    return(
+        <div>
+            <p>
+                See <a href='https://apps.apple.com/us/app/mymorph/id1554421298'>iOS app</a> developed with my younger brother
+            </p>
+        </div>
+    )
+
+    // TODO: Replace this deprecated web app with the react native build
     return (
         <div className="ImageMorpher" style={{color: "white", textAlign: "left", margin: "2% 4%"}}>
             <h1 style={{textAlign: 'center'}}>Face Morpher</h1>

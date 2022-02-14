@@ -3,6 +3,10 @@ import Gallery from "../components/grid/Gallery";
 import {travel2018} from "../scripts/Gallery/travel/2018";
 import {travel2019} from "../scripts/Gallery/travel/2019";
 import {travel2020} from "../scripts/Gallery/travel/2020";
+import {
+    travel2021,
+    travel2022,
+} from "../scripts/Gallery/travel/travel";
 
 export default class Travel extends Component {
     render() {
@@ -14,7 +18,15 @@ export default class Travel extends Component {
                   </h5>
                 </div>
                 <h1>
-                    2020, 2021 :)
+                    2022
+                </h1>
+                <Gallery gridData={travel2022}/>
+                <h1>
+                    2021
+                </h1>
+                <Gallery gridData={travel2021}/>
+                <h1>
+                    2020
                 </h1>
                 <Gallery gridData={travel2020}/>
                 <h1>

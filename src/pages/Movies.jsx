@@ -13,6 +13,10 @@ export default class Movies extends Component {
                 But I might as well be tracking this information :)</p>
                 </div>
                 <h1>
+                    2022
+                </h1>
+                <Gallery gridData={movies['2022']}/>
+                <h1>
                     2021
                 </h1>
                 <Gallery gridData={movies['2021']}/>
