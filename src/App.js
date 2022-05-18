@@ -14,7 +14,6 @@ import Header from '../src/components/Header';
 import Projects from '../src/pages/Projects';
 import MyPersonalWebsite from '../src/pages/projects/MyPersonalWebsite';
 import ImageMorpher from './pages/projects/Image-Morpher/ImageMorpher';
-import TheRise from '../src/pages/TheRise';
 import PrivacyPolicy from '../src/pages/projects/Image-Morpher/PrivacyPolicy';
 
 class App extends Component {
@@ -36,7 +35,6 @@ class App extends Component {
                         <Route exact path="/projects/my-personal-website" component={MyPersonalWebsite}/>
                         <Route exact path="/projects/image-morpher" component={ImageMorpher}/>
                         <Route exact path="/privacy" component={PrivacyPolicy}/>
-                        <Route exact path="/imscrewed" component={TheRise}/>
                     </div>
                 </div>
         );
