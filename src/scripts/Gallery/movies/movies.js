@@ -24,6 +24,26 @@ export const movies = {
       'text': 'Royal Tenenbaums',
       'url': '#',
     },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'The Batman',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Super Pumped',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Secrets of Dumbledore',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'WeCrashed (TV)',
+      'url': '#',
+    },
   ],
   '2021': [
     {

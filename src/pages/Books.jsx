@@ -13,6 +13,10 @@ export default class Homepage extends Component {
                   <p>Here are books I've read in the years listed.  I'm trying to read one book per month</p>
                 </div>
                 <h1>
+                    2022
+                </h1>
+                <Gallery gridData={books['2022']}/>
+                <h1>
                     2021
                 </h1>
                 <Gallery gridData={books['2021']}/>

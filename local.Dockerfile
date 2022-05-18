@@ -6,7 +6,7 @@
 # Development steps:
 #   1) run container
 #   2) make changes to src/ directory + save changes
-#   3) app will hot reload, test http://sammyjaved.com:3001/projects/image-morpher/ afterwards
+#   3) app will hot reload, test http://sammyjaved.com:3001 afterwards
 
 # base image
 FROM node:12.2.0-alpine

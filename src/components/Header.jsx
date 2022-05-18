@@ -39,6 +39,7 @@ export default class Header extends Component {
                 <a href="https://twitter.com/osamja24" target="_blank" rel="noopener noreferrer">
                     <i class="fa fa-twitter" />
                 </a>
+                {/* Hide LinkedIn icon */}
                 <a href="https://www.linkedin.com/in/sammy-javed-991a4a72/" target="_blank" rel="noopener noreferrer">
                     <i class="fa fa-linkedin" />
                 </a>

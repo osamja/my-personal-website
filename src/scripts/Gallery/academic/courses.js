@@ -5,6 +5,12 @@ import {
 export const coursesAcademicProjects = [
   {
     'src': DEFAULT_BLACK_IMAGE_PATH,
+    'text': 'Deep Learning A-Z (In-Progress)',
+    'date': 'May 2022',
+    'url': '#',
+  },
+  {
+    'src': DEFAULT_BLACK_IMAGE_PATH,
     'text': 'Intro to Machine Learning - Andrew Ng',
     'url': '#',
   },
