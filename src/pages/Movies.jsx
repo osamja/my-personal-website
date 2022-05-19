@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Gallery from "../components/grid/Gallery";
+import ContentList from "../components/grid/ContentList";
 import {movies2019} from "../scripts/Gallery/movies/2019";
 import {movies2020} from "../scripts/Gallery/movies/2020";
 import {movies} from "../scripts/Gallery/movies/movies";
@@ -9,25 +9,12 @@ export default class Movies extends Component {
         return (
             <div className="Movies" style={{color: "white"}}>
                 <div className="intro-text" style={{color: "#e0e0e0", fontWeight: 200}}>
-                <p>Ok, people have said it's ridiculous to count movies here like it's some achievement.
-                But I might as well be tracking this information :)</p>
+                <p>Movies I've watched over the years (that I can recall)</p>
                 </div>
-                <h1>
-                    2022
-                </h1>
-                <Gallery gridData={movies['2022']}/>
-                <h1>
-                    2021
-                </h1>
-                <Gallery gridData={movies['2021']}/>
-                <h1>
-                    2020
-                </h1>
-                <Gallery gridData={movies2020}/>
-                <h1>
-                    2019
-                </h1>
-                <Gallery gridData={movies2019}/>
+                <ContentList title="2022" items={movies['2022']}/>
+                <ContentList title="2021" items={movies['2021']}/>
+                <ContentList title="2020" items={movies2020}/>
+                <ContentList title="2019" items={movies2019}/>
             </div>
         );
     }

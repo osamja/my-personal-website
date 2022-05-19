@@ -1,38 +1,21 @@
-import React, { Component } from 'react';
-import Gallery from "../components/grid/Gallery";
+import React from 'react';
+import ContentList from "../components/grid/ContentList";
 import {books2020} from "../scripts/Gallery/books/2020";
 import {books2019} from "../scripts/Gallery/books/2019";
 import {books2018} from "../scripts/Gallery/books/2018";
 import {books} from "../scripts/Gallery/books/books";
 
-export default class Homepage extends Component {
-    render() {
-        return (
-            <div className="Books" style={{color: "white"}}>
-                <div className="intro-text" style={{color: "#e0e0e0", fontWeight: 200}}>
-                  <p>Here are books I've read in the years listed.  I'm trying to read one book per month</p>
-                </div>
-                <h1>
-                    2022
-                </h1>
-                <Gallery gridData={books['2022']}/>
-                <h1>
-                    2021
-                </h1>
-                <Gallery gridData={books['2021']}/>
-                <h1>
-                    2020
-                </h1>
-                <Gallery gridData={books2020}/>
-                <h1>
-                    2019
-                </h1>
-                <Gallery gridData={books2019}/>
-                <h1>
-                    2018
-                </h1>
-                <Gallery gridData={books2018}/>
+export default function Homepage() {
+    return (
+        <div style={{}}>
+            <div style={{color: "#e0e0e0", fontWeight: 200}}>
+                <p>Here are books I've read in the years listed.</p>
             </div>
-        );
-    }
+            <ContentList title="2022" items={books['2022']} />
+            <ContentList title="2021" items={books['2021']} />
+            <ContentList title="2020" items={books2020} />
+            <ContentList title="2019" items={books2019} />
+            <ContentList title="2018" items={books2018} />
+        </div>
+    )
 }

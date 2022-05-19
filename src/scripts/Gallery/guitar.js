@@ -12,7 +12,7 @@ import {
  * - Blackbird
  */
 
-export const guitar = [
+export const guitarSetList2018 = [
     {
         'src': DEFAULT_BLACK_IMAGE_PATH,
         'text': 'Better Together - Jack Johnson',
@@ -36,29 +36,6 @@ export const guitar = [
     {
         'src': DEFAULT_BLACK_IMAGE_PATH,
         'text': 'Wonderland - John Mayer',
-        'url': '#',
-    },
-];
-
-export const guitar2019 = [
-    {
-        'src': DEFAULT_BLACK_IMAGE_PATH,
-        'text': 'Blackbird - The Beatles',
-        'url': '#',
-    },
-    {
-        'src': DEFAULT_BLACK_IMAGE_PATH,
-        'text': 'Crash Into Me - Dave Matthews Band',
-        'url': '#',
-    },
-    {
-        'src': DEFAULT_BLACK_IMAGE_PATH,
-        'text': 'Love Yourself - Justin Bieber',
-        'url': '#',
-    },
-    {
-        'src': DEFAULT_BLACK_IMAGE_PATH,
-        'text': 'Eastside - Khalid',
         'url': '#',
     },
 ];

@@ -40,9 +40,4 @@ export const imgUrls = [
         'text': 'Movies',
         'url': '/movies',
     },
-    {
-        'src': getHomePageSource('academic.jpg'),
-        'text': 'Academic',
-        'url': '/academic',
-    },
 ];

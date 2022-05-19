@@ -32,4 +32,9 @@ export const projects = [
       'url': 'https://hsh.sfgov.org/',
       'redirect': true,
     },
+    {
+      'src': getProjectSource('academic.jpg'),
+      'text': 'Academic',
+      'url': '/academic',
+  },
 ];

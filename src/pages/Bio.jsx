@@ -35,6 +35,7 @@ export default function Bio() {
             </ul>
 
             <h2>Pictures</h2>
+            {/* TODO: Add a click here button to see me before/after haircut button.  Avoids loading unnecessary images + fun interaction for user */}
             <p>Here is me after haircut</p>
             <img src={mePath} alt="Me" width='50%' style={{marginBottom: '5%'}}></img>
 
