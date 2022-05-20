@@ -11,8 +11,8 @@ import {
 export default class Travel extends Component {
     render() {
         return (
-            <div className="Travel" style={{color: "white"}}>
-                <div className="intro-text" style={{color: "#e0e0e0", fontWeight: 200}}>
+            <div className="Travel" style={{color: "white", textAlign: 'center'}}>
+                <div className="intro-text" style={{color: "#e0e0e0", fontWeight: 200, }}>
                   <h5>
                     "The real voyage of discovery consists, not in seeking new landscapes, but in having new eyes. - Marcel Proust"
                   </h5>
