@@ -10,10 +10,15 @@ function getHomePageSource(imageFileName) {
 }
 
 export const imgUrls = [
+    // {
+    //     'src': getHomePageSource('photography.jpg'),
+    //     'text': 'Bio',
+    //     'url': '/bio',
+    // },
     {
         'src': getHomePageSource('photography.jpg'),
-        'text': 'Bio',
-        'url': '/bio',
+        'text': 'Journal',
+        'url': '/journal',
     },
     {
         'src': getHomePageSource('projects.jpg'),
@@ -39,5 +44,10 @@ export const imgUrls = [
         'src': getHomePageSource('movies.jpg'),
         'text': 'Movies',
         'url': '/movies',
+    },
+    {
+        'src': getHomePageSource('compressed/evc2.jpg'),
+        'text': 'Live Events',
+        'url': '/shows',
     },
 ];

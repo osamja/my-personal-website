@@ -6,6 +6,7 @@ import {travel2020} from "../scripts/Gallery/travel/2020";
 import {
     travel2021,
     travel2022,
+    countries_visited,
 } from "../scripts/Gallery/travel/travel";
 
 export default class Travel extends Component {
@@ -16,6 +17,15 @@ export default class Travel extends Component {
                   <h5>
                     "The real voyage of discovery consists, not in seeking new landscapes, but in having new eyes. - Marcel Proust"
                   </h5>
+                  
+                Countries Visited: 
+                <ol>
+                    {countries_visited.map(country => (
+                        <li>
+                            {country}
+                        </li>
+                    ))}
+                </ol>
                 </div>
                 <h1>
                     2022

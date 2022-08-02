@@ -6,7 +6,7 @@ export const books = {
   '2022': [
     {
       'src': DEFAULT_BLACK_IMAGE_PATH,
-      'text': 'Harry Potter and the Sorcerer Stone (In-Progress)',
+      'text': 'Harry Potter and the Sorcerer Stone',
       'url': '#',
     },
     {

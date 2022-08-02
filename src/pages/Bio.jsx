@@ -1,15 +1,15 @@
 import React from 'react';
-import {
-    getBaseUrl,
-    getBasePath,
-} from '../scripts/Routes/images.js';
+// import {
+//     getBaseUrl,
+//     getBasePath,
+// } from '../scripts/Routes/images.js';
 
 export default function Bio() {
 
     // https://reactjsexample.com/a-vertical-timeline-component-for-react/
 
-    const mePath = getBaseUrl() + '/' + getBasePath() + '/home/me.jpg';
-    const meBefore = getBaseUrl() + '/' + getBasePath() + '/home/meBefore.jpg';
+    // const mePath = getBaseUrl() + '/' + getBasePath() + '/home/me.jpg';
+    // const meBefore = getBaseUrl() + '/' + getBasePath() + '/home/meBefore.jpg';
 
     return (
         <div className="Bio" style={{color: '#e0e0e0', textAlign: 'left', margin: '5%'}}>
@@ -23,7 +23,7 @@ export default function Bio() {
                     <li>Planning to build some silly apps.</li>
                 </ul>
                 <li>Before that, I was a full-stack web developer at Adobe for 4 years where I worked on the <a href='https://stock.adobe.com' style={{'color': 'pink'}}>Adobe Stock</a> website (Feb 2018 - April 2022)</li>
-                <li>Before that, I did my undergraduate studies in computer science from <a href='https://cs.berkeley.edu/' style={{'color': 'pink'}}>UC Berkeley</a> (May 2015 - Dec 2017)</li>
+                <li>Before that, I did my undergraduate studies in computer science from <a href='https://cs.berkeley.edu/' style={{'color': 'pink'}}>UC Berkeley</a> (May 2015 - Dec 2017) and Evergreen Valley College (May 2012 - 2015)</li>
             </ul>
             
             <h2>Interests</h2>
@@ -34,13 +34,13 @@ export default function Bio() {
                 <li>Basketball</li>
             </ul>
 
-            <h2>Pictures</h2>
+            {/* <h2>Pictures</h2> */}
             {/* TODO: Add a click here button to see me before/after haircut button.  Avoids loading unnecessary images + fun interaction for user */}
-            <p>Here is me after haircut</p>
+            {/* <p>Here is me after haircut</p>
             <img src={mePath} alt="Me" width='50%' style={{marginBottom: '5%'}}></img>
 
             <p>Here is me before haircut</p>
-            <img src={meBefore} alt="Me" width='30%' style={{marginBottom: '5%'}}></img>
+            <img src={meBefore} alt="Me" width='30%' style={{marginBottom: '5%'}}></img> */}
         </div>
     );
 }

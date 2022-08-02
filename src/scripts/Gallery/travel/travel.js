@@ -2,6 +2,19 @@ import {
   DEFAULT_BLACK_IMAGE_PATH,
 } from '../../../scripts/Routes/images.js';
 
+export const countries_visited = [
+  'USA',
+  'Canada',
+  'Mexico',
+  'Peru',
+  'St Lucia',
+  'France',
+  'Pakistan',
+  'Turkey',
+  'United Arab Emirates',
+  'England',
+];
+
 export const travel2021 = [
     {
         'src': DEFAULT_BLACK_IMAGE_PATH,
@@ -36,7 +49,21 @@ export const travel2022 = [
   },
   {
     'src': DEFAULT_BLACK_IMAGE_PATH,
-    'text': 'London, UK',
+    'text': 'NYC',
+    'duration': '10 days',
+    'time': 'May 2022',
+    'url': '#',
+  },
+  {
+    'src': DEFAULT_BLACK_IMAGE_PATH,
+    'text': 'Lohn, Texas',
+    'duration': '7 days',
+    'time': 'June 2022',
+    'url': '#',
+  },
+  {
+    'src': DEFAULT_BLACK_IMAGE_PATH,
+    'text': 'London, UK (planned july 22")',
     'duration': '14 days',
     'time': 'July 2022',
     'url': '#',

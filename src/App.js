@@ -5,8 +5,10 @@ import Homepage from '../src/pages/Homepage';
 import Books from '../src/pages/Books';
 import Photography from '../src/pages/Photography';
 import Bio from '../src/pages/Bio';
+import Journal from '../src/pages/Journal';
 import Academic from './pages/Academic';
 import Movies from './pages/Movies';
+import Shows from './pages/Shows';
 import Guitar from './pages/Guitar';
 import Professional from './pages/Professional';
 import Travel from '../src/pages/Travel';
@@ -28,8 +30,10 @@ class App extends Component {
                         <Route exact path="/travel" component={Travel}/>
                         <Route exact path="/photography" component={Photography}/>
                         <Route exact path="/bio" component={Bio}/>
+                        <Route exact path="/journal" component={Journal}/>
                         <Route exact path="/academic" component={Academic}/>
                         <Route exact path="/movies" component={Movies}/>
+                        <Route exact path="/shows" component={Shows}/>
                         <Route exact path="/guitar" component={Guitar}/>
                         <Route exact path="/professional" component={Professional}/>
                         <Route exact path="/projects/my-personal-website" component={MyPersonalWebsite}/>
