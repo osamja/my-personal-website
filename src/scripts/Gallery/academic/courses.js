@@ -5,7 +5,7 @@ import {
 export const coursesAcademicProjects = [
   {
     'src': DEFAULT_BLACK_IMAGE_PATH,
-    'text': 'Deep Learning A-Z (In-Progress)',
+    'text': 'Deep Learning A-Z',
     'date': 'May 2022',
     'url': '#',
   },
@@ -22,6 +22,12 @@ export const coursesAcademicProjects = [
   {
     'src': DEFAULT_BLACK_IMAGE_PATH,
     'text': 'Advanced React and GraphQL - Wes Bos',
+    'url': '#',
+  },
+  {
+    'src': DEFAULT_BLACK_IMAGE_PATH,
+    'text': 'Machine Learning A-Z',
+    'date': 'August 2022',
     'url': '#',
   },
 ];

@@ -25,11 +25,6 @@ export default class Academic extends Component {
                     Academic side projects
                 </h1>
                 <Gallery gridData={sideAcademicProjects} />
-
-                <h1>
-                    Machine Learning
-                </h1>
-                <h4>Coming soon</h4>
             </div>
         );
     }
