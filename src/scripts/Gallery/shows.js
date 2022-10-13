@@ -59,7 +59,17 @@ export const shows = {
       },
       {
         'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Khruangbin at Greek Theatre',
+        'url': '#',
+      },
+      {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
         'text': 'Coldplay Concert @ Wembley Stadium',
+        'url': '#',
+      },
+      {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Flamenco @ a Gypsy cave in Granada, Spain',
         'url': '#',
       },
     ],

@@ -24,6 +24,16 @@ export const books = {
       'text': 'The Founders',
       'url': '#',
     },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Neither Here nor There: Travels in Europe by Bill Bryson',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'The Little Prince by Antoine de Saint-Exupéry',
+      'url': '#',
+    },
   ],
     '2021': [
       {

@@ -15,11 +15,11 @@ export const imgUrls = [
     //     'text': 'Bio',
     //     'url': '/bio',
     // },
-    {
-        'src': getHomePageSource('photography.jpg'),
-        'text': 'Journal',
-        'url': '/journal',
-    },
+    // {
+    //     'src': getHomePageSource('photography.jpg'),
+    //     'text': 'Journal',
+    //     'url': '/journal',
+    // },
     {
         'src': getHomePageSource('projects.jpg'),
         'text': 'Projects',

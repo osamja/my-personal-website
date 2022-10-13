@@ -13,6 +13,9 @@ export const countries_visited = [
   'Turkey',
   'United Arab Emirates',
   'England',
+  'Scotland',
+  'Italy',
+  'Spain',
 ];
 
 export const travel2021 = [
@@ -63,9 +66,47 @@ export const travel2022 = [
   },
   {
     'src': DEFAULT_BLACK_IMAGE_PATH,
-    'text': 'London, UK (planned july 22")',
+    'text': 'London, UK',
     'duration': '14 days',
     'time': 'July 2022',
+    'url': '#',
+  },
+  {
+    'src': DEFAULT_BLACK_IMAGE_PATH,
+    'text': 'Edinburgh, Scotland',
+    'duration': '6 days',
+    'time': 'August 2022',
+    'url': '#',
+  },
+  {
+    'src': DEFAULT_BLACK_IMAGE_PATH,
+    'text': 'Northern Italy',
+    'duration': '21 days',
+    'time': 'August 2022',
+    'url': '#',
+  },
+  {
+    'src': DEFAULT_BLACK_IMAGE_PATH,
+    'text': 'Spain',
+    'detail': 'Barcelona, Valencia, Cartagena, Granada, Cordoba, Seville, Madrid',
+    'duration': '~3-4 weeks',
+    'time': 'September 2022',
+    'url': '#',
+  },
+  {
+    'src': DEFAULT_BLACK_IMAGE_PATH,
+    'text': 'The Netherlands',
+    'detail': 'Amsterdam, Rotterdam, The Hague',
+    'duration': '7 days',
+    'time': 'October 2022',
+    'url': '#',
+  },
+  {
+    'src': DEFAULT_BLACK_IMAGE_PATH,
+    'text': 'Belgium',
+    'detail': 'Antwerp, Brussels, Brugges, Blankenberge',
+    'duration': '8 days',
+    'time': 'October 2022',
     'url': '#',
   },
 ];
