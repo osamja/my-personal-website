@@ -10,15 +10,16 @@ export default function Header() {
 
     return (
         <div style={{textAlign: 'center'}}>
-            <NavLink to="/">
+            <NavLink to="/" style={{textDecoration: 'none'}}>
                 <StyledHeader>Sammy Javed</StyledHeader>
             </NavLink>
-            <a href="https://twitter.com/osamja24" target="_blank" rel="noopener noreferrer">
+            {/* Social Media Icon Links */}
+            {/* <a href="https://twitter.com/osamja24" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-twitter" />
             </a>
             <a href="https://www.linkedin.com/in/sammy-javed-991a4a72/" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-linkedin" />
-            </a>
+            </a> */}
         </div>
     );
 }
