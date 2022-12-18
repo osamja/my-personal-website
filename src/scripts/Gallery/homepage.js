@@ -5,7 +5,7 @@ import {
 
 const homepagePath = 'home';
 
-function getHomePageSource(imageFileName) {
+export function getHomePageSource(imageFileName) {
     return getBaseUrl() + '/' + getBasePath() + '/' + homepagePath + '/' + imageFileName;
 }
 

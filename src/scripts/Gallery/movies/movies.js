@@ -59,6 +59,17 @@ export const movies = {
       'text': 'The Hall: Honoring the Greats of Stand-Up',
       'url': '#',
     },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Oceans documentary',
+      'theater': 'valencia',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'The Fablemans',
+      'url': '#',
+    },
   ],
   '2021': [
     {

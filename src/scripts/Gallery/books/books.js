@@ -34,6 +34,11 @@ export const books = {
       'text': 'The Little Prince by Antoine de Saint-Exupéry',
       'url': '#',
     },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Build by Tony Fadell',
+      'url': '#',
+    },
   ],
     '2021': [
       {

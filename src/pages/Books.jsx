@@ -8,9 +8,6 @@ import {books} from "../scripts/Gallery/books/books";
 export default function Homepage() {
     return (
         <div style={{}}>
-            <div style={{color: "#e0e0e0", fontWeight: 200}}>
-                <p>Here are books I've read in the years listed.</p>
-            </div>
             <ContentList title="2022" items={books['2022']} />
             <ContentList title="2021" items={books['2021']} />
             <ContentList title="2020" items={books2020} />

@@ -19,13 +19,14 @@ export default class Travel extends Component {
                   </h5>
                   
                 Countries Visited: 
-                <ul>
+                {/* Insert amCharts.jpg here instead*/}
+                {/* <ul>
                     {countries_visited.map(country => (
                         <li>
                             {country}
                         </li>
                     ))}
-                </ul>
+                </ul> */}
                 </div>
                 <h1>
                     2022

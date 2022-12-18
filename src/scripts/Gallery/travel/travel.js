@@ -16,6 +16,9 @@ export const countries_visited = [
   'Scotland',
   'Italy',
   'Spain',
+  'The Netherlands',
+  'Belgium',
+  'Germany',
 ];
 
 export const travel2021 = [

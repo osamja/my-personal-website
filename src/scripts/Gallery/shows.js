@@ -72,6 +72,16 @@ export const shows = {
         'text': 'Flamenco @ a Gypsy cave in Granada, Spain',
         'url': '#',
       },
+      {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': '2nd comedy show ever in Prague',
+        'url': '#',
+      },
+      {
+        'src': DEFAULT_BLACK_IMAGE_PATH,
+        'text': 'Kokoroko in Utrecht, Netherlands',
+        'url': '#',
+      },
     ],
   };
   

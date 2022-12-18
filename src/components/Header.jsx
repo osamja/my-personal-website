@@ -5,11 +5,17 @@ import styled from 'styled-components';
 export default function Header() {
     const StyledHeader = styled.h1`
         color: white;
-        font-weight: 300;
+        font-weight: 100;
+
+        &: hover {
+            font-weight: 350;
+        }
     `;
 
+    
+
     return (
-        <div style={{textAlign: 'center'}}>
+        <div style={{textAlign: 'center', textShadow: `1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue`}}>
             <NavLink to="/" style={{textDecoration: 'none'}}>
                 <StyledHeader>Sammy Javed</StyledHeader>
             </NavLink>
