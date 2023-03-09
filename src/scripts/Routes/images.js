@@ -2,13 +2,6 @@ const BASE_DOMAIN = 'sammyjaved.com';
 const HTTPS = 'https://';
 const BASE_PATH = 'static';
 const CATEGORY = 'images';
-// require('dotenv').config();
-
-/**
- * React apps can only read env variables prefixed with 'REACT_APP'.
- * process.env.environment does not work locally with npm start, needs server
- */
-
 
 /**
  * Returns the base domain used for retrieving static images
@@ -16,6 +9,9 @@ const CATEGORY = 'images';
  * @returns {string}
  */
 function getBaseDomain() {
+
+  return BASE_DOMAIN;
+
   if (process.env.REACT_APP_ENV === 'local') {
     return BASE_DOMAIN + ':3001';
   } else if (process.env.REACT_APP_ENV === 'development') {
@@ -34,6 +30,8 @@ function getBaseDomain() {
  * @returns {string}
  */
 export function getBaseUrl() {
+  return HTTPS + getBaseDomain();
+  
   if (process.env.REACT_APP_ENV === 'production' 
     || process.env.REACT_APP_ENV === 'staging' 
     || process.env.REACT_APP_ENV === 'development' ) {

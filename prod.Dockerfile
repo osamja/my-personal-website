@@ -1,5 +1,8 @@
-# This Node image builds our frontend assets into the ./build directory which is then served by nginx
+# This Node image builds our frontend assets into the build directory within the container which is served by nginx
 # BUILD IMAGE: docker build -t my-personal-website:prod -f prod.Dockerfile .
+# SHELL: docker container run -it my-personal-website:prod sh
+
+# See readme.me for development steps
 
 FROM node:18.15.0-alpine AS builder
 

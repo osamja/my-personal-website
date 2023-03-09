@@ -2,6 +2,23 @@
 * craco has been put in between CRA and react scripts so the commands below may not work
 * see package.json + the dockerfiles for up-to-date information
 
+# Development Steps
+
+#### Bring down proxy:
+- `docker-compose down`
+- Run this twice to ensure all containers have been stopped and removed!
+
+#### Build this image:
+- `docker build -t my-personal-website:prod -f prod.Dockerfile .`
+
+#### Run this container:
+- `docker container run -it my-personal-website:prod sh`
+
+#### Copy files container to host
+- `sudo docker cp <CONTAINER-ID>:/app/build /home/sammy/nginx_sammyjaved_proxy/sammyjaved.com`
+
+#### Bring up proxy:
+- `docker-compose up`
 
 ****************************************************************************************************
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
