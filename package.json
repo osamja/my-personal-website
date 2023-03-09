@@ -26,14 +26,10 @@
     "styled-components": "^4.4.1"
   },
   "scripts": {
-    "start": "npm start",
-    "start-local": "cross-env REACT_APP_ENV=local craco start",
-    "build-dev": "cross-env REACT_APP_ENV=development craco build",
-    "build-stage": "cross-env REACT_APP_ENV=staging craco build",
-    "build-prod": "cross-env REACT_APP_ENV=production craco build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "start-staging": "env-cmd -f .env.staging nodemon server.js 8000"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
