@@ -10,7 +10,7 @@ export const countries_visited = [
   'St Lucia',
   'France',
   'Pakistan',
-  'Turkey',
+  'Turkiye',
   'United Arab Emirates',
   'England',
   'Scotland',
@@ -19,6 +19,7 @@ export const countries_visited = [
   'The Netherlands',
   'Belgium',
   'Germany',
+  'Japan',
 ];
 
 export const travel2021 = [

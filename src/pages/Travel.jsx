@@ -6,7 +6,6 @@ import {travel2020} from "../scripts/Gallery/travel/2020";
 import {
     travel2021,
     travel2022,
-    countries_visited,
 } from "../scripts/Gallery/travel/travel";
 
 export default class Travel extends Component {

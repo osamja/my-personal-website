@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Gallery from '../components/grid/Gallery';
 import {imgUrls, getHomePageSource} from '../scripts/Gallery/homepage';
 import styled from 'styled-components';

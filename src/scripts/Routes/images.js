@@ -9,20 +9,7 @@ const CATEGORY = 'images';
  * @returns {string}
  */
 function getBaseDomain() {
-
   return BASE_DOMAIN;
-
-  if (process.env.REACT_APP_ENV === 'local') {
-    return BASE_DOMAIN + ':3001';
-  } else if (process.env.REACT_APP_ENV === 'development') {
-      return BASE_DOMAIN + ':8080';
-  } else if (process.env.REACT_APP_ENV === 'staging') {
-      return BASE_DOMAIN + ':8000';
-  } else if (process.env.REACT_APP_ENV === 'production') {
-      return BASE_DOMAIN;
-  } else {
-      return 'localhost:3000';
-  }
 }
 
 /**
@@ -31,14 +18,6 @@ function getBaseDomain() {
  */
 export function getBaseUrl() {
   return HTTPS + getBaseDomain();
-  
-  if (process.env.REACT_APP_ENV === 'production' 
-    || process.env.REACT_APP_ENV === 'staging' 
-    || process.env.REACT_APP_ENV === 'development' ) {
-      return HTTPS + getBaseDomain();
-  } else {
-      return 'http://' + getBaseDomain();
-  }
 }
 
 export function getCloudinaryBaseUrl() {
