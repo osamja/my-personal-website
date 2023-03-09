@@ -2,6 +2,6 @@
 .git
 .cache
 node_modules
-
+package-lock.json
 
 # TODO: Ignore the build directory since it's built by this image but served by our reverse proxy
