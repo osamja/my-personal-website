@@ -10,11 +10,6 @@ export function getHomePageSource(imageFileName) {
 }
 
 export const imgUrls = [
-    {
-        'src': getHomePageSource('photography.jpg'),
-        'text': 'Bio',
-        'url': '/bio',
-    },
     // {
     //     'src': getHomePageSource('photography.jpg'),
     //     'text': 'Journal',
