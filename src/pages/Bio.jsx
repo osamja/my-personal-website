@@ -1,38 +1,35 @@
 import React from 'react';
-// import {
-//     getBaseUrl,
-//     getBasePath,
-// } from '../scripts/Routes/images.js';
+import styled from 'styled-components';
+import {getHomePageSource} from '../scripts/Gallery/homepage';
 
 export default function Bio() {
 
     // https://reactjsexample.com/a-vertical-timeline-component-for-react/
+    const StyledHeader = styled.h2`
+        font-weight: 250;
+    `;
 
-    // const mePath = getBaseUrl() + '/' + getBasePath() + '/home/me.jpg';
-    // const meBefore = getBaseUrl() + '/' + getBasePath() + '/home/meBefore.jpg';
+    const StyledLi = styled.li`
+        font-weight: 100;
+    `;
+
+    const StyledImage = styled.img`
+        max-width: 25%;
+    `;
 
     return (
         <div className="Bio" style={{color: '#e0e0e0', textAlign: 'left', margin: '5%'}}>
-            <h1>
-                Bio
-            </h1>
-            <ul>
-                <li><b>I am</b> currently a digital nomad.  I intend to backpack Europe this Summer, starting with London.  Ending who knows where and when (April 2022 - Present)</li>  
-                <ul>
-                    <li>I'm studying machine learning (self-paced online)</li>
-                    <li>Planning to build some silly apps.</li>
-                </ul>
-                <li>Before that, I was a full-stack web developer at Adobe for 4 years where I worked on the <a href='https://stock.adobe.com' style={{'color': 'pink'}}>Adobe Stock</a> website (Feb 2018 - April 2022)</li>
-                <li>Before that, I did my undergraduate studies in computer science from <a href='https://cs.berkeley.edu/' style={{'color': 'pink'}}>UC Berkeley</a> (May 2015 - Dec 2017) and Evergreen Valley College (May 2012 - 2015)</li>
-            </ul>
-            
-            <h2>Interests</h2>
-            <ul>
-                <li>Writing software</li>
-                <li>Video editing</li>
-                <li>Guitar</li>
-                <li>Basketball</li>
-            </ul>
+            <div>
+                <div className="Homepage" style={{color: "#e0e0e0", fontWeight: 200}}>
+                    <StyledHeader>Adab! (Hi) I'm Sammy</StyledHeader>
+                    <ul>
+                        <StyledLi>Currently, I am studying ML abroad (in Kyoto, Japan as of March 2023) since I never got the chance to do it in school.</StyledLi>
+                        <StyledLi>I was a full-stack web developer at Adobe for 4 years where I worked on the Adobe Stock website (Feb 2018 - April 2022)</StyledLi>
+                        <StyledLi>I did my undergraduate studies in computer science from UC Berkeley (May 2015 - Dec 2017)</StyledLi>
+                    </ul>
+                    <StyledImage src={getHomePageSource("anime-backpack-me.JPG")} alt="here is an AI generated portrait of me" />      
+                </div>
+            </div>
 
             {/* <h2>Pictures</h2> */}
             {/* TODO: Add a click here button to see me before/after haircut button.  Avoids loading unnecessary images + fun interaction for user */}
