@@ -10,11 +10,11 @@ function getProjectSource(imageFileName) {
 }
 
 export const projects = [
-    {
-        'src': getProjectSource('homepage.jpg'),
-        'text': 'My Personal Website',
-        'url': '/projects/my-personal-website',
-    },
+    // {
+    //     'src': getProjectSource('homepage.jpg'),
+    //     'text': 'My Personal Website',
+    //     'url': '/projects/my-personal-website',
+    // },
     {
         'src': getProjectSource('axe.jpg'),
         'text': 'Give Em the Axe',

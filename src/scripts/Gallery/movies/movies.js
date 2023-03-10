@@ -3,6 +3,38 @@ import {
 } from '../../../scripts/Routes/images.js';
 
 export const movies = {
+  '2023': [
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'The Banshees of Inisherin',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Titanic (Dolby Cinema)',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Women Talking',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'The Whale',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Babylon',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Avatar: The Way of Water',
+      'url': '#',
+    },
+  ],
   '2022': [
     {
     'src': DEFAULT_BLACK_IMAGE_PATH,

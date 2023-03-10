@@ -61,7 +61,7 @@ export default function GridItem (props) {
     }
 
     return (
-        <div className="grid-item" key={image_content.url} onMouseOver={onGridItemHover} onMouseLeave={onGridItemLeave} style={gridItemStyle}>
+        <div className="grid-item" key={image_content.src + image_content.text} onMouseOver={onGridItemHover} onMouseLeave={onGridItemLeave} style={gridItemStyle}>
             {gridItemz}
         </div>
     )

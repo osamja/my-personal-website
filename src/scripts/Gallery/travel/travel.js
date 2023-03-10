@@ -2,6 +2,12 @@ import {
   DEFAULT_BLACK_IMAGE_PATH,
 } from '../../../scripts/Routes/images.js';
 
+import {
+  getBaseUrl,
+  getBasePath,
+  getCloudinaryBaseUrl,
+} from '../../../scripts/Routes/images.js';
+
 export const countries_visited = [
   'USA',
   'Canada',
@@ -22,17 +28,34 @@ export const countries_visited = [
   'Japan',
 ];
 
-export const travel2021 = [
-    {
-        'src': DEFAULT_BLACK_IMAGE_PATH,
-        'text': 'Hunza, Pakistan',
-        'duration': '21 days',
-        'time': 'September 2021',
-        'url': '#',
-    },
-];
+function getImageSource(imageFileName, useCloudinary, season) {
+  const cloudinaryTravelPath = 'v1564458339/my-personal-website/travel/';
+  if (useCloudinary) {
+      return getCloudinaryBaseUrl() + cloudinaryTravelPath + imageFileName;
+  }
+
+  return getBaseUrl() + '/' + getBasePath() + '/travel/cover/' + imageFileName;
+}
+
+export const travel2023 = [
+  {
+    'src': DEFAULT_BLACK_IMAGE_PATH,
+    'text': 'Japan',
+    'duration': '',
+    'time': 'February 2023 - ',
+    'url': '#',
+  },
+]
 
 export const travel2022 = [
+  {
+    'src': getImageSource('europe.png', false),
+    'text': 'UK + Europe',
+    'duration': '4 months',
+    'time': 'July - November 2022',
+    'redirect': true,
+    'url': 'https://youtu.be/wDBnOPnfvyM',
+  },
   {
       'src': DEFAULT_BLACK_IMAGE_PATH,
       'text': 'Oahu, Hawaii',
@@ -68,49 +91,14 @@ export const travel2022 = [
     'time': 'June 2022',
     'url': '#',
   },
+];
+
+export const travel2021 = [
   {
-    'src': DEFAULT_BLACK_IMAGE_PATH,
-    'text': 'London, UK',
-    'duration': '14 days',
-    'time': 'July 2022',
-    'url': '#',
-  },
-  {
-    'src': DEFAULT_BLACK_IMAGE_PATH,
-    'text': 'Edinburgh, Scotland',
-    'duration': '6 days',
-    'time': 'August 2022',
-    'url': '#',
-  },
-  {
-    'src': DEFAULT_BLACK_IMAGE_PATH,
-    'text': 'Northern Italy',
-    'duration': '21 days',
-    'time': 'August 2022',
-    'url': '#',
-  },
-  {
-    'src': DEFAULT_BLACK_IMAGE_PATH,
-    'text': 'Spain',
-    'detail': 'Barcelona, Valencia, Cartagena, Granada, Cordoba, Seville, Madrid',
-    'duration': '~3-4 weeks',
-    'time': 'September 2022',
-    'url': '#',
-  },
-  {
-    'src': DEFAULT_BLACK_IMAGE_PATH,
-    'text': 'The Netherlands',
-    'detail': 'Amsterdam, Rotterdam, The Hague',
-    'duration': '7 days',
-    'time': 'October 2022',
-    'url': '#',
-  },
-  {
-    'src': DEFAULT_BLACK_IMAGE_PATH,
-    'text': 'Belgium',
-    'detail': 'Antwerp, Brussels, Brugges, Blankenberge',
-    'duration': '8 days',
-    'time': 'October 2022',
-    'url': '#',
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Hunza, Pakistan',
+      'duration': '21 days',
+      'time': 'September 2021',
+      'url': '#',
   },
 ];

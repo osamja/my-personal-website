@@ -11,6 +11,7 @@ export default class Movies extends Component {
                 <div className="intro-text" style={{color: "#e0e0e0", fontWeight: 200}}>
                 <p>Movies I've watched over the years (that I can recall)</p>
                 </div>
+                <ContentList title="2023" items={movies['2023']}/>
                 <ContentList title="2022" items={movies['2022']}/>
                 <ContentList title="2021" items={movies['2021']}/>
                 <ContentList title="2020" items={movies2020}/>

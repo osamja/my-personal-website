@@ -3,6 +3,18 @@ import {
 } from '../../../scripts/Routes/images.js';
 
 export const books = {
+  '2023': [
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Understanding Business',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'The Heart of Business',
+      'url': '#',
+    },
+  ],
   '2022': [
     {
       'src': DEFAULT_BLACK_IMAGE_PATH,

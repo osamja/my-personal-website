@@ -1,6 +1,13 @@
 import { DEFAULT_BLACK_IMAGE_PATH } from '../../scripts/Routes/images.js';
 
 export const shows = {
+  '2023': [
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': '49ers vs Seahawks (NFC Wild Card)',
+      'url': '#',
+    },
+  ],
     '2022': [
       {
         'src': DEFAULT_BLACK_IMAGE_PATH,

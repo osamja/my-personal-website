@@ -6,6 +6,7 @@ import {travel2020} from "../scripts/Gallery/travel/2020";
 import {
     travel2021,
     travel2022,
+    travel2023,
 } from "../scripts/Gallery/travel/travel";
 
 export default class Travel extends Component {
@@ -27,6 +28,10 @@ export default class Travel extends Component {
                     ))}
                 </ul> */}
                 </div>
+                <h1>
+                    2023
+                </h1>
+                <Gallery gridData={travel2023}/>
                 <h1>
                     2022
                 </h1>
