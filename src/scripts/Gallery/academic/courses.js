@@ -5,6 +5,12 @@ import {
 export const coursesAcademicProjects = [
   {
     'src': DEFAULT_BLACK_IMAGE_PATH,
+    'text': 'Zero to Hero',
+    'date': 'March 2023',
+    'url': '#',
+  },
+  {
+    'src': DEFAULT_BLACK_IMAGE_PATH,
     'text': 'Deep Learning A-Z',
     'date': 'May 2022',
     'url': '#',
