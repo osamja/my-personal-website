@@ -5,19 +5,23 @@
 # Development Steps
 
 #### Bring down proxy:
+- Attach to existing screen session with `screen -r`
 - `docker-compose down`
 - Run this twice to ensure all containers have been stopped and removed!
 
 #### Build this image:
 - `docker build -t my-personal-website:prod -f prod.Dockerfile .`
 
-#### Run this container:
+<!-- DEPRECATED -->
+<!-- #### Run this container:
+- `cd ~/my-personal-website`
 - `docker container run -it my-personal-website:prod sh`
 
 #### Copy files container to host
-- `sudo docker cp <CONTAINER-ID>:/app/build /home/sammy/nginx_sammyjaved_proxy/sammyjaved.com`
+- `sudo docker cp <CONTAINER-ID>:/app/build /home/sammy/nginx_sammyjaved_proxy/sammyjaved.com` -->
 
 #### Bring up proxy:
+- `cd ~/nginx_sammyjaved_proxy`
 - `docker-compose up`
 
 ****************************************************************************************************
