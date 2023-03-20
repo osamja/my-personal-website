@@ -7,6 +7,11 @@ export const shows = {
       'text': '49ers vs Seahawks (NFC Wild Card)',
       'url': '#',
     },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Gear Show @ Non-Verbal Theater in Kyoto ',
+      'url': '#',
+    },
   ],
     '2022': [
       {

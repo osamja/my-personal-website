@@ -5,24 +5,9 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 
 import 'react-vertical-timeline-component/style.min.css';
 
+// https://reactjsexample.com/a-vertical-timeline-component-for-react/
 
 export default function Bio() {
-
-    // https://reactjsexample.com/a-vertical-timeline-component-for-react/
-    const StyledHeader = styled.h3`
-        font-weight: 550;
-        color: yellow;
-        display: inline;
-    `;
-
-    const StyledTimelineText = styled.p`
-        font-weight: 100;
-    `;
-
-    const StyledLi = styled.li`
-        font-weight: 100;
-    `;
-
     const WorkIcon = () => (
         <svg
             xmlns="http://www.w3.org/2000/svg"
