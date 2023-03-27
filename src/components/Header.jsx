@@ -17,7 +17,6 @@ export default function Header() {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
 
     &:hover {
