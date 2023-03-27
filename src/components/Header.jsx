@@ -1,31 +1,43 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 
 export default function Header() {
-    const StyledHeader = styled.h1`
-        color: white;
-        font-weight: 100;
+  const history = useHistory();
 
-        &: hover {
-            font-weight: 350;
-        }
-    `;
+  const StyledHeader = styled.h1`
+    display: inline;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #8e44ad, #3498db);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
 
-    
+    &:hover {
+      text-decoration: underline;
+    }
+  `;
 
-    return (
-        <div style={{textAlign: 'center', textShadow: `1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue`}}>
-            <NavLink to="/" style={{textDecoration: 'none'}}>
-                <StyledHeader>Sammy Javed</StyledHeader>
-            </NavLink>
-            {/* Social Media Icon Links */}
-            {/* <a href="https://twitter.com/osamja24" target="_blank" rel="noopener noreferrer">
-                <i className="fa fa-twitter" />
-            </a>
-            <a href="https://www.linkedin.com/in/sammy-javed-991a4a72/" target="_blank" rel="noopener noreferrer">
-                <i className="fa fa-linkedin" />
-            </a> */}
-        </div>
-    );
+  const HeaderContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  `;
+
+  const handleHeaderClick = () => {
+    history.push('/');
+  };
+
+  return (
+    <HeaderContainer>
+      <StyledHeader onClick={handleHeaderClick}>Sammy Javed</StyledHeader>
+    </HeaderContainer>
+  );
 }
