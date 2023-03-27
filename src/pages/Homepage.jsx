@@ -59,8 +59,16 @@ export default function Homepage() {
         gap: 1rem;
     `;
 
+    const StyledPageContent = styled.div`
+        padding-bottom: 1rem; // Add some default padding-bottom for all devices
+
+        @media (max-width: 768px) {
+            padding-bottom: 3rem; // Add more padding-bottom for smaller devices
+        }
+    `;
+
     return (
-        <div>
+        <StyledPageContent>
             <StyledContainer>
                 <StyledSocialLinks href="https://snort.social/p/npub16wgk7s474eppd9xwqwfccvh57u0ev7c9q69sr4cnk3s3vk7av3rqf98had">
                     <StyledNostrLink src={nostrPath} alt='Image' />
@@ -78,6 +86,6 @@ export default function Homepage() {
                 <li>In 2019, I developed a face morpher app I had worked on in school into an <StyledLink href="https://apps.apple.com/us/app/mymorph/id1554421298">iOS app</StyledLink>.  You can try it on the web <StyledLink href="https://imagemorpher-mobile.vercel.app/">here</StyledLink>.</li>
                 <li>In 2017, I helped produce a short animated film from my UCBUGG class.  Check it out <StyledLink href="https://www.youtube.com/watch?v=silvjiqSnaQ">here</StyledLink>.</li>
             </ul>
-        </div>  
+        </StyledPageContent>  
     );
 }
