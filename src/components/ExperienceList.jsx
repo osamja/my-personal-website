@@ -47,21 +47,16 @@ const StyledLink = styled.a`
 const ExperienceList = () => (
   <StyledList>
     <StyledListItem>
-      In 2022, I backpacked Europe for 4 months. Here's a{' '}
-      <StyledLink href="https://www.youtube.com/watch?v=wDBnOPnfvyM">video</StyledLink> I made of my trip.
+      I <StyledLink href="https://www.youtube.com/watch?v=wDBnOPnfvyM">backpacked Europe</StyledLink> for 4 months.  Traveled to 11 different countries and countless cities.
     </StyledListItem>
     <StyledListItem>
-      In 2020, I volunteered with San Francisco's Department of Homelessness and Supportive Housing to help build them a new{' '}
-      <StyledLink href="https://hsh.sfgov.org/">website</StyledLink>.
+      Volunteered with San Francisco's Department of Homelessness to build them a new <StyledLink href="https://hsh.sfgov.org/">website</StyledLink>.
     </StyledListItem>
     <StyledListItem>
-      In 2019, I developed a face morpher app I had worked on in school into an{' '}
-      <StyledLink href="https://apps.apple.com/us/app/mymorph/id1554421298">iOS app</StyledLink>. You can try it on the web{' '}
-      <StyledLink href="https://imagemorpher-mobile.vercel.app/">here</StyledLink>.
+      Developed a face morphing <StyledLink href="https://apps.apple.com/us/app/mymorph/id1554421298">iOS app</StyledLink> from a class project.
     </StyledListItem>
     <StyledListItem>
-      In 2017, I helped produce a short animated film from my UCBUGG class. Check it out{' '}
-      <StyledLink href="https://www.youtube.com/watch?v=silvjiqSnaQ">here</StyledLink>.
+      Created an animated short <StyledLink href="https://www.youtube.com/watch?v=silvjiqSnaQ">film</StyledLink> about saving trees with my team.
     </StyledListItem>
   </StyledList>
 );

@@ -78,6 +78,7 @@ export default function Homepage() {
             </StyledContainer>
 
             <Bio />
+            <h3 style={{color: 'white'}}>Some cool experiences</h3>
             <ExperienceList />
         </StyledPageContent>  
     );
