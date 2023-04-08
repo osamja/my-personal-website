@@ -8,32 +8,32 @@ const StyledList = styled.ul`
 `;
 
 const StyledListItem = styled.li`
-        position: relative;
-        padding-left: 1.5rem;
-        margin-bottom: 1rem;
-        transition: all 0.3s ease;
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
 
+    &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: #8e44ad;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    }
+
+    &:hover {
         &:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 5px;
-        height: 5px;
-        background-color: #8e44ad;
-        border-radius: 50%;
-        transform: translateY(-50%);
-        transition: all 0.3s ease;
+            width: 10px;
+            height: 10px;
+            background-color: #3498db;
         }
-
-        &:hover {
-            &:before {
-                width: 10px;
-                height: 10px;
-                background-color: #3498db;
-            }
-        }
-    `;
+    }
+`;
 
 const StyledLink = styled.a`
   color: #f06292;

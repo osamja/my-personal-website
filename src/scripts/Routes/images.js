@@ -38,6 +38,14 @@ export function getBasePath() {
   return basePath;
 }
 
+export function getImageSource(imageName, category = null) {
+  if (category) {
+    return getBaseUrl() + '/' + getBasePath() + '/' + category + '/' + imageName;
+  }
+
+  return getBaseUrl() + '/' + getBasePath() + '/' + imageName;
+}
+
 
 
 export const DEFAULT_BLACK_IMAGE_PATH = getBaseUrl() + '/' + getBasePath() + '/general/colors/black.jpg';
