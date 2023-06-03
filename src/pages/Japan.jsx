@@ -2,171 +2,207 @@ import React, { useState, useCallback } from 'react';
 import Gallery from 'react-photo-gallery';
 import Carousel, { Modal, ModalGateway } from 'react-images';
 // import 'react-images/dist/react-images.min.css'; // Include CSS for react-images
-import { getImageSource } from '../scripts/Routes/images';
+// import { getImageSource } from '../scripts/Routes/images';
 
 
-function getJapanPics(img_name) {
-  return getImageSource('travel/japan-pics/' + img_name);
-}
+// function getJapanPics(img_name) {
+//   return getImageSource('travel/japan-pics/' + img_name);
+// }
 
-const photos = [
-    {
-      src: getJapanPics('inari-mountain.jpeg'),
-      width: 4,
-      height: 3,
-      caption: 'From the Inari Shrine, you can hike up to this mountain with a view of Kyoto',
-    },
-    {
-      src: getJapanPics('shrine-near-arashiyama.jpeg'),
-      width: 4,
-      height: 3,
-      caption: 'Cherry blossoms near the Arashiyama Bamboo Forest',
-    },
-    {
-      src: getJapanPics('fire-ramen.jpeg'),
-      width: 4,
-      height: 3,
-      caption: 'Some fire ramen',
-    },
-    {
-      src: getJapanPics('okonomiyaki.jpeg'),
-      width: 4,
-      height: 3,
-      caption: 'Okonomiyaki are savory Japanese pancakes',
-    },
-    {
-      src: getJapanPics('tiny-me-osaka-castle.jpeg'),
-      width: 3,
-      height: 4,
-      caption: 'I am tiny compared to Osaka Castle',
-    },
-    {
-      src: getJapanPics('tennoji-park-night.jpeg'),
-      width: 4,
-      height: 3,
-      caption: 'Tennoji Park at night',
-    },
-    {
-      src: getJapanPics('cherry-bench.jpeg'),
-      width: 3,
-      height: 4,
-      caption: '',
-    },
-    {
-      src: getJapanPics('fast-food.jpeg'),
-      width: 3,
-      height: 4,
-      caption: 'Even the fast food in Japan is so good. This chain is called Sukiya',
-    },
-    {
-      src: getJapanPics('running-man.jpeg'),
-      width: 3,
-      height: 4,
-      caption: 'Famous Running Man in Dotonbori district of Osaka',
-    },
-    {
-      src: getJapanPics('spidey.jpeg'),
-      width: 3,
-      height: 4,
-      caption: 'Spiderman in Osaka',
-    },
-    {
-      src: getJapanPics('sakuranomiya-busy.jpeg'),
-      width: 3,
-      height: 4,
-      caption: 'Sakuranomiya Park in Osaka during cherry blossom season',
-    },
-    {
-      src: getJapanPics('cherry-skyline.jpeg'),
-      width: 4,
-      height: 3,
-      caption: 'Cherry blossoms near the Osaka skyline',
-    },
-    {
-      src: getJapanPics('me-smiling-cherry.jpeg'),
-      width: 3,
-      height: 4,
-      caption: 'Sakura smiles',
-    },
-    {
-      src: getJapanPics('cherrys-buildings.jpeg'),
-      width: 4,
-      height: 3,
-      caption: 'Cherry blossoms near the Osaka skyline',
-    },
-    {
-      src: getJapanPics('osaka-castle-park-sakura.jpeg'),
-      width: 4,
-      height: 3,
-      caption: 'Cherry blossoms near the Arashiyama Bamboo Forest',
-    },
-    {
-      src: getJapanPics('hanami.jpeg'),
-      width: 3,
-      height: 4,
-      caption: 'A hanami is a picnic under the Sakura (cherry blossom) trees. A popular activity in Japan during the spring',
-    },
-    {
-      src: getJapanPics('green-blossom.jpeg'),
-      width: 3,
-      height: 4,
-      caption: 'Not all flowers are pink',
-    },
-    {
-      src: getJapanPics('full-bloom.jpeg'),
-      width: 4,
-      height: 3,
-      caption: 'Full bloom',
-    },
-    {
-      src: getJapanPics('me-garden.jpeg'),
-      width: 3,
-      height: 4,
-      caption: 'Me in the garden',
-    },
-    {
-      src: getJapanPics('gold-temple.jpeg'),
-      width: 3,
-      height: 4,
-      caption: 'All gold everything',
-    },
-    {
-      src: getJapanPics('ryoanji.jpeg'),
-      width: 3,
-      height: 4,
-      caption: 'Definitely visit Ryoanji Temple in Kyoto',
-    },
-    {
-      src: getJapanPics('bloom-big.jpeg'),
-      width: 3,
-      height: 4,
-      caption: '',
-    },
-    {
-      src: getJapanPics('kyoto-gate.jpeg'),
-      width: 4,
-      height: 3,
-      caption: 'Kyoto Gate',
-    },
-    {
-      src: getJapanPics('philosophers-path.jpeg'),
-      width: 4,
-      height: 3,
-      caption: 'Philosopher\'s Path in Kyoto',
-    },
-    {
-      src: getJapanPics('hot-pink.jpeg'),
-      width: 4,
-      height: 3,
-      caption: '',
-    },
-    // {
-    //   src: getJapanPics('shrine-near-arashiyama.jpeg'),
-    //   width: 4,
-    //   height: 3,
-    //   caption: 'Cherry blossoms near the Arashiyama Bamboo Forest',
-    // },
-];
+// const photos = [
+//     {
+//       src: getJapanPics('inari-mountain.jpeg'),
+//       width: 4,
+//       height: 3,
+//       caption: 'From the Inari Shrine, you can hike up to this mountain with a view of Kyoto',
+//     },
+//     {
+//       src: getJapanPics('shrine-near-arashiyama.jpeg'),
+//       width: 4,
+//       height: 3,
+//       caption: 'Cherry blossoms near the Arashiyama Bamboo Forest',
+//     },
+//     {
+//       src: getJapanPics('fire-ramen.jpeg'),
+//       width: 4,
+//       height: 3,
+//       caption: 'Some fire ramen',
+//     },
+//     {
+//       src: getJapanPics('okonomiyaki.jpeg'),
+//       width: 4,
+//       height: 3,
+//       caption: 'Okonomiyaki are savory Japanese pancakes',
+//     },
+//     {
+//       src: getJapanPics('tiny-me-osaka-castle.jpeg'),
+//       width: 3,
+//       height: 4,
+//       caption: 'I am tiny compared to Osaka Castle',
+//     },
+//     {
+//       src: getJapanPics('tennoji-park-night.jpeg'),
+//       width: 4,
+//       height: 3,
+//       caption: 'Tennoji Park at night',
+//     },
+//     {
+//       src: getJapanPics('cherry-bench.jpeg'),
+//       width: 3,
+//       height: 4,
+//       caption: '',
+//     },
+//     {
+//       src: getJapanPics('fast-food.jpeg'),
+//       width: 3,
+//       height: 4,
+//       caption: 'Even the fast food in Japan is so good. This chain is called Sukiya',
+//     },
+//     {
+//       src: getJapanPics('running-man.jpeg'),
+//       width: 3,
+//       height: 4,
+//       caption: 'Famous Running Man in Dotonbori district of Osaka',
+//     },
+//     {
+//       src: getJapanPics('spidey.jpeg'),
+//       width: 3,
+//       height: 4,
+//       caption: 'Spiderman in Osaka',
+//     },
+//     {
+//       src: getJapanPics('sakuranomiya-busy.jpeg'),
+//       width: 3,
+//       height: 4,
+//       caption: 'Sakuranomiya Park in Osaka during cherry blossom season',
+//     },
+//     {
+//       src: getJapanPics('cherry-skyline.jpeg'),
+//       width: 4,
+//       height: 3,
+//       caption: 'Cherry blossoms near the Osaka skyline',
+//     },
+//     {
+//       src: getJapanPics('me-smiling-cherry.jpeg'),
+//       width: 3,
+//       height: 4,
+//       caption: 'Sakura smiles',
+//     },
+//     {
+//       src: getJapanPics('cherrys-buildings.jpeg'),
+//       width: 4,
+//       height: 3,
+//       caption: 'Cherry blossoms near the Osaka skyline',
+//     },
+//     {
+//       src: getJapanPics('osaka-castle-park-sakura.jpeg'),
+//       width: 4,
+//       height: 3,
+//       caption: 'Cherry blossoms near the Arashiyama Bamboo Forest',
+//     },
+//     {
+//       src: getJapanPics('hanami.jpeg'),
+//       width: 3,
+//       height: 4,
+//       caption: 'A hanami is a picnic under the Sakura (cherry blossom) trees. A popular activity in Japan during the spring',
+//     },
+//     {
+//       src: getJapanPics('green-blossom.jpeg'),
+//       width: 3,
+//       height: 4,
+//       caption: 'Not all flowers are pink',
+//     },
+//     {
+//       src: getJapanPics('full-bloom.jpeg'),
+//       width: 4,
+//       height: 3,
+//       caption: 'Full bloom',
+//     },
+//     {
+//       src: getJapanPics('me-garden.jpeg'),
+//       width: 3,
+//       height: 4,
+//       caption: 'Me in the garden',
+//     },
+//     {
+//       src: getJapanPics('gold-temple.jpeg'),
+//       width: 3,
+//       height: 4,
+//       caption: 'All gold everything',
+//     },
+//     {
+//       src: getJapanPics('ryoanji.jpeg'),
+//       width: 3,
+//       height: 4,
+//       caption: 'Definitely visit Ryoanji Temple in Kyoto',
+//     },
+//     {
+//       src: getJapanPics('bloom-big.jpeg'),
+//       width: 3,
+//       height: 4,
+//       caption: '',
+//     },
+//     {
+//       src: getJapanPics('kyoto-gate.jpeg'),
+//       width: 4,
+//       height: 3,
+//       caption: 'Kyoto Gate',
+//     },
+//     {
+//       src: getJapanPics('philosophers-path.jpeg'),
+//       width: 4,
+//       height: 3,
+//       caption: 'Philosopher\'s Path in Kyoto',
+//     },
+//     {
+//       src: getJapanPics('hot-pink.jpeg'),
+//       width: 4,
+//       height: 3,
+//       caption: '',
+//     },
+//     // {
+//     //   src: getJapanPics('shrine-near-arashiyama.jpeg'),
+//     //   width: 4,
+//     //   height: 3,
+//     //   caption: 'Cherry blossoms near the Arashiyama Bamboo Forest',
+//     // },
+// ];
+
+
+// This context will include all .jpg files inside the given directory and its subdirectories
+
+const imagesContext = require.context('../../public/static/images/travel/japan-pics/japan-photos/jpgs/', true, /\.jpeg$/);
+
+// const photosFunc = () => {
+//   imagesContext.keys().map((item) => {
+//     console.log((item))
+//   })
+// }
+
+// photosFunc()
+
+let photos = imagesContext.keys().map((item) => ({
+  src: imagesContext(item), // Get the image src from the context
+  width: 4,
+  height: 3,
+  // additional properties...
+}));
+
+// Sort photos by image name
+photos = photos.sort((a, b) => {
+  const nameA = a.src.toUpperCase(); // Ignore case
+  const nameB = b.src.toUpperCase(); // Ignore case
+  if (nameA < nameB) {
+    return -1;
+  }
+  if (nameA > nameB) {
+    return 1;
+  }
+  // Names are equal
+  return 0;
+});
+
+
 
 export default function Japan23() {
   const [currentImage, setCurrentImage] = useState(0);

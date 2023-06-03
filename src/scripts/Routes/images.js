@@ -19,7 +19,7 @@ function getBaseDomain() {
 export function getBaseUrl() {
   // for local development
   if (window.location.hostname === 'localhost') {
-    return 'http://' + 'localhost:3000';
+    return 'http://localhost:3000';
   }
   
   return HTTPS + getBaseDomain();
