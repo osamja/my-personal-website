@@ -69,7 +69,7 @@ export default function Bio() {
                             <StyledTimelinePicture src={getHomePageSource("anime-backpack-me.JPG")} alt="here is an AI generated portrait of me" />
                             <h4 className="vertical-timeline-element-subtitle">Europe, Japan</h4>
                             <p>
-                                I backpacked through Europe for 4 months. I learned a lot about myself and the world. Currently, I'm studying abroad in Japan.
+                                I went backpacking in the UK and Europe, didn't really work tbh.  In Japan, I studied Japanese and AI.
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
