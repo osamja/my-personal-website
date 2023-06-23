@@ -35,12 +35,8 @@ export default function Bio() {
     );
 
     const StyledLink = styled.a`
-        color: #f06292;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
+        color: white;
+        text-decoration: underline;
     `;
 
     const StyledTimelinePicture = styled.img`
@@ -75,7 +71,7 @@ export default function Bio() {
                             <StyledTimelinePicture src={getHomePageSource("anime-backpack-me.JPG")} alt="here is an AI generated portrait of me" />
                             <h4 className="vertical-timeline-element-subtitle">Europe, Japan</h4>
                             <p>
-                                I <StyledLink href="https://youtu.be/mcHtMAysfao">backpacked Europe</StyledLink> for months and was a digital nomad in <StyledLink href="https://sammyjaved.com/japan">Japan</StyledLink> for 3 months.
+                                I backpacked <StyledLink href="https://youtu.be/mcHtMAysfao">Europe</StyledLink> for months and was a digital nomad in <StyledLink href="https://sammyjaved.com/japan">Japan</StyledLink> for 3 months.
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
