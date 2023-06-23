@@ -47,9 +47,6 @@ const StyledLink = styled.a`
 const ExperienceList = () => (
   <StyledList>
     <StyledListItem>
-      I <StyledLink href="https://www.youtube.com/watch?v=wDBnOPnfvyM">backpacked Europe</StyledLink> for 4 months.  Traveled to 11 different countries and countless cities.
-    </StyledListItem>
-    <StyledListItem>
       Volunteered with San Francisco's Department of Homelessness to build them a new <StyledLink href="https://hsh.sfgov.org/">website</StyledLink>.
     </StyledListItem>
     <StyledListItem>
