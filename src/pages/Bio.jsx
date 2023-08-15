@@ -61,14 +61,14 @@ export default function Bio() {
                     <VerticalTimeline>
                         <VerticalTimelineElement
                             className="vertical-timeline-element--travel"
-                            date="2022 - present"
-                            contentStyle={{ background: 'rgb(202, 156, 158)', color: 'white' }}
+                            date="2023 - present"
+                            contentStyle={{ background: 'rgb(221, 196, 248)', color: 'white' }}
                             contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                            iconStyle={{ background: 'rgb(202, 156, 158)', color: 'white' }}
+                            iconStyle={{ background: 'rgb(221, 196, 248)', color: 'white' }}
                             icon={<TravelIcon />}
                         >
                             <h3 className="vertical-timeline-element-title">Founder</h3>
-                            <StyledTimelinePicture src={getHomePageSource("anime-backpack-me.JPG")} alt="here is an AI generated portrait of me" />
+                            <StyledTimelinePicture src={getHomePageSource("yin-yang.png")} alt="here is an AI generated portrait of me" />
                             <h4 className="vertical-timeline-element-subtitle">pyaar.ai</h4>
                             <p>
                                 I'm building a startup that uses AI to help people be more musical.
