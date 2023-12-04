@@ -67,11 +67,11 @@ export default function Bio() {
                             iconStyle={{ background: 'rgb(221, 196, 248)', color: 'white' }}
                             icon={<TravelIcon />}
                         >
-                            <h3 className="vertical-timeline-element-title">Founder</h3>
+                            <h3 className="vertical-timeline-element-title">whoami</h3>
                             <StyledTimelinePicture src={getHomePageSource("yin-yang.png")} alt="here is an AI generated portrait of me" />
                             <h4 className="vertical-timeline-element-subtitle">pyaar.ai</h4>
                             <p>
-                                I'm building a startup that uses AI to help people be more musical.
+                                I guess you could say I'm learning AI.
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
@@ -82,11 +82,11 @@ export default function Bio() {
                             iconStyle={{ background: 'rgb(202, 156, 158)', color: 'white' }}
                             icon={<TravelIcon />}
                         >
-                            <h3 className="vertical-timeline-element-title">Digital Nomad</h3>
+                            <h3 className="vertical-timeline-element-title">Nomad</h3>
                             <StyledTimelinePicture src={getHomePageSource("anime-backpack-me.JPG")} alt="here is an AI generated portrait of me" />
                             <h4 className="vertical-timeline-element-subtitle">Europe, Japan</h4>
                             <p>
-                                I backpacked <StyledLink href="https://youtu.be/mcHtMAysfao">Europe</StyledLink> for months and was a digital nomad in <StyledLink href="https://sammyjaved.com/japan">Japan</StyledLink> for 3 months.
+                                I backpacked <StyledLink href="https://youtu.be/mcHtMAysfao">Europe</StyledLink> for and self-studied AI in <StyledLink href="https://sammyjaved.com/japan">Japan</StyledLink>.
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
