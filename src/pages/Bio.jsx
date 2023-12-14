@@ -67,11 +67,11 @@ export default function Bio() {
                             iconStyle={{ background: 'rgb(221, 196, 248)', color: 'white' }}
                             icon={<TravelIcon />}
                         >
-                            <h3 className="vertical-timeline-element-title">whoami</h3>
+                            <h3 className="vertical-timeline-element-title">Padawan</h3>
                             <StyledTimelinePicture src={getHomePageSource("yin-yang.png")} alt="here is an AI generated portrait of me" />
-                            <h4 className="vertical-timeline-element-subtitle">pyaar.ai</h4>
+                            <h4 className="vertical-timeline-element-subtitle"></h4>
                             <p>
-                                I guess you could say I'm learning AI.
+                                Studying AI
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement

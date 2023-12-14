@@ -14,6 +14,21 @@ export const books = {
       'text': 'The Heart of Business',
       'url': '#',
     },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Elon Musk by Walter Isaacson',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Elon Musk by Walter Isaacson',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Fear and Loathing in Las Vegas',
+      'url': '#',
+    },
   ],
   '2022': [
     {
@@ -52,21 +67,21 @@ export const books = {
       'url': '#',
     },
   ],
-    '2021': [
-      {
-        'src': DEFAULT_BLACK_IMAGE_PATH,
-        'text': 'Yearbook by Seth Rogen',
-        'url': '#',
-      },
-      {
-        'src': DEFAULT_BLACK_IMAGE_PATH,
-        'text': 'A Promised Land by Barack Obama',
-        'url': '#',
-      },
-      {
-        'src': DEFAULT_BLACK_IMAGE_PATH,
-        'text': 'The 7 Habits of Highly Effective People',
-        'url': '#',
-      },
-    ],
+  '2021': [
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Yearbook by Seth Rogen',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'A Promised Land by Barack Obama',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'The 7 Habits of Highly Effective People',
+      'url': '#',
+    },
+  ],
 };
