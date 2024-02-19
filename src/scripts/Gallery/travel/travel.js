@@ -31,7 +31,7 @@ export const countries_visited = [
 function getImageSource(imageFileName, useCloudinary, season) {
   const cloudinaryTravelPath = 'v1564458339/my-personal-website/travel/';
   if (useCloudinary) {
-      return getCloudinaryBaseUrl() + cloudinaryTravelPath + imageFileName;
+    return getCloudinaryBaseUrl() + cloudinaryTravelPath + imageFileName;
   }
 
   return getBaseUrl() + '/' + getBasePath() + '/travel/cover/' + imageFileName;
@@ -43,6 +43,27 @@ export const travel2023 = [
     'text': 'Japan',
     'duration': '',
     'time': 'February 2023 - ',
+    'url': '#',
+  },
+  {
+    'src': DEFAULT_BLACK_IMAGE_PATH,
+    'text': 'Istanbul, Turkey + Pakistan',
+    'duration': '3 weeks',
+    'time': 'September 2023 - ',
+    'url': '#',
+  },
+  {
+    'src': DEFAULT_BLACK_IMAGE_PATH,
+    'text': 'Mediterranean',
+    'duration': '3 weeks',
+    'time': 'October 2023 - ',
+    'url': '#',
+  },
+  {
+    'src': DEFAULT_BLACK_IMAGE_PATH,
+    'text': 'Milan, Italy',
+    'duration': '1 month',
+    'time': 'November 2023 - ',
     'url': '#',
   },
 ]
@@ -57,11 +78,11 @@ export const travel2022 = [
     'url': 'https://youtu.be/wDBnOPnfvyM',
   },
   {
-      'src': DEFAULT_BLACK_IMAGE_PATH,
-      'text': 'Oahu, Hawaii',
-      'duration': '7 days',
-      'time': 'Janurary 2022',
-      'url': '#',
+    'src': DEFAULT_BLACK_IMAGE_PATH,
+    'text': 'Oahu, Hawaii',
+    'duration': '7 days',
+    'time': 'Janurary 2022',
+    'url': '#',
   },
   {
     'src': DEFAULT_BLACK_IMAGE_PATH,
@@ -95,10 +116,10 @@ export const travel2022 = [
 
 export const travel2021 = [
   {
-      'src': DEFAULT_BLACK_IMAGE_PATH,
-      'text': 'Hunza, Pakistan',
-      'duration': '21 days',
-      'time': 'September 2021',
-      'url': '#',
+    'src': DEFAULT_BLACK_IMAGE_PATH,
+    'text': 'Hunza, Pakistan',
+    'duration': '21 days',
+    'time': 'September 2021',
+    'url': '#',
   },
 ];

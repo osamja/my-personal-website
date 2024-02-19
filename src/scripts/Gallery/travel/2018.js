@@ -1,12 +1,12 @@
 import {
-  getBaseUrl,
-  getBasePath,
+    getBaseUrl,
+    getBasePath,
 } from '../../../scripts/Routes/images.js';
 
 const travel2018Path = 'travel/cover';
 
 function getTravel2018Source(imageFileName) {
-  return getBaseUrl() + '/' + getBasePath() + '/' + travel2018Path + '/' + imageFileName;
+    return getBaseUrl() + '/' + getBasePath() + '/' + travel2018Path + '/' + imageFileName;
 }
 
 export const travel2018 = [

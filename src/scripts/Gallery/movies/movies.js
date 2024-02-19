@@ -3,6 +3,18 @@ import {
 } from '../../../scripts/Routes/images.js';
 
 export const movies = {
+  '2024': [
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Poor Things',
+      'url': '#',
+    },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Wonka',
+      'url': '#',
+    },
+  ],
   '2023': [
     {
       'src': DEFAULT_BLACK_IMAGE_PATH,
@@ -37,9 +49,9 @@ export const movies = {
   ],
   '2022': [
     {
-    'src': DEFAULT_BLACK_IMAGE_PATH,
-    'text': 'Matrix 4',
-    'url': '#',
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Matrix 4',
+      'url': '#',
     },
     {
       'src': DEFAULT_BLACK_IMAGE_PATH,
@@ -105,9 +117,9 @@ export const movies = {
   ],
   '2021': [
     {
-    'src': DEFAULT_BLACK_IMAGE_PATH,
-    'text': 'Grand Budapest Hotel',
-    'url': '#',
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Grand Budapest Hotel',
+      'url': '#',
     },
     {
       'src': DEFAULT_BLACK_IMAGE_PATH,

@@ -3,6 +3,13 @@ import {
 } from '../../../scripts/Routes/images.js';
 
 export const books = {
+  '2024': [
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'The Innovators by Walter Isaacson',
+      'url': '#',
+    },
+  ],
   '2023': [
     {
       'src': DEFAULT_BLACK_IMAGE_PATH,
