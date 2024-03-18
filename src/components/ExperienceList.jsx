@@ -47,6 +47,9 @@ const StyledLink = styled.a`
 const ExperienceList = () => (
   <StyledList>
     <StyledListItem>
+      Presented the Nostr protocol and ecosystem to the Osaka/Kyoto Web Developers Meetup <StyledLink href="https://owddm.com">group</StyledLink>.
+    </StyledListItem>
+    <StyledListItem>
       Volunteered with San Francisco's Department of Homelessness to build them a new <StyledLink href="https://hsh.sfgov.org/">website</StyledLink>.
     </StyledListItem>
     <StyledListItem>
