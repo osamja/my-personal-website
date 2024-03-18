@@ -69,9 +69,8 @@ export default function Bio() {
                         >
                             <h3 className="vertical-timeline-element-title">Padawan</h3>
                             <StyledTimelinePicture src={getHomePageSource("yin-yang.png")} alt="here is an AI generated portrait of me" />
-                            <h4 className="vertical-timeline-element-subtitle"></h4>
                             <p>
-                                Studying AI
+                                Studying AI by building an automatic music transcription guitar app.
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement

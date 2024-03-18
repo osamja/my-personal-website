@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+// import images.js
+import { getImageSource } from '../scripts/Routes/images';
 
 const StyledList = styled.ul`
   list-style-type: none;
@@ -44,10 +46,12 @@ const StyledLink = styled.a`
   }
 `;
 
+const NostrPdf = getImageSource('nostr.pdf', 'presentations');
+
 const ExperienceList = () => (
   <StyledList>
     <StyledListItem>
-      Presented the Nostr protocol and ecosystem to the Osaka/Kyoto Web Developers Meetup <StyledLink href="https://owddm.com">group</StyledLink>.
+      Presented the Nostr protocol and ecosystem to the Osaka/Kyoto Web Developers Meetup group. <StyledLink href={NostrPdf}>pdf</StyledLink>
     </StyledListItem>
     <StyledListItem>
       Volunteered with San Francisco's Department of Homelessness to build them a new <StyledLink href="https://hsh.sfgov.org/">website</StyledLink>.
