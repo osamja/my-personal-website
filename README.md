@@ -1,4 +1,4 @@
-[sammyjaved.com](sammyjaved.com)
+[sammyjaved.com](https://sammyjaved.com)
 
 # Development Steps
 
