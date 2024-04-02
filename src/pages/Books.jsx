@@ -8,6 +8,7 @@ import {books} from "../scripts/Gallery/books/books";
 export default function Homepage() {
     return (
         <div style={{}}>
+            <ContentList title="2024" items={books['2024']} />
             <ContentList title="2023" items={books['2023']} />
             <ContentList title="2022" items={books['2022']} />
             <ContentList title="2021" items={books['2021']} />

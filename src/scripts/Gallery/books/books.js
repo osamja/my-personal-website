@@ -9,6 +9,11 @@ export const books = {
       'text': 'The Innovators by Walter Isaacson',
       'url': '#',
     },
+    {
+      'src': DEFAULT_BLACK_IMAGE_PATH,
+      'text': 'Make Your Bed by Admiral William H. McRaven',
+      'url': '#',
+    },
   ],
   '2023': [
     {
@@ -19,11 +24,6 @@ export const books = {
     {
       'src': DEFAULT_BLACK_IMAGE_PATH,
       'text': 'The Heart of Business',
-      'url': '#',
-    },
-    {
-      'src': DEFAULT_BLACK_IMAGE_PATH,
-      'text': 'Elon Musk by Walter Isaacson',
       'url': '#',
     },
     {
