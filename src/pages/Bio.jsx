@@ -5,8 +5,6 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 
 import 'react-vertical-timeline-component/style.min.css';
 
-// https://reactjsexample.com/a-vertical-timeline-component-for-react/
-
 export default function Bio() {
     const WorkIcon = () => (
         <svg
@@ -42,15 +40,15 @@ export default function Bio() {
     const StyledTimelinePicture = styled.img`
         float: right;
         border-radius: 50%;
-        width:25%;/*To occupy image portion of the container and also fit inside the container*/
-        max-width:100%/*To fit inside the container alone with natural size of the image ,Use either of these width or max-width based on your need*/
+        width:25%;
+        max-width:100%;
         height:auto;
     `;
 
     const StyledTimelineAdobePicture = styled.img`
         float: right;
-        width:25%;/*To occupy image portion of the container and also fit inside the container*/
-        max-width:100%/*To fit inside the container alone with natural size of the image ,Use either of these width or max-width based on your need*/
+        width:25%;
+        max-width:100%;
         height:auto;
     `;
 
@@ -60,22 +58,22 @@ export default function Bio() {
                 <div className="Homepage" style={{ color: "#e0e0e0", fontWeight: 200 }}>
                     <VerticalTimeline>
                         <VerticalTimelineElement
-                            className="vertical-timeline-element--travel"
-                            date="2023 - present"
-                            contentStyle={{ background: 'rgb(221, 196, 248)', color: 'white' }}
+                            className="vertical-timeline-element--work"
+                            date="2024 - present"
+                            contentStyle={{ background: "linear-gradient(280deg, rgb(2, 0, 36) 0%, rgb(1, 47, 47) 35%, rgba(40, 38, 87, 0.74) 100%)" }}
                             contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                            iconStyle={{ background: 'rgb(221, 196, 248)', color: 'white' }}
-                            icon={<TravelIcon />}
+                            iconStyle={{ background: 'linear-gradient(280deg, rgb(2, 0, 36) 0%, rgb(1, 47, 47) 35%, rgba(40, 38, 87, 0.74) 100%)' }}
+                            icon={<WorkIcon />}
                         >
-                            <h3 className="vertical-timeline-element-title">Padawan</h3>
-                            <StyledTimelinePicture src={getHomePageSource("yin-yang.png")} alt="here is an AI generated portrait of me" />
+                            <h3 className="vertical-timeline-element-title">Software Engineer at Vast.ai</h3>
+                            <StyledTimelinePicture src={getHomePageSource("vast.svg")} alt="Vast.ai Logo" />
                             <p>
-                                Studying AI by building an automatic music transcription guitar app.
+                                Developing the web platform for a decentralized cloud computing marketplace.
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
                             className="vertical-timeline-element--travel"
-                            date="2022 - present"
+                            date="2022 - 2024"
                             contentStyle={{ background: 'rgb(202, 156, 158)', color: 'white' }}
                             contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                             iconStyle={{ background: 'rgb(202, 156, 158)', color: 'white' }}
@@ -86,6 +84,20 @@ export default function Bio() {
                             <h4 className="vertical-timeline-element-subtitle">Europe, Japan</h4>
                             <p>
                                 I backpacked <StyledLink href="https://youtu.be/mcHtMAysfao">Europe</StyledLink> for and self-studied AI in <StyledLink href="https://sammyjaved.com/japan">Japan</StyledLink>.
+                            </p>
+                        </VerticalTimelineElement>
+                        <VerticalTimelineElement
+                            className="vertical-timeline-element--travel"
+                            date="2023 - 2024"
+                            contentStyle={{ background: 'rgb(221, 196, 248)', color: 'white' }}
+                            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                            iconStyle={{ background: 'rgb(221, 196, 248)', color: 'white' }}
+                            icon={<TravelIcon />}
+                        >
+                            <h3 className="vertical-timeline-element-title">pyaar.ai</h3>
+                            <StyledTimelinePicture src={getHomePageSource("yin-yang.png")} alt="here is an AI generated portrait of me" />
+                            <p>
+                                Automatic music transcription app built on Magenta MT3.
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
@@ -119,22 +131,8 @@ export default function Bio() {
                             </p>
                         </VerticalTimelineElement>
                     </VerticalTimeline>
-
-                    {/* <ul>
-                        <StyledLi>Currently, I am studying ML abroad (in Kyoto, Japan as of March 2023) since I never got the chance to do it in school.</StyledLi>
-                        <StyledLi>I was a full-stack web developer at Adobe for 4 years where I worked on the Adobe Stock website (Feb 2018 - April 2022)</StyledLi>
-                        <StyledLi>I did my undergraduate studies in computer science from UC Berkeley (May 2015 - Dec 2017)</StyledLi>
-                    </ul> */}
                 </div>
             </div>
-
-            {/* <h2>Pictures</h2> */}
-            {/* TODO: Add a click here button to see me before/after haircut button.  Avoids loading unnecessary images + fun interaction for user */}
-            {/* <p>Here is me after haircut</p>
-            <img src={mePath} alt="Me" width='50%' style={{marginBottom: '5%'}}></img>
-
-            <p>Here is me before haircut</p>
-            <img src={meBefore} alt="Me" width='30%' style={{marginBottom: '5%'}}></img> */}
         </div>
     );
 }

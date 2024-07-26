@@ -11,13 +11,6 @@
 - `cd ~/my-personal-website`
 - `docker build -t my-personal-website:prod -f prod.Dockerfile .`
 
-<!-- DEPRECATED -->
-<!-- #### Run this container:
-- `cd ~/my-personal-website`
-- `docker container run -it my-personal-website:prod sh`
-#### Copy files container to host
-- `sudo docker cp <CONTAINER-ID>:/app/build /home/sammy/nginx_sammyjaved_proxy/sammyjaved.com` -->
-
 #### Bring up proxy:
 - `cd ~/nginx_sammyjaved_proxy`
 - `docker-compose up`
