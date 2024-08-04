@@ -73,31 +73,16 @@ export default function Bio() {
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
                             className="vertical-timeline-element--travel"
-                            date="2022 - 2024"
-                            contentStyle={{ background: 'rgb(202, 156, 158)', color: 'white' }}
-                            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                            iconStyle={{ background: 'rgb(202, 156, 158)', color: 'white' }}
-                            icon={<TravelIcon />}
-                        >
-                            <h3 className="vertical-timeline-element-title">Nomad</h3>
-                            <StyledTimelinePicture src={getHomePageSource("anime-backpack-me.JPG")} alt="here is an AI generated portrait of me" />
-                            <h4 className="vertical-timeline-element-subtitle">Europe, Japan</h4>
-                            <p>
-                                I backpacked <StyledLink href="https://youtu.be/mcHtMAysfao">Europe</StyledLink> for and self-studied AI in <StyledLink href="https://sammyjaved.com/japan">Japan</StyledLink>.
-                            </p>
-                        </VerticalTimelineElement>
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--travel"
                             date="2023 - 2024"
-                            contentStyle={{ background: 'rgb(221, 196, 248)', color: 'white' }}
+                            contentStyle={{ background: 'rgb(136, 97, 178)', color: 'white' }}
                             contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                             iconStyle={{ background: 'rgb(221, 196, 248)', color: 'white' }}
                             icon={<TravelIcon />}
                         >
-                            <h3 className="vertical-timeline-element-title">pyaar.ai</h3>
+                            <h3 className="vertical-timeline-element-title"><a href="https://pyaar.ai" style={{color: "white"}}>pyaar.ai</a></h3>
                             <StyledTimelinePicture src={getHomePageSource("yin-yang.png")} alt="here is an AI generated portrait of me" />
                             <p>
-                                Automatic music transcription app built on Magenta MT3.
+                                Automatic music transcription app built on Magenta MT3.  This converts audio to MIDI and sheet music.
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement

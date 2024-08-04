@@ -51,7 +51,7 @@ const NostrPdf = getImageSource('nostr.pdf', 'presentations');
 const ExperienceList = () => (
   <StyledList>
     <StyledListItem>
-      Presented the Nostr protocol and ecosystem to the Osaka/Kyoto Web Developers Meetup group. <StyledLink href={NostrPdf}>pdf</StyledLink>
+      I backpacked <StyledLink href="https://youtu.be/mcHtMAysfao">UK, Europe</StyledLink> for 4 months, and slow traveled <StyledLink href="https://sammyjaved.com/japan">Japan</StyledLink>.  In Kyoto, I gave a presentation about the <StyledLink href={NostrPdf}>Nostr</StyledLink> protocol to the Kyoto Web Developers group.
     </StyledListItem>
     <StyledListItem>
       Volunteered with San Francisco's Department of Homelessness to build them a new <StyledLink href="https://hsh.sfgov.org/">website</StyledLink>.
