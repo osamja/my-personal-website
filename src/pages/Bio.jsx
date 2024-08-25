@@ -60,34 +60,47 @@ export default function Bio() {
                         <VerticalTimelineElement
                             className="vertical-timeline-element--work"
                             date="2024 - present"
-                            contentStyle={{ background: "linear-gradient(280deg, rgb(2, 0, 36) 0%, rgb(1, 47, 47) 35%, rgba(40, 38, 87, 0.74) 100%)" }}
+                            contentStyle={{
+                                background: "linear-gradient(280deg, rgb(2, 0, 36) 0%, rgb(1, 47, 47) 35%, rgba(40, 38, 87, 0.74) 100%)",
+                                border: "2px solid currentColor",
+                            }}
                             contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                             iconStyle={{ background: 'linear-gradient(280deg, rgb(2, 0, 36) 0%, rgb(1, 47, 47) 35%, rgba(40, 38, 87, 0.74) 100%)' }}
                             icon={<WorkIcon />}
                         >
-                            <h3 className="vertical-timeline-element-title">Software Engineer at Vast.ai</h3>
+                            <h3 className="vertical-timeline-element-title">Software Engineer at <a href="https://vast.ai" style={{ color: "white" }}>Vast.ai</a></h3>
                             <StyledTimelinePicture src={getHomePageSource("vast.svg")} alt="Vast.ai Logo" />
+                            <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
                             <p>
                                 Developing the web platform for a decentralized cloud computing marketplace.
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
                             className="vertical-timeline-element--travel"
-                            date="2023 - 2024"
-                            contentStyle={{ background: 'rgb(136, 97, 178)', color: 'white' }}
+                            date="2023 - present"
+                            contentStyle={{
+                                background: 'linear-gradient(90deg, rgb(156, 196, 249, 1) 50%, rgb(221, 196, 248, 1) 100%)',
+                                color: 'azure',
+                                border: "2px solid currentColor"
+                            }}
                             contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                             iconStyle={{ background: 'rgb(221, 196, 248)', color: 'white' }}
                             icon={<TravelIcon />}
                         >
-                            <h3 className="vertical-timeline-element-title"><a href="https://pyaar.ai" style={{color: "white"}}>pyaar.ai</a></h3>
+                            <h3 className="vertical-timeline-element-title"><a href="https://pyaar.ai" style={{ color: "white" }}>Pyaar.ai</a></h3>
                             <StyledTimelinePicture src={getHomePageSource("yin-yang.png")} alt="here is an AI generated portrait of me" />
+                            <h4 className="vertical-timeline-element-subtitle">CA, Kyoto, Milan</h4>
                             <p>
                                 Automatic music transcription app built on Magenta MT3.  This converts audio to MIDI and sheet music.
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
                             className="vertical-timeline-element--work"
-                            contentStyle={{ background: 'rgb(218, 56, 50)', color: 'white' }}
+                            contentStyle={{
+                                background: 'rgb(218, 56, 50)',
+                                color: 'white',
+                                border: "2px solid currentColor",
+                            }}
                             contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                             date="2018 - 2022"
                             iconStyle={{ background: 'rgb(218, 56, 50)', color: 'white' }}
@@ -97,12 +110,16 @@ export default function Bio() {
                             <StyledTimelineAdobePicture src={getHomePageSource("adobe.png")} alt="here is an AI generated portrait of me" />
                             <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
                             <p>
-                                Developed microservices, frontend components, and the monolith for the Adobe Stock website.
+                                Developed microservices, frontend components, and the monolith for the Adobe <a href="https://stock.adobe.com" style={{ color: "white" }}>Stock</a> website.
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
                             className="vertical-timeline-element--school"
-                            contentStyle={{ background: 'rgb(25, 65, 113)', color: 'rgb(237, 184, 72)' }}
+                            contentStyle={{
+                                background: 'rgb(25, 65, 113)',
+                                color: 'rgb(237, 184, 72)',
+                                border: "2px solid currentColor"
+                            }}
                             contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                             date="2015 - 2018"
                             iconStyle={{ background: 'rgb(25, 65, 113)', color: 'rgb(237, 184, 72)' }}
@@ -112,7 +129,7 @@ export default function Bio() {
                             <StyledTimelinePicture src={getHomePageSource("berkeley-seal.png")} alt="UC Berkeley" />
                             <h4 className="vertical-timeline-element-subtitle">Berkeley, CA</h4>
                             <p>
-                                Took as many CS courses as I could handle + a Harry Potter class.
+                                Took as many <a href="https://eecs.berkeley.edu/cs/" style={{ color: 'rgb(237, 184, 72)' }}>CS</a> courses as I could handle + a Harry Potter class.
                             </p>
                         </VerticalTimelineElement>
                     </VerticalTimeline>
