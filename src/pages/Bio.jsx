@@ -77,7 +77,7 @@ export default function Bio() {
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
                             className="vertical-timeline-element--travel"
-                            date="2023 - present"
+                            date="2023 - 2024"
                             contentStyle={{
                                 background: 'linear-gradient(90deg, rgb(156, 196, 249, 1) 50%, rgb(221, 196, 248, 1) 100%)',
                                 color: 'azure',
