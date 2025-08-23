@@ -72,7 +72,7 @@ export default function Bio() {
                             <StyledTimelinePicture src={getHomePageSource("vast.svg")} alt="Vast.ai Logo" />
                             <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
                             <p>
-                                Developing the web platform for a decentralized cloud computing marketplace.
+                                Working on agents, cloud, and Things.
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
