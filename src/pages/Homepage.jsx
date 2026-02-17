@@ -68,7 +68,7 @@ export default function Homepage() {
     return (
         <StyledPageContent>
             <StyledContainer>
-                <StyledSocialLinks href="https://snort.social/p/npub16wgk7s474eppd9xwqwfccvh57u0ev7c9q69sr4cnk3s3vk7av3rqf98had">
+                <StyledSocialLinks href="https://primal.net/p/nprofile1qqsd8yt0g2l2usskjn8q8yuvxt60w8uk0vzsdzcp6ufmgcgkt0wkg3sle0dc6">
                     <StyledNostrLink src={nostrPath} alt='Image' />
                 </StyledSocialLinks>
                 
