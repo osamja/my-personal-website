@@ -68,7 +68,7 @@ export default function Bio() {
                             iconStyle={{ background: 'linear-gradient(280deg, rgb(2, 0, 36) 0%, rgb(1, 47, 47) 35%, rgba(40, 38, 87, 0.74) 100%)' }}
                             icon={<WorkIcon />}
                         >
-                            <h3 className="vertical-timeline-element-title">Software Engineer at <a href="https://vast.ai" style={{ color: "white" }}>Vast.ai</a></h3>
+                            <h3 className="vertical-timeline-element-title">Member of Technical Staff at <a href="https://vast.ai" style={{ color: "white" }}>Vast.ai</a></h3>
                             <StyledTimelinePicture src={getHomePageSource("vast.svg")} alt="Vast.ai Logo" />
                             <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
                             <p>
