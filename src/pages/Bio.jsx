@@ -52,6 +52,13 @@ export default function Bio() {
         height:auto;
     `;
 
+    const StyledTimelineEVCPicture = styled.img`
+        float: right;
+        width: 40%;
+        max-width: 100%;
+        height: auto;
+    `;
+
     return (
         <div className="Bio" style={{ color: '#e0e0e0', textAlign: 'left', margin: '5%' }}>
             <div>
@@ -130,6 +137,26 @@ export default function Bio() {
                             <h4 className="vertical-timeline-element-subtitle">Berkeley, CA</h4>
                             <p>
                                 Took as many <a href="https://eecs.berkeley.edu/cs/" style={{ color: 'rgb(237, 184, 72)' }}>CS</a> courses as I could handle + a Harry Potter class.
+                            </p>
+                        </VerticalTimelineElement>
+                        <VerticalTimelineElement
+                            className="vertical-timeline-element--school"
+                            contentStyle={{
+                                background: 'rgb(0, 102, 68)',
+                                color: 'rgb(220, 220, 220)',
+                                border: "2px solid currentColor"
+                            }}
+                            contentArrowStyle={{ borderRight: '7px solid  rgb(0, 102, 68)' }}
+                            date="2012 - 2015"
+                            iconStyle={{ background: 'rgb(0, 102, 68)', color: 'white' }}
+                            icon={<SchoolIcon />}
+                        >
+                            <h3 className="vertical-timeline-element-title" style={{ display: 'inline' }}>A.S. in Mathematics</h3>
+                            <StyledTimelineEVCPicture src={getHomePageSource("evc-logo.png")} alt="Evergreen Valley College Logo" />
+                            <h4 className="vertical-timeline-element-subtitle">Evergreen Valley College</h4>
+                            <h4 className="vertical-timeline-element-subtitle">San Jose, CA</h4>
+                            <p>
+                                Computer Science coursework before transferring to UC Berkeley.
                             </p>
                         </VerticalTimelineElement>
                     </VerticalTimeline>

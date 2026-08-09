@@ -8,7 +8,7 @@ class GalleryModal extends React.Component {
         document.body.addEventListener('keydown', this.handleKeyDown);
     }
 
-    componentWillUnMount() {
+    componentWillUnmount() {
         document.body.removeEventListener('keydown', this.handleKeyDown);
     }
 

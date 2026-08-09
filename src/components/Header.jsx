@@ -28,6 +28,8 @@ export default function Header() {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 12px 48px 8px;
+    min-height: 56px;
   `;
 
   const handleHeaderClick = () => {

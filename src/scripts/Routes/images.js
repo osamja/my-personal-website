@@ -48,5 +48,20 @@ export function getImageSource(imageName, category = null) {
 
 
 
-export const DEFAULT_BLACK_IMAGE_PATH = getBaseUrl() + '/' + getBasePath() + '/general/colors/black.jpg';
-export const DEFAULT_BLACK_THUMBNAIL_IMAGE_PATH = getBaseUrl() + '/' + getBasePath() + '/general/colors/black-thumbnail.jpg';
+const generatePlaceholderSvg = (w, h) => {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+    <defs>
+      <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#3a4565"/>
+        <stop offset="100%" style="stop-color:#2a3350"/>
+      </linearGradient>
+    </defs>
+    <rect width="${w}" height="${h}" fill="url(#g)"/>
+    <line x1="0" y1="0" x2="${w}" y2="${h}" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    <line x1="${w}" y1="0" x2="0" y2="${h}" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  </svg>`;
+  return 'data:image/svg+xml,' + encodeURIComponent(svg);
+};
+
+export const DEFAULT_BLACK_IMAGE_PATH = generatePlaceholderSvg(800, 600);
+export const DEFAULT_BLACK_THUMBNAIL_IMAGE_PATH = generatePlaceholderSvg(400, 300);

@@ -51,22 +51,13 @@ html {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 8px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
 
-.grid-item:hover {
-  /* border: 2px solid #d9d9d9; */
-}
-
-@media (min-width: 20em) {
-  .gallery-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 @media (min-width: 34em) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -74,7 +65,7 @@ html {
 }
 @media (min-width: 60em) {
   .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
