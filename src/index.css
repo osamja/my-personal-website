@@ -138,6 +138,16 @@ strong {
   color: var(--ks-champagne);
 }
 
+ul,
+ol {
+  padding-left: 1.5rem;
+  color: var(--ks-text);
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
 /* ============================================================
    Gallery grid
    ============================================================ */
@@ -279,6 +289,25 @@ strong {
 
 .Journal h1 {
   text-align: center;
+}
+
+.Journal {
+  max-width: 70ch;
+  margin: 0 auto;
+}
+
+.Journal h3 {
+  margin-top: 2rem;
+}
+
+.Journal h5 {
+  font-family: var(--ks-font-mono);
+  font-weight: 500;
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ks-muted);
+  margin-top: 2.5rem;
 }
 
 .Journal blockquote {
