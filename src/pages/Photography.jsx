@@ -6,8 +6,6 @@ export default class Photography extends Component {
     render() {
         return (
           <div className="Photography">
-              <div className="intro-text" style={{ fontWeight: 200 }}> 
-              </div>
               <h1>
                   2019
               </h1>

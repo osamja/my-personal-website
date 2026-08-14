@@ -66,7 +66,6 @@ export default function Bio() {
         borderRadius: '4px',
     };
 
-    const workArrowStyle = { borderRight: '7px solid var(--ks-raised)' };
     const workIconStyle = { background: 'var(--ks-kinpaku)', color: 'var(--ks-dark-ink)', boxShadow: 'none' };
     const secondaryIconStyle = { background: 'var(--ks-patina-deep)', color: 'var(--ks-champagne)', boxShadow: 'none' };
 
@@ -78,7 +77,6 @@ export default function Bio() {
                         className="vertical-timeline-element--work"
                         date="2024 - present"
                         contentStyle={workContentStyle}
-                        contentArrowStyle={workArrowStyle}
                         iconStyle={workIconStyle}
                         icon={<WorkIcon />}
                     >
@@ -93,7 +91,6 @@ export default function Bio() {
                         className="vertical-timeline-element--travel"
                         date="2023 - 2024"
                         contentStyle={secondaryContentStyle}
-                        contentArrowStyle={workArrowStyle}
                         iconStyle={secondaryIconStyle}
                         icon={<TravelIcon />}
                     >
@@ -108,7 +105,6 @@ export default function Bio() {
                         className="vertical-timeline-element--work"
                         date="2018 - 2022"
                         contentStyle={workContentStyle}
-                        contentArrowStyle={workArrowStyle}
                         iconStyle={workIconStyle}
                         icon={<WorkIcon />}
                     >
@@ -123,7 +119,6 @@ export default function Bio() {
                         className="vertical-timeline-element--school"
                         date="2015 - 2018"
                         contentStyle={secondaryContentStyle}
-                        contentArrowStyle={workArrowStyle}
                         iconStyle={secondaryIconStyle}
                         icon={<SchoolIcon />}
                     >

@@ -4,6 +4,8 @@
    ============================================================ */
 
 :root {
+  color-scheme: dark;
+
   /* Brand anchors */
   --ks-kinpaku: oklch(84% 0.19 80.46);
   --ks-kinpaku-pale: oklch(86% 0.07 84);
@@ -85,6 +87,7 @@ h5 {
   line-height: 1.05;
   letter-spacing: -0.01em;
   margin: 0 0 0.75rem;
+  text-wrap: balance;
 }
 
 h1 {
@@ -106,11 +109,14 @@ h3 {
 
 p {
   max-width: 70ch;
+  text-wrap: pretty;
 }
 
 a {
   color: var(--ks-kinpaku);
   text-decoration: none;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
   transition: color 0.18s ease;
 }
 
@@ -237,6 +243,10 @@ strong {
   box-shadow: none;
 }
 
+.vertical-timeline-element-content-arrow {
+  display: none;
+}
+
 .vertical-timeline-element-date {
   color: var(--ks-muted);
   opacity: 1;
@@ -279,28 +289,40 @@ strong {
 }
 
 /* ============================================================
-   Font Awesome social icons (legacy)
+   Browser surfaces (selection, focus, scrollbar, caret)
    ============================================================ */
 
-.fa {
-  padding: 5px;
-  font-size: 33px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 3px;
+::selection {
+  background: var(--ks-kinpaku);
+  color: var(--ks-dark-ink);
 }
 
-.fa:hover {
-  opacity: 0.7;
+:focus-visible {
+  outline: 2px solid var(--ks-patina);
+  outline-offset: 4px;
+  border-radius: 2px;
 }
 
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-  margin-left: 20px;
+:root {
+  caret-color: var(--ks-kinpaku);
+  scrollbar-color: var(--ks-graphite-2) var(--ks-lacquer-deep);
 }
 
-.fa-twitter {
-  background: #55acee;
-  color: white;
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ks-lacquer-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ks-graphite-2);
+  border-radius: 5px;
+  border: 2px solid var(--ks-lacquer-deep);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ks-graphite);
 }
