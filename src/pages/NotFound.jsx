@@ -14,15 +14,15 @@ const Wrapper = styled.div`
 
 const ErrorCode = styled.h1`
   font-size: 6rem;
-  font-weight: 200;
-  color: rgba(255, 255, 255, 0.15);
+  font-weight: 100;
+  color: var(--ks-faint);
   margin: 0 0 0.5rem;
   line-height: 1;
 `;
 
 const Message = styled.p`
   font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--ks-muted);
   margin: 0 0 2rem;
   font-weight: 300;
 `;
@@ -37,19 +37,18 @@ const LinkGrid = styled.div`
 
 const LinkCard = styled(NavLink)`
   padding: 0.6rem 1.2rem;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-  color: rgba(255, 255, 255, 0.75);
+  background: var(--ks-raised);
+  border: 1px solid var(--ks-rule);
+  border-radius: 4px;
+  color: var(--ks-text);
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 300;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: border-color 0.2s, color 0.2s;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.25);
-    color: #fff;
+    border-color: var(--ks-rule-strong);
+    color: var(--ks-kinpaku);
   }
 `;
 

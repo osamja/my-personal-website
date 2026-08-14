@@ -8,7 +8,7 @@ import {coursesAcademicProjects} from "../scripts/Gallery/academic/courses";
 export default class Academic extends Component {
     render() {
         return (
-            <div className="Academic" style={{color: "white"}}>
+            <div className="Academic">
                 <h1>
                   Self-Paced Courses
                 </h1>

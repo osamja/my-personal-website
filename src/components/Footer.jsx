@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const FooterWrapper = styled.footer`
   margin-top: 3rem;
   padding: 2rem 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--ks-rule);
   text-align: center;
 `;
 
@@ -18,19 +18,19 @@ const FooterLinks = styled.div`
 `;
 
 const FooterLink = styled(NavLink)`
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--ks-muted);
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 300;
   transition: color 0.2s;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--ks-kinpaku);
   }
 `;
 
 const Copyright = styled.p`
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--ks-faint);
   font-size: 0.75rem;
   margin: 0;
 `;

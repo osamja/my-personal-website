@@ -1,0 +1,36 @@
+# Sammy Javed
+
+> Personal website of Sammy Javed — a software developer living in the SF Bay Area. This site shares projects, writing, and personal interests (travel, books, movies, photography, music, and more).
+
+## About
+
+Sammy Javed is a software engineer based in the San Francisco Bay Area. This site is a personal portfolio and journal covering both professional work and hobbies.
+
+## Pages
+
+- [Homepage](https://sammyjaved.com/) — Landing page
+- [Bio](https://sammyjaved.com/bio) — About Sammy
+- [Professional](https://sammyjaved.com/professional) — Professional experience
+- [Academic](https://sammyjaved.com/academic) — Academic work
+- [Projects](https://sammyjaved.com/projects) — Software and side projects
+- [Journal](https://sammyjaved.com/journal) — Personal writing
+
+## Projects
+
+- [ImageMorpher](https://sammyjaved.com/projects/image-morpher) — Face morphing API using dlib and Delaunay triangulation. Live at pyaar.ai/morph with a React Native iOS client.
+- [My Personal Website](https://sammyjaved.com/projects/my-personal-website) — This site. React 16 + styled-components, deployed via Docker and nginx on Linode.
+- [Pyaar AI](https://pyaar.ai) — Music transcription API that converts audio to MIDI using a PyTorch rewrite of Google's MT3 model.
+
+## Hobbies & Interests
+
+- [Books](https://sammyjaved.com/books) — Reading list
+- [Movies](https://sammyjaved.com/movies) — Movies watched
+- [Shows](https://sammyjaved.com/shows) — TV shows
+- [Travel](https://sammyjaved.com/travel) — Travel photos and notes
+- [Japan](https://sammyjaved.com/japan) — Japan trip
+- [Photography](https://sammyjaved.com/photography) — Photography portfolio
+- [Guitar](https://sammyjaved.com/guitar) — Music and guitar
+
+## Contact
+
+- GitHub: https://github.com/osamja

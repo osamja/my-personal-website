@@ -14,7 +14,6 @@ import Travel from '../src/pages/Travel';
 import Header from '../src/components/Header';
 import Navigation from '../src/components/Navigation';
 import Footer from '../src/components/Footer';
-import ScrollToTop from '../src/components/ScrollToTop';
 import Projects from '../src/pages/Projects';
 import MyPersonalWebsite from '../src/pages/projects/MyPersonalWebsite';
 import ImageMorpher from './pages/projects/Image-Morpher/ImageMorpher';
@@ -26,7 +25,6 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                    <ScrollToTop />
                     <Navigation />
                     <Header/>
                     <div className="routes">

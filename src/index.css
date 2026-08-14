@@ -1,34 +1,52 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: adobe-garamond-pro, serif;
-  font-style: normal;
-  font-weight: 400;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  position: relative;
-  background-repeat: no-repeat;
-  background-color: #2e3750;
-  -moz-osx-font-smoothing: grayscale;
+/* ============================================================
+   Neo Kinpaku design tokens
+   Dark lacquer surfaces, kinpaku gold accent, verdigris patina.
+   ============================================================ */
+
+:root {
+  color-scheme: dark;
+
+  /* Brand anchors */
+  --ks-kinpaku: oklch(84% 0.19 80.46);
+  --ks-kinpaku-pale: oklch(86% 0.07 84);
+  --ks-kinpaku-rich: oklch(77% 0.13 82);
+  --ks-kinpaku-deep: oklch(61% 0.085 78);
+  --ks-patina: oklch(70% 0.12 188);
+  --ks-patina-pale: oklch(82% 0.07 188);
+  --ks-patina-deep: oklch(49% 0.08 188);
+
+  /* Surfaces */
+  --ks-lacquer: oklch(7% 0.006 95);
+  --ks-lacquer-deep: oklch(4% 0.004 95);
+  --ks-raised: oklch(11% 0.006 95);
+  --ks-graphite: oklch(15% 0.008 95);
+  --ks-graphite-2: oklch(19% 0.008 95);
+
+  /* Text */
+  --ks-champagne: oklch(91% 0 0);
+  --ks-text: oklch(88% 0 0);
+  --ks-muted: oklch(72% 0 0);
+  --ks-faint: oklch(62% 0 0);
+  --ks-mute-deep: oklch(52% 0 0);
+  --ks-dark-ink: oklch(14% 0.018 95);
+
+  /* Rules */
+  --ks-rule: oklch(78% 0 0 / 0.16);
+  --ks-rule-strong: oklch(74% 0.09 82 / 0.6);
+
+  /* Type */
+  --ks-font-display: "Alumni Sans", "Albert Sans", Arial, sans-serif;
+  --ks-font-body: "Albert Sans", "Avenir Next", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --ks-font-mono: "SFMono-Regular", "Roboto Mono", Consolas, monospace;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+/* ============================================================
+   Base
+   ============================================================ */
 
-
-/**
-sammy stuff below
- */
-
-html, body, #root {
-  height: 100%;
-}
-
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -36,17 +54,117 @@ html {
   font-size: 16px;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--ks-lacquer);
+  color: var(--ks-text);
+  font-family: var(--ks-font-body);
+  font-weight: 400;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================================
+   Typography
+   ============================================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--ks-champagne);
+  font-family: var(--ks-font-display);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.75rem;
+  text-wrap: balance;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+}
+
+h2 {
+  font-weight: 300;
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+}
+
+h3 {
+  font-family: var(--ks-font-body);
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.35;
+}
+
+p {
+  max-width: 70ch;
+  text-wrap: pretty;
+}
+
+a {
+  color: var(--ks-kinpaku);
+  text-decoration: none;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color 0.18s ease;
+}
+
+a:hover {
+  color: var(--ks-kinpaku-pale);
+  text-decoration: underline;
+}
+
+code {
+  font-family: var(--ks-font-mono);
+  font-size: 0.875em;
+  color: var(--ks-patina);
+  background: var(--ks-raised);
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+}
+
+strong {
+  color: var(--ks-champagne);
+}
+
+ul,
+ol {
+  padding-left: 1.5rem;
+  color: var(--ks-text);
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+/* ============================================================
+   Gallery grid
+   ============================================================ */
+
 .gallery-container {
-  padding: .9375rem 0;
+  padding: 0.9375rem 0;
 }
 
 .gallery-container h1 {
-  margin: 2rem 0;
+  margin: 2.5rem 0 1rem;
   padding: 0;
   text-align: center;
-  color: #fff;
-  font-size: 6.5vw;
-  font-weight: lighter;
+  color: var(--ks-champagne);
+  font-family: var(--ks-font-display);
+  font-weight: 200;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: -0.01em;
 }
 
 .gallery-grid {
@@ -63,6 +181,7 @@ html {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (min-width: 60em) {
   .gallery-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -71,36 +190,162 @@ html {
 
 .gallery-grid div {
   position: relative;
-  border-radius: 5px;
-  /* border: 2px solid #737373; */
+  border-radius: 4px;
 }
 
-/* Style all font awesome icons */
-.fa {
-  padding: 5px;
-  font-size: 33px;
-  /* width: 30px; */
-  text-align: center;
+/* ============================================================
+   Grid item
+   ============================================================ */
+
+.grid-item {
+  border: 1px solid var(--ks-rule);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: border-color 0.18s ease;
+}
+
+.grid-item:hover {
+  border-color: var(--ks-rule-strong);
+}
+
+.grid-item a,
+.grid-item > div {
+  display: block;
+  position: relative;
   text-decoration: none;
-  border-radius: 10%;
 }
 
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
+.grid-item img {
+  width: 100%;
+  display: block;
 }
 
-/* Set a specific color for each brand */
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-  margin-left: 20px;
+.grid-item .grid-item-label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  margin: 0;
+  padding: 0.25rem 0.6rem;
+  color: var(--ks-champagne);
+  background: var(--ks-lacquer-deep);
+  border: 1px solid var(--ks-rule);
+  border-radius: 3px;
+  font-family: var(--ks-font-body);
+  font-size: 0.8125rem;
+  font-weight: 400;
 }
 
-/* Twitter */
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
+/* ============================================================
+   Vertical timeline
+   ============================================================ */
+
+.vertical-timeline::before {
+  background: var(--ks-rule);
 }
 
+.vertical-timeline-element-content {
+  box-shadow: none;
+}
+
+.vertical-timeline-element-content-arrow {
+  display: none;
+}
+
+.vertical-timeline-element-date {
+  color: var(--ks-muted);
+  opacity: 1;
+}
+
+.vertical-timeline-element-icon {
+  box-shadow: none;
+}
+
+.vertical-timeline-element-title {
+  color: var(--ks-champagne);
+  font-family: var(--ks-font-body);
+  font-weight: 500;
+}
+
+.vertical-timeline-element-subtitle {
+  color: var(--ks-muted);
+  font-weight: 300;
+}
+
+.vertical-timeline-element--work .vertical-timeline-element-content,
+.vertical-timeline-element--travel .vertical-timeline-element-content,
+.vertical-timeline-element--school .vertical-timeline-element-content {
+  border-radius: 4px;
+}
+
+/* ============================================================
+   Journal / markdown
+   ============================================================ */
+
+.Journal h1 {
+  text-align: center;
+}
+
+.Journal {
+  max-width: 70ch;
+  margin: 0 auto;
+}
+
+.Journal h3 {
+  margin-top: 2rem;
+}
+
+.Journal h5 {
+  font-family: var(--ks-font-mono);
+  font-weight: 500;
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ks-muted);
+  margin-top: 2.5rem;
+}
+
+.Journal blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--ks-kinpaku);
+  color: var(--ks-muted);
+}
+
+/* ============================================================
+   Browser surfaces (selection, focus, scrollbar, caret)
+   ============================================================ */
+
+::selection {
+  background: var(--ks-kinpaku);
+  color: var(--ks-dark-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ks-patina);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+:root {
+  caret-color: var(--ks-kinpaku);
+  scrollbar-color: var(--ks-graphite-2) var(--ks-lacquer-deep);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ks-lacquer-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ks-graphite-2);
+  border-radius: 5px;
+  border: 2px solid var(--ks-lacquer-deep);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ks-graphite);
+}

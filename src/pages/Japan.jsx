@@ -227,7 +227,7 @@ export default function Japan23() {
   };
 
   return (
-    <div className="Bio" style={{color: '#e0e0e0', textAlign: 'left', margin: '5%'}}>
+    <div className="Bio" style={{ textAlign: 'left' }}>
       {/* <div>
         <h2>Travels in Japan</h2>
         <p>
