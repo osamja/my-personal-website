@@ -117,7 +117,7 @@ export default function Journal() {
     `
 
     return (
-        <div className="Journal" style={{color: '#e0e0e0', textAlign: 'left', margin: '5%'}}>
+        <div className="Journal" style={{ textAlign: 'left' }}>
             <h1 style={{'textAlign': 'center'}}>
                 Backpacking 2022 Journal
             </h1>

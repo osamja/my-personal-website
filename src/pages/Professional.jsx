@@ -5,7 +5,7 @@ import {professional} from "../scripts/Gallery/professional/professional";
 export default class Movies extends Component {
   render() {
     return (
-      <div className="Professional" style={{color: "white"}}>
+      <div className="Professional">
         <h1>
           Professional
         </h1>

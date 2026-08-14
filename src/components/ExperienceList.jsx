@@ -1,47 +1,44 @@
 import React from 'react';
 import styled from 'styled-components';
-// import images.js
 import { getImageSource } from '../scripts/Routes/images';
 
 const StyledList = styled.ul`
   list-style-type: none;
-  color: white;
+  color: var(--ks-text);
   padding: 0;
+  max-width: 70ch;
 `;
 
 const StyledListItem = styled.li`
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-    transition: all 0.3s ease;
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
 
-    &:before {
+  &:before {
     content: '';
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 0.65em;
     width: 5px;
     height: 5px;
-    background-color: #8e44ad;
+    background-color: var(--ks-kinpaku);
     border-radius: 50%;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
-    }
+  }
 
-    &:hover {
-        &:before {
-            width: 10px;
-            height: 10px;
-            background-color: #3498db;
-        }
+  &:hover {
+    &:before {
+      background-color: var(--ks-patina);
     }
+  }
 `;
 
 const StyledLink = styled.a`
-  color: #f06292;
+  color: var(--ks-kinpaku);
   text-decoration: none;
 
   &:hover {
+    color: var(--ks-kinpaku-pale);
     text-decoration: underline;
   }
 `;
@@ -51,7 +48,7 @@ const NostrPdf = getImageSource('nostr.pdf', 'presentations');
 const ExperienceList = () => (
   <StyledList>
     <StyledListItem>
-      I backpacked <StyledLink href="https://youtu.be/mcHtMAysfao">UK, Europe</StyledLink> for 4 months, and slow traveled <StyledLink href="https://sammyjaved.com/japan">Japan</StyledLink>.  In Kyoto, I gave a presentation about the <StyledLink href={NostrPdf}>Nostr</StyledLink> protocol to the Kyoto Web Developers group.
+      I backpacked <StyledLink href="https://youtu.be/mcHtMAysfao">UK, Europe</StyledLink> for 4 months, and slow traveled <StyledLink href="https://sammyjaved.com/japan">Japan</StyledLink>. In Kyoto, I gave a presentation about the <StyledLink href={NostrPdf}>Nostr</StyledLink> protocol to the Kyoto Web Developers group.
     </StyledListItem>
     <StyledListItem>
       Volunteered with San Francisco's Department of Homelessness to build them a new <StyledLink href="https://hsh.sfgov.org/">website</StyledLink>.

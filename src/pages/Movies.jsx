@@ -7,8 +7,8 @@ import {movies} from "../scripts/Gallery/movies/movies";
 export default class Movies extends Component {
     render() {
         return (
-            <div className="Movies" style={{color: "white"}}>
-                <div className="intro-text" style={{color: "#e0e0e0", fontWeight: 200}}>
+            <div className="Movies">
+                <div className="intro-text" style={{ fontWeight: 200 }}>
                 <p>Movies I've watched over the years (that I can recall)</p>
                 </div>
                 <ContentList title="2023" items={movies['2023']}/>

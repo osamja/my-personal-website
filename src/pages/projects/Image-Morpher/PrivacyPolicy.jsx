@@ -2,7 +2,7 @@ import React from 'react';
 
 function PrivacyPolicy() {
     return (
-        <div style={{color: 'white'}}>
+        <div>
           <h1>Privacy Policy</h1>
           <p>
             This policy applies to all information collected or submitted on Sammy Javed's website and our apps for iPhone and any other devices and platforms.

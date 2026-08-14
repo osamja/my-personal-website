@@ -1,85 +1,56 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import Bio from './Bio';
-import {getHomePageSource} from '../scripts/Gallery/homepage';
-// Import the experience list component
+import { getHomePageSource } from '../scripts/Gallery/homepage';
 import ExperienceList from '../components/ExperienceList';
 
 export default function Homepage() {
     const nostrPath = getHomePageSource("nostr-link.png");
     const githubPath = getHomePageSource("github-mark/github-mark-white-link.png");
 
-    const slideIn = keyframes`
-        0% {
-            transform: translateX(-100%);
-            opacity: 0;
-        }
-        100% {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    `;
-
-    const StyledNostrLink = styled.img`
-        // Center the image
-        margin-left: auto;
-        margin-right: auto;
+    const StyledSocialIcon = styled.img`
+        width: 2.25rem;
+        height: 2.25rem;
         border-radius: 50%;
-        // Set the border
-        border: 1px solid #fff;
-        // Set the box-shadow
-        box-shadow: 0 0 0 1px #fff;
-        // Set the transition
-        transition: all 0.3s ease-in-out;
-        // Set the hover state
+        transition: opacity 0.18s ease, transform 0.18s ease;
+
         &:hover {
-            // Set the border
-            border: 1px solid #fff;
-            // Set the box-shadow
-            box-shadow: 0 0 0 1px #fff;
-            // Set the transform
-            transform: scale(1.1);
+            opacity: 0.75;
+            transform: translateY(-1px);
         }
-
-    `;
-
-    const StyledSocialLinks = styled.a`
-        display: inline-flex;
-        animation: ${slideIn} 0.5s ease-out forwards;
     `;
 
     const StyledContainer = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: nowrap;
-        gap: 1rem;
+        gap: 1.25rem;
+        margin-bottom: 2rem;
     `;
 
-    const StyledPageContent = styled.div`
-        padding-bottom: 1rem; // Add some default padding-bottom for all devices
-
-        @media (max-width: 768px) {
-            padding-bottom: 3rem; // Add more padding-bottom for smaller devices
-        }
+    const StyledSectionTitle = styled.h3`
+        font-family: var(--ks-font-display);
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: var(--ks-champagne);
+        margin: 2.5rem 0 1rem;
     `;
-
 
     return (
-        <StyledPageContent>
+        <div>
             <StyledContainer>
-                <StyledSocialLinks href="https://primal.net/p/nprofile1qqsd8yt0g2l2usskjn8q8yuvxt60w8uk0vzsdzcp6ufmgcgkt0wkg3sle0dc6">
-                    <StyledNostrLink src={nostrPath} alt='Image' />
-                </StyledSocialLinks>
-                
-                <StyledSocialLinks href='https://github.com/osamja'>
-                    <StyledNostrLink src={githubPath} alt='Image' />
-                </StyledSocialLinks>    
+                <a href="https://primal.net/p/nprofile1qqsd8yt0g2l2usskjn8q8yuvxt60w8uk0vzsdzcp6ufmgcgkt0wkg3sle0dc6">
+                    <StyledSocialIcon src={nostrPath} alt='Nostr profile' />
+                </a>
+                <a href='https://github.com/osamja'>
+                    <StyledSocialIcon src={githubPath} alt='GitHub profile' />
+                </a>
             </StyledContainer>
 
             <Bio />
-            <h3 style={{color: 'white'}}>Some cool experiences</h3>
+
+            <StyledSectionTitle>Some cool experiences</StyledSectionTitle>
             <ExperienceList />
-        </StyledPageContent>  
+        </div>
     );
 }
