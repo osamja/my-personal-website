@@ -149,7 +149,7 @@ export default function Bio() {
                         <h4 className="vertical-timeline-element-subtitle">Evergreen Valley College</h4>
                         <h4 className="vertical-timeline-element-subtitle">San Jose, CA</h4>
                         <p>
-                            Computer Science coursework before transferring to UC Berkeley.
+                            VP of Student Association, 90+ credits across multiple disciplines, 4.0 GPA.
                         </p>
                     </VerticalTimelineElement>
                 </VerticalTimeline>
