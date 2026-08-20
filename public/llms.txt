@@ -9,8 +9,6 @@ Sammy Javed is a software engineer based in the San Francisco Bay Area. This sit
 ## Pages
 
 - [Homepage](https://sammyjaved.com/) — Landing page
-- [Bio](https://sammyjaved.com/bio) — About Sammy
-- [Professional](https://sammyjaved.com/professional) — Professional experience
 - [Academic](https://sammyjaved.com/academic) — Academic work
 - [Projects](https://sammyjaved.com/projects) — Software and side projects
 - [Journal](https://sammyjaved.com/journal) — Personal writing

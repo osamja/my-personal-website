@@ -9,7 +9,6 @@ import Academic from './pages/Academic';
 import Movies from './pages/Movies';
 import Shows from './pages/Shows';
 import Guitar from './pages/Guitar';
-import Professional from './pages/Professional';
 import Travel from '../src/pages/Travel';
 import Header from '../src/components/Header';
 import Navigation from '../src/components/Navigation';
@@ -39,7 +38,6 @@ class App extends Component {
                             <Route exact path="/movies" component={Movies}/>
                             <Route exact path="/shows" component={Shows}/>
                             <Route exact path="/guitar" component={Guitar}/>
-                            <Route exact path="/professional" component={Professional}/>
                             <Route exact path="/projects/my-personal-website" component={MyPersonalWebsite}/>
                             <Route exact path="/projects/image-morpher" component={ImageMorpher}/>
                             <Route exact path="/privacy" component={PrivacyPolicy}/>

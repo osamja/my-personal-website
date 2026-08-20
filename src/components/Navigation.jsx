@@ -138,7 +138,6 @@ const navSections = [
     title: 'Work',
     links: [
       { to: '/projects', label: 'Projects' },
-      { to: '/professional', label: 'Professional' },
       { to: '/academic', label: 'Academic' },
     ],
   },
