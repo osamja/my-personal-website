@@ -68,7 +68,6 @@ export default function Header() {
 
   const links = [
     { to: '/', label: 'Home', exact: true },
-    { to: '/bio', label: 'Bio' },
     { to: '/professional', label: 'Professional' },
     { to: '/projects', label: 'Projects' },
     { to: '/travel', label: 'Travel' },
