@@ -9,7 +9,7 @@
 #   3) app will hot reload, test http://sammyjaved.com:3001 afterwards
 
 # base image
-FROM node:18.15.0-alpine AS builder
+FROM node:22-alpine AS builder
 
 # set working directory
 WORKDIR /app

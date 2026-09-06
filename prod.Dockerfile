@@ -13,7 +13,7 @@
 
 
 # Stage 1) Node image for building frontend assets
-FROM node:18.15.0-alpine AS builder
+FROM node:22-alpine AS builder
 
 WORKDIR /app
 
